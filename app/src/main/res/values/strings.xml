@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kotlin-learn</string>
+    <string name="title">TEST LANCHES</string>
+    <string name="inicialButton">CARDÁPIO</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red_primary">#FFEB1212</color>
+
+    <!-- Card colors -->
+    <color name="red_card">#FFB14848</color>
+    <color name="orange_card">#FFD8983A</color>
+    <color name="yellow_card">#FFD3D562</color>
+    <color name="green_card">#FF579839</color>
+    <color name="blue_card">#FF2CBBB2</color>
+    <color name="purple_card">#FF9943B8</color>
+
+    <!-- additional colors -->
+    <color name="description">#FFC0C0C0</color>
+    <color name="card_bg">#FFD9D9D9</color>
+    <color name="product_price">#FF39891D</color>
+</resources>
