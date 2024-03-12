@@ -49,10 +49,6 @@
         android:fontFamily="times"
         android:textColor="@color/black"
         android:textSize="36sp"
-
-
-
-
         />
 
 
