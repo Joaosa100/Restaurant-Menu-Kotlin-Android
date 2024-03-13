@@ -45,6 +45,7 @@
 
         />
 
+
     <View
         android:id="@+id/hamburgueres"
         android:layout_width="0dp"
@@ -52,14 +53,40 @@
         android:background="@drawable/red_card"
         app:layout_constraintTop_toBottomOf="@+id/headerContainer"
         app:layout_constraintStart_toStartOf="parent"
-
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintWidth_percent="0.45"
         app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
+    />
+
+    <ImageView
+        android:id="@+id/hamburgueresIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hamburger"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/hamburgueres"
+        app:layout_constraintTop_toTopOf="@+id/hamburgueres"
+        app:layout_constraintEnd_toEndOf="@+id/hamburgueres"
 
         />
+
+    <TextView
+        android:id="@+id/hamburgueresName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/hamburgueres"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueresIcon"
+        app:layout_constraintEnd_toEndOf="@+id/hamburgueres"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+
+        />
+
 
     <View
         android:id="@+id/cervejas"
@@ -77,6 +104,37 @@
 
         />
 
+    <ImageView
+        android:id="@+id/cervejasIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beer"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/cervejas"
+        app:layout_constraintTop_toTopOf="@+id/cervejas"
+        app:layout_constraintEnd_toEndOf="@+id/cervejas"
+
+        />
+
+    <TextView
+        android:id="@+id/cervejasName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beer"
+        app:layout_constraintStart_toStartOf="@+id/cervejas"
+        app:layout_constraintTop_toBottomOf="@+id/cervejasIcon"
+        app:layout_constraintEnd_toEndOf="@+id/cervejas"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="2"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+
     <View
         android:id="@+id/soda"
         android:layout_width="0dp"
@@ -90,6 +148,34 @@
         app:layout_constraintWidth_percent="0.45"
         app:layout_constraintHeight_percent="0.25"
         />
+
+    <ImageView
+        android:id="@+id/sodaIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cola"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/soda"
+        app:layout_constraintTop_toTopOf="@+id/soda"
+        app:layout_constraintEnd_toEndOf="@+id/soda"
+
+        />
+
+    <TextView
+        android:id="@+id/sodaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soda"
+        app:layout_constraintStart_toStartOf="@+id/soda"
+        app:layout_constraintTop_toBottomOf="@+id/sodaIcon"
+        app:layout_constraintEnd_toEndOf="@+id/soda"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+
+        />
+
 
     <View
         android:id="@+id/ice"
@@ -105,6 +191,34 @@
         app:layout_constraintHeight_percent="0.25"
         />
 
+    <ImageView
+        android:id="@+id/iceIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cone"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/ice"
+        app:layout_constraintTop_toTopOf="@+id/ice"
+        app:layout_constraintEnd_toEndOf="@+id/ice"
+
+        />
+
+    <TextView
+        android:id="@+id/iceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ice"
+        app:layout_constraintStart_toStartOf="@+id/ice"
+        app:layout_constraintTop_toBottomOf="@+id/iceIcon"
+        app:layout_constraintEnd_toEndOf="@+id/ice"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+
+        />
+
+
     <View
         android:id="@+id/organic"
         android:layout_width="0dp"
@@ -119,6 +233,34 @@
         app:layout_constraintHeight_percent="0.25"
         />
 
+    <ImageView
+        android:id="@+id/organicIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/salad"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/organic"
+        app:layout_constraintTop_toTopOf="@+id/organic"
+        app:layout_constraintEnd_toEndOf="@+id/organic"
+
+        />
+
+    <TextView
+        android:id="@+id/organicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organic"
+        app:layout_constraintStart_toStartOf="@+id/organic"
+        app:layout_constraintTop_toBottomOf="@+id/organicIcon"
+        app:layout_constraintEnd_toEndOf="@+id/organic"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+
+        />
+
+
     <View
         android:id="@+id/pizza"
         android:layout_width="0dp"
@@ -132,6 +274,34 @@
         app:layout_constraintWidth_percent="0.45"
         app:layout_constraintHeight_percent="0.25"
         />
+
+    <ImageView
+        android:id="@+id/pizzaIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pizza"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/pizza"
+        app:layout_constraintTop_toTopOf="@+id/pizza"
+        app:layout_constraintEnd_toEndOf="@+id/pizza"
+
+        />
+
+    <TextView
+        android:id="@+id/pizzaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza"
+        app:layout_constraintStart_toStartOf="@+id/pizza"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaIcon"
+        app:layout_constraintEnd_toEndOf="@+id/pizza"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
 
     <!-- strings menu -->
     <string name="hamb">Hambúrgueres</string>
-    <string name="beer">Bebidas Alcoólicas</string>
+    <string name="beer">Bebidas\nAlcoólicas</string>
     <string name="soda">Refrigerantes</string>
     <string name="ice">Sobremesas</string>
     <string name="organic">Saladas</string>
