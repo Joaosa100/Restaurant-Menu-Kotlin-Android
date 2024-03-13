@@ -48,36 +48,90 @@
     <View
         android:id="@+id/hamburgueres"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/red_card"
+        android:layout_height="0dp"
+        android:background="@drawable/red_card"
         app:layout_constraintTop_toBottomOf="@+id/headerContainer"
         app:layout_constraintStart_toStartOf="parent"
 
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.2"
-
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
 
         />
 
     <View
         android:id="@+id/cervejas"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/yellow_card"
+        android:layout_height="0dp"
+        android:background="@drawable/yellow_card"
         app:layout_constraintTop_toBottomOf="@+id/headerContainer"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hamburgueres"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
 
         />
 
+    <View
+        android:id="@+id/soda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/blue_card"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueres"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        />
 
+    <View
+        android:id="@+id/ice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/purple_card"
+        app:layout_constraintTop_toBottomOf="@+id/cervejas"
+        app:layout_constraintStart_toEndOf="@+id/soda"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        />
 
+    <View
+        android:id="@+id/organic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/green_card"
+        app:layout_constraintTop_toBottomOf="@+id/soda"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        />
 
+    <View
+        android:id="@+id/pizza"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/orange_card"
+        app:layout_constraintTop_toBottomOf="@+id/ice"
+        app:layout_constraintStart_toEndOf="@+id/organic"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
