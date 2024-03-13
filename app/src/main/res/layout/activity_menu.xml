@@ -45,6 +45,38 @@
 
         />
 
+    <View
+        android:id="@+id/hamburgueres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.2"
+
+
+        />
+
+    <View
+        android:id="@+id/cervejas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.2"
+
+        />
+
+
+
 
 
 

@@ -3,6 +3,15 @@
     <string name="title">TEST LANCHES</string>
     <string name="inicialButton">CARDÁPIO</string>
 
+    <!-- strings menu -->
+    <string name="hamb">Hambúrgueres</string>
+    <string name="beer">Bebidas Alcoólicas</string>
+    <string name="soda">Refrigerantes</string>
+    <string name="ice">Sobremesas</string>
+    <string name="organic">Saladas</string>
+    <string name="pizza">Pizzas</string>
+
+
 
 
     <string name="backbutton"></string>
