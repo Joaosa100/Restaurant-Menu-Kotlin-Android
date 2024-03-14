@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Kotlinlearn"
         tools:targetApi="31">
         <activity
+            android:name=".MenuHamb"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity

@@ -6,16 +6,18 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.kotlin_learn.databinding.ActivityMenuBinding
+import com.example.kotlin_learn.databinding.ActivityMenuHambBinding
 
-class Menu : AppCompatActivity() {
-    private lateinit var binding: ActivityMenuBinding
+class MenuHamb : AppCompatActivity() {
+    private lateinit var binding: ActivityMenuHambBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMenuBinding.inflate(layoutInflater)
+        binding = ActivityMenuHambBinding.inflate(layoutInflater)
 
+
+
+        super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -24,14 +26,10 @@ class Menu : AppCompatActivity() {
             insets
         }
 
-        binding.backButton.setOnClickListener {
-            val goToFirstView = Intent(this, MainActivity::class.java)
-            startActivity(goToFirstView)
-        }
 
-        binding.hamburgueres.setOnClickListener{
-            val goToMenuHamb = Intent(this, MenuHamb::class.java)
-            startActivity(goToMenuHamb)
+        binding.backButton.setOnClickListener {
+            val goBackToMenu = Intent(this, Menu::class.java)
+            startActivity(goBackToMenu)
         }
 
 
