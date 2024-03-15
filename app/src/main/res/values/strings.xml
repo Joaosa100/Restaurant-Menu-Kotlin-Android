@@ -3,7 +3,7 @@
     <string name="title">TEST LANCHES</string>
     <string name="inicialButton">CARDÁPIO</string>
 
-    <!-- strings menu -->
+    <!-- strings menu & category products -->
     <string name="hamb">Hambúrgueres</string>
     <string name="beer">Bebidas\nAlcoólicas</string>
     <string name="soda">Refrigerantes</string>
@@ -11,6 +11,17 @@
     <string name="organic">Saladas</string>
     <string name="pizza">Pizzas</string>
 
+    <!-- strings hamburger products -->
+    <string name="hambbasicao">Basicão</string>
+    <!--    <string name="hambbasicao">Basicão</string>-->
+    <!--    <string name="hambbasicao">Basicão</string>-->
+    <!--    <string name="hambbasicao">Basicão</string>-->
 
+    <!-- hamb prices -->
+    <string name="hambbasicaoprice">R$12.50</string>
+
+
+
+    <!-- strings view elements -->
     <string name="backbutton"></string>
 </resources>

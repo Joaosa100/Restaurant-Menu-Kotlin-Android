@@ -47,6 +47,73 @@
 
         />
 
+    <View
+        android:id="@+id/hambBasicao"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/basicao"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hambbasicao"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toTopOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+
+        />
+
+    <TextView
+        android:id="@+id/hambBasicaoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambbasicao"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/basicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/hamburgueresDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/hambBasicaoName"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/hambBasicaoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambbasicaoprice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:textColor="@color/product_price"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
 
 
 
