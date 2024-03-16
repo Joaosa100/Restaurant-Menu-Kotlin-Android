@@ -47,6 +47,8 @@
 
         />
 
+
+    <!--  BASICÃO  -->
     <View
         android:id="@+id/hambBasicao"
         android:layout_width="0dp"
@@ -101,6 +103,19 @@
 
         />
 
+    <View
+        android:id="@+id/wrapPrice"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintBottom_toBottomOf="@+id/hambBasicao"
+        android:background="@drawable/rounded_price"
+
+        />
+
     <TextView
         android:id="@+id/hambBasicaoPrice"
         android:layout_width="wrap_content"
@@ -110,10 +125,281 @@
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
         app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        android:textColor="@color/product_price"
+        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
         />
+
+
+
+    <!--  BIG PICANHA -->
+    <View
+        android:id="@+id/bigPicanha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  bigPicanhaImg  -->
+    <ImageView
+        android:id="@+id/bigPicanhaImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bigpicanha"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toTopOf="@+id/bigPicanha"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        />
+
+
+    <!--  bigPicanhaName  -->
+    <TextView
+        android:id="@+id/bigPicanhaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambBigPicanha"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaImg"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  bigPicanhaDescription  -->
+    <TextView
+        android:id="@+id/bigPicanhaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaName"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  bigPicanhaWrap  -->
+    <View
+        android:id="@+id/bigPicanhaWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        app:layout_constraintBottom_toBottomOf="@+id/bigPicanha"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  bigPicanhaPrice  -->
+    <TextView
+        android:id="@+id/bigPicanhaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambbigpicanhaprice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+
+    <!--  DOUBLE PICANHA -->
+    <View
+        android:id="@+id/doublePicanha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/hambBasicao"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  doublePicanhaImg  -->
+    <ImageView
+        android:id="@+id/doublePicanhaImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/doublepicanha"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toTopOf="@+id/doublePicanha"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        />
+
+
+    <!--  doublePicanhaName  -->
+    <TextView
+        android:id="@+id/doublePicanhaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambDoublePicanha"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaImg"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  doublePicanhaDescription  -->
+    <TextView
+        android:id="@+id/doublePicanhaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaName"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  doublePicanhaWrap  -->
+    <View
+        android:id="@+id/doublePicanhaWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        app:layout_constraintBottom_toBottomOf="@+id/doublePicanha"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  doublePicanhaPrice  -->
+    <TextView
+        android:id="@+id/doublePicanhaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambdoublepicanhaprice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <!--  SMOKED CLASSIC -->
+    <View
+        android:id="@+id/smokedClassic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanha"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  smokedClassicImg  -->
+    <ImageView
+        android:id="@+id/smokedClassicImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smokedclassic"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toTopOf="@+id/smokedClassic"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        />
+
+
+    <!--  SmokedClassicName  -->
+    <TextView
+        android:id="@+id/smokedClassicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambSmokedClassic"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassicImg"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  smokedClassicDescription  -->
+    <TextView
+        android:id="@+id/smokedClassicDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassicName"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  smokedClassicWrap  -->
+    <View
+        android:id="@+id/smokedClassicWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        app:layout_constraintBottom_toBottomOf="@+id/smokedClassic"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  smokedClassicPrice  -->
+    <TextView
+        android:id="@+id/smokedClassicPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambsmokedclassicprice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
 
 
 

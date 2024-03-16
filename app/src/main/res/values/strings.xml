@@ -13,12 +13,15 @@
 
     <!-- strings hamburger products -->
     <string name="hambbasicao">Basicão</string>
-    <!--    <string name="hambbasicao">Basicão</string>-->
-    <!--    <string name="hambbasicao">Basicão</string>-->
-    <!--    <string name="hambbasicao">Basicão</string>-->
+        <string name="hambBigPicanha">Big Picanha</string>
+        <string name="hambDoublePicanha">Double Picanha</string>
+        <string name="hambSmokedClassic">Smoked Classic</string>
 
     <!-- hamb prices -->
-    <string name="hambbasicaoprice">R$12.50</string>
+    <string name="hambbasicaoprice">R$12.90</string>
+    <string name="hambbigpicanhaprice">R$17.90</string>
+    <string name="hambdoublepicanhaprice">R$21.90</string>
+    <string name="hambsmokedclassicprice">R$24.90</string>
 
 
 
