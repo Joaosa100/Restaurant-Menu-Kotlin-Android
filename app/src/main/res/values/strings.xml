@@ -53,6 +53,25 @@
     <string name="beerStellaArtoisDesc">Stella Artois beer</string>
 
 
+
+    <!--  soda products  -->
+    <string name="sodaCocaCola">Coca Cola 350ml</string>
+    <string name="sodaPepsi">Pepsi 350ml</string>
+    <string name="sodaGuaranaJesus">Gua. Jesus 350ml</string>
+    <string name="sodaSaoGeraldo">São Geraldo 1L</string>
+
+    <!--  soda prices  -->
+    <string name="sodaCocaColaPrice">R$ 3.90</string>
+    <string name="sodaPepsiPrice">R$ 3.90</string>
+    <string name="sodaGuaranaJesusPrice">R$ 2.90</string>
+    <string name="sodaSaoGeraldoPrice">R$ 7.90</string>
+
+    <!--  soda image descriptions  -->
+    <string name="sodaCocaColaDesc">Coca Cola soda</string>
+    <string name="sodaPepsiDesc">Pepsi soda</string>
+    <string name="sodaGuaranaJesusDesc">Guaraná Jesus soda</string>
+    <string name="sodaSaoGeraldoDesc">São Geraldo soda</string>
+
     <!-- strings view elements -->
     <string name="backbutton"></string>
 </resources>
