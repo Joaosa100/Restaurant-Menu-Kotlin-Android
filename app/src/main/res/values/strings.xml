@@ -6,16 +6,19 @@
     <!-- strings menu & category products -->
     <string name="hamb">Hambúrgueres</string>
     <string name="beer">Bebidas\nAlcoólicas</string>
+    <string name="beer2">Bebidas Alcoólicas</string>
     <string name="soda">Refrigerantes</string>
     <string name="ice">Sobremesas</string>
     <string name="organic">Saladas</string>
     <string name="pizza">Pizzas</string>
 
-    <!-- strings hamburger products -->
+
+
+    <!-- burger products -->
     <string name="hambbasicao">Basicão</string>
-        <string name="hambBigPicanha">Big Picanha</string>
-        <string name="hambDoublePicanha">Double Picanha</string>
-        <string name="hambSmokedClassic">Smoked Classic</string>
+    <string name="hambBigPicanha">Big Picanha</string>
+    <string name="hambDoublePicanha">Double Picanha</string>
+    <string name="hambSmokedClassic">Smoked Classic</string>
 
     <!-- hamb prices -->
     <string name="hambbasicaoprice">R$12.90</string>
@@ -23,6 +26,31 @@
     <string name="hambdoublepicanhaprice">R$21.90</string>
     <string name="hambsmokedclassicprice">R$24.90</string>
 
+    <!--  hamb image descriptions  -->
+    <string name="hambBasicaoImgDesc">Our basic burger</string>
+    <string name="hambBigPicanhaImgDesc">Our Big Picanha burger</string>
+    <string name="hambDoublePicanhaImgDesc">Our Double Picanha burger</string>
+    <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
+
+
+
+    <!--  beer products  -->
+    <string name="beerItaipava">Itaipava 600ml</string>
+    <string name="beerBudweiser">Budweiser 600ml</string>
+    <string name="beerHeineken">Heineken 600ml</string>
+    <string name="beerStellaArtois">St. Artois 600ml</string>
+
+    <!--  beer prices  -->
+    <string name="beerItaipavaPrice">R$ 4.90</string>
+    <string name="beerBudweiserPrice">R$ 7.90</string>
+    <string name="beerHeinekenPrice">R$ 8.90</string>
+    <string name="beerStellaArtoisPrice">R$ 9.90</string>
+
+    <!--  beer image descriptions  -->
+    <string name="beerItaipavaDesc">Itaipava beer</string>
+    <string name="beerBudweiserDesc">Budweiser beer</string>
+    <string name="beerHeinekenDesc">Heineken beer</string>
+    <string name="beerStellaArtoisDesc">Stella Artois beer</string>
 
 
     <!-- strings view elements -->

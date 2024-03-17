@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="@+id/hamburgueres"
         app:layout_constraintEnd_toEndOf="@+id/hamburgueres"
 
-        />
+        android:contentDescription="a simple burger" />
 
     <TextView
         android:id="@+id/hamburgueresName"

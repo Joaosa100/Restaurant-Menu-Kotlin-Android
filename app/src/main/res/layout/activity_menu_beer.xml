@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red_card"
-    tools:context=".MenuHamb">
+    android:background="@color/yellow_card"
+    tools:context=".MenuBeer">
 
 
     <View
@@ -48,9 +48,9 @@
         />
 
 
-    <!--  BASICÃO  -->
+    <!--  ITAIPAVA  -->
     <View
-        android:id="@+id/hambBasicao"
+        android:id="@+id/itaipava"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
@@ -64,25 +64,25 @@
         />
 
     <ImageView
-        android:id="@+id/basicao"
+        android:id="@+id/itaipavaImg"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/hambbasicao"
+        android:src="@drawable/itaipava"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toTopOf="@+id/hambBasicao"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintStart_toStartOf="@+id/itaipava"
+        app:layout_constraintTop_toTopOf="@+id/itaipava"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
 
-        android:contentDescription="@string/hambBasicaoImgDesc" />
+        android:contentDescription="@string/beerItaipavaDesc" />
 
     <TextView
-        android:id="@+id/hambBasicaoName"
+        android:id="@+id/itaipavaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambbasicao"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toBottomOf="@+id/basicao"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:text="@string/beerItaipava"
+        app:layout_constraintStart_toStartOf="@+id/itaipava"
+        app:layout_constraintTop_toBottomOf="@+id/itaipavaImg"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         android:textColor="@color/black"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
@@ -93,10 +93,10 @@
         android:id="@+id/hamburgueresDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hamb"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toBottomOf="@+id/hambBasicaoName"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:text="@string/beer2"
+        app:layout_constraintStart_toStartOf="@+id/itaipava"
+        app:layout_constraintTop_toBottomOf="@+id/itaipavaName"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
@@ -108,23 +108,23 @@
         android:layout_width="185dp"
         android:layout_height="32dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintStart_toStartOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        app:layout_constraintBottom_toBottomOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
+        app:layout_constraintBottom_toBottomOf="@+id/itaipava"
         android:background="@drawable/rounded_price"
 
         />
 
     <TextView
-        android:id="@+id/hambBasicaoPrice"
+        android:id="@+id/itaipavaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambbasicaoprice"
+        android:text="@string/beerItaipavaPrice"
         android:layout_marginTop="1dp"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintStart_toStartOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         android:textColor="@color/white"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
@@ -132,9 +132,9 @@
 
 
 
-    <!--  BIG PICANHA -->
+    <!--  BUDWEISER -->
     <View
-        android:id="@+id/bigPicanha"
+        android:id="@+id/budweiser"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
@@ -147,74 +147,74 @@
         android:layout_marginTop="20dp"
         />
 
-    <!--  bigPicanhaImg  -->
+    <!--  budweiserImg  -->
     <ImageView
-        android:id="@+id/bigPicanhaImg"
+        android:id="@+id/budweiserImg"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/bigpicanha"
+        android:src="@drawable/budweiser"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toTopOf="@+id/bigPicanha"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:contentDescription="@string/hambBigPicanhaImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/budweiser"
+        app:layout_constraintTop_toTopOf="@+id/budweiser"
+        app:layout_constraintEnd_toEndOf="@+id/budweiser"
+        android:contentDescription="@string/beerBudweiserDesc" />
 
 
-    <!--  bigPicanhaName  -->
+    <!--  budweiserName  -->
     <TextView
-        android:id="@+id/bigPicanhaName"
+        android:id="@+id/budweiserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambBigPicanha"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaImg"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:text="@string/beerBudweiser"
+        app:layout_constraintStart_toStartOf="@+id/budweiser"
+        app:layout_constraintTop_toBottomOf="@+id/budweiserImg"
+        app:layout_constraintEnd_toEndOf="@+id/budweiser"
         android:textColor="@color/black"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
 
         />
 
-    <!--  bigPicanhaDescription  -->
+    <!--  budweiserDescription  -->
     <TextView
-        android:id="@+id/bigPicanhaDescription"
+        android:id="@+id/budweiserDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hamb"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaName"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:text="@string/beer2"
+        app:layout_constraintStart_toStartOf="@+id/budweiser"
+        app:layout_constraintTop_toBottomOf="@+id/budweiserName"
+        app:layout_constraintEnd_toEndOf="@+id/budweiser"
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
 
         />
 
-    <!--  bigPicanhaWrap  -->
+    <!--  budweiserWrap  -->
     <View
-        android:id="@+id/bigPicanhaWrap"
+        android:id="@+id/budweiserWrap"
         android:layout_width="185dp"
         android:layout_height="32dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        app:layout_constraintBottom_toBottomOf="@+id/bigPicanha"
+        app:layout_constraintStart_toStartOf="@+id/budweiser"
+        app:layout_constraintTop_toBottomOf="@+id/budweiserDescription"
+        app:layout_constraintEnd_toEndOf="@+id/budweiser"
+        app:layout_constraintBottom_toBottomOf="@+id/budweiser"
         android:background="@drawable/rounded_price"
 
         />
 
 
-    <!--  bigPicanhaPrice  -->
+    <!--  budweiserPrice  -->
     <TextView
-        android:id="@+id/bigPicanhaPrice"
+        android:id="@+id/budweiserPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambbigpicanhaprice"
+        android:text="@string/beerBudweiserPrice"
         android:layout_marginTop="1dp"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        app:layout_constraintStart_toStartOf="@+id/budweiser"
+        app:layout_constraintTop_toBottomOf="@+id/budweiserDescription"
+        app:layout_constraintEnd_toEndOf="@+id/budweiser"
         android:textColor="@color/white"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
@@ -222,13 +222,13 @@
 
 
 
-    <!--  DOUBLE PICANHA -->
+    <!-- HEINEKEN -->
     <View
-        android:id="@+id/doublePicanha"
+        android:id="@+id/heineken"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/itaipava"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
@@ -237,87 +237,87 @@
         android:layout_marginTop="20dp"
         />
 
-    <!--  doublePicanhaImg  -->
+    <!--  heinekenImg  -->
     <ImageView
-        android:id="@+id/doublePicanhaImg"
+        android:id="@+id/heinekenImg"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/doublepicanha"
+        android:src="@drawable/heineken"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toTopOf="@+id/doublePicanha"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:contentDescription="@string/hambDoublePicanhaImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintTop_toTopOf="@+id/heineken"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        android:contentDescription="@string/beerHeinekenDesc" />
 
 
-    <!--  doublePicanhaName  -->
+    <!--  heinekenName  -->
     <TextView
-        android:id="@+id/doublePicanhaName"
+        android:id="@+id/heinekenName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambDoublePicanha"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaImg"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:text="@string/beerHeineken"
+        app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintTop_toBottomOf="@+id/heinekenImg"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
         android:textColor="@color/black"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
 
         />
 
-    <!--  doublePicanhaDescription  -->
+    <!--  heinekenDescription  -->
     <TextView
-        android:id="@+id/doublePicanhaDescription"
+        android:id="@+id/heinekenDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hamb"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaName"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:text="@string/beer2"
+        app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintTop_toBottomOf="@+id/heinekenName"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
 
         />
 
-    <!--  doublePicanhaWrap  -->
+    <!--  heinekenWrap  -->
     <View
-        android:id="@+id/doublePicanhaWrap"
+        android:id="@+id/heinekenWrap"
         android:layout_width="185dp"
         android:layout_height="32dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        app:layout_constraintBottom_toBottomOf="@+id/doublePicanha"
+        app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        app:layout_constraintBottom_toBottomOf="@+id/heineken"
         android:background="@drawable/rounded_price"
 
         />
 
 
-    <!--  doublePicanhaPrice  -->
+    <!--  heinekenPrice  -->
     <TextView
-        android:id="@+id/doublePicanhaPrice"
+        android:id="@+id/heinekenPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambdoublepicanhaprice"
+        android:text="@string/beerHeinekenPrice"
         android:layout_marginTop="1dp"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
         android:textColor="@color/white"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
         />
 
 
-    <!--  SMOKED CLASSIC -->
+    <!--  STELLA ARTOIS -->
     <View
-        android:id="@+id/smokedClassic"
+        android:id="@+id/stellaArtois"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/budweiser"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
@@ -326,80 +326,78 @@
         android:layout_marginTop="20dp"
         />
 
-    <!--  smokedClassicImg  -->
+    <!--  stellaArtoisImg  -->
     <ImageView
-        android:id="@+id/smokedClassicImg"
+        android:id="@+id/stellaArtoisImg"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/smokedclassic"
+        android:src="@drawable/stellaartois"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toTopOf="@+id/smokedClassic"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:contentDescription="@string/hambSmokedClassicImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/stellaArtois"
+        app:layout_constraintTop_toTopOf="@+id/stellaArtois"
+        app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
+        android:contentDescription="@string/beerStellaArtoisDesc" />
 
 
     <!--  SmokedClassicName  -->
     <TextView
-        android:id="@+id/smokedClassicName"
+        android:id="@+id/stellaArtoisName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambSmokedClassic"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicImg"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:text="@string/beerStellaArtois"
+        app:layout_constraintStart_toStartOf="@+id/stellaArtois"
+        app:layout_constraintTop_toBottomOf="@+id/stellaArtoisImg"
+        app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
         android:textColor="@color/black"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
 
         />
 
-    <!--  smokedClassicDescription  -->
+    <!--  stellaArtoisDescription  -->
     <TextView
-        android:id="@+id/smokedClassicDescription"
+        android:id="@+id/stellaArtoisDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hamb"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicName"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:text="@string/beer2"
+        app:layout_constraintStart_toStartOf="@+id/stellaArtois"
+        app:layout_constraintTop_toBottomOf="@+id/stellaArtoisName"
+        app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
 
         />
 
-    <!--  smokedClassicWrap  -->
+    <!--  stellaArtoisWrap  -->
     <View
-        android:id="@+id/smokedClassicWrap"
+        android:id="@+id/stellaArtoisWrap"
         android:layout_width="185dp"
         android:layout_height="32dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        app:layout_constraintBottom_toBottomOf="@+id/smokedClassic"
+        app:layout_constraintStart_toStartOf="@+id/stellaArtois"
+        app:layout_constraintTop_toBottomOf="@+id/stellaArtoisDescription"
+        app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
+        app:layout_constraintBottom_toBottomOf="@+id/stellaArtois"
         android:background="@drawable/rounded_price"
 
         />
 
 
-    <!--  smokedClassicPrice  -->
+    <!--  stellaArtoisPrice  -->
     <TextView
-        android:id="@+id/smokedClassicPrice"
+        android:id="@+id/stellaArtoisPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambsmokedclassicprice"
+        android:text="@string/beerStellaArtoisPrice"
         android:layout_marginTop="1dp"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        app:layout_constraintStart_toStartOf="@+id/stellaArtois"
+        app:layout_constraintTop_toBottomOf="@+id/stellaArtoisDescription"
+        app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
         android:textColor="@color/white"
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
         />
-
-
 
 
 
