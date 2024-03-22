@@ -88,6 +88,25 @@
     <string name="dessertMaracujaDesc">Guaraná Jesus soda</string>
     <string name="dessertBoloBananaDesc">Bolo de Banana sobremesa</string>
 
+
+    <!--  organic products  -->
+    <string name="organicSaladaAbacate">Salada Abacate</string>
+    <string name="organicSaladaOvo">Batata e Ovo</string>
+    <string name="organicSaladaRepolhoRoxo">Repolho Roxo</string>
+    <string name="organicSaladaGraoDeBico">Grão de Bico</string>
+
+    <!--  organic prices  -->
+    <string name="organicSaladaAbacatePrice">R$ 7.90</string>
+    <string name="organicSaladaOvoPrice">R$ 8.90</string>
+    <string name="organicSaladaRepolhoRoxoPrice">R$ 6.90</string>
+    <string name="organicSaladaGraoDeBicoPrice">R$ 5.90</string>
+
+    <!--  organic image descriptions  -->
+    <string name="organicSaladaAbacateDesc">Salada de Abacate orgânicos</string>
+    <string name="organicSaladaOvoDesc">Salada de Ovo orgânicos</string>
+    <string name="organicSaladaRepolhoRoxoDesc">Salada de Repolho Roxo orgânicos</string>
+    <string name="organicSaladaGraoDeBicoDesc">Salada de Grão de Bico orgânicos</string>
+
     <!-- strings view elements -->
     <string name="backbutton"></string>
 </resources>

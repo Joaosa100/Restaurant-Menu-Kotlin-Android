@@ -5,6 +5,399 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green_card"
     tools:context=".MenuSaladas">
+
+
+
+    <View
+        android:id="@+id/headerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/red_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+
+        />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/backbutton" />
+
+    <TextView
+        android:id="@+id/restaurantTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="@string/title"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+
+        />
+
+
+    <!--  SALADA DE ABACATE  -->
+    <View
+        android:id="@+id/saladaAbacate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/saladaAbacateImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saladaabacate"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toTopOf="@+id/saladaAbacate"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+
+        android:contentDescription="@string/organicSaladaAbacateDesc"/>
+
+    <TextView
+        android:id="@+id/saladaAbacateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaAbacate"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toBottomOf="@+id/saladaAbacateImg"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/beerDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organic"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toBottomOf="@+id/saladaAbacateName"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <View
+        android:id="@+id/wrapPrice"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+        app:layout_constraintBottom_toBottomOf="@+id/saladaAbacate"
+        android:background="@drawable/rounded_price"
+
+        />
+
+    <TextView
+        android:id="@+id/saladaAbacatePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaAbacatePrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+
+    <!--  SALADA DE OVO -->
+    <View
+        android:id="@+id/saladaOvo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  saladaOvoImg  -->
+    <ImageView
+        android:id="@+id/saladaOvoImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saladadeovo"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toTopOf="@+id/saladaOvo"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        android:contentDescription="@string/organicSaladaOvoDesc" />
+
+
+    <!--  saladaOvoName  -->
+    <TextView
+        android:id="@+id/saladaOvoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaOvo"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvoImg"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  saladaOvoDescription  -->
+    <TextView
+        android:id="@+id/saladaOvoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organic"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvoName"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  saladaOvoWrap  -->
+    <View
+        android:id="@+id/saladaOvoWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        app:layout_constraintBottom_toBottomOf="@+id/saladaOvo"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  saladaOvoPrice  -->
+    <TextView
+        android:id="@+id/saladaOvoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaOvoPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+
+    <!-- SALADA DE REPOLHO ROXO -->
+    <View
+        android:id="@+id/saladaRepolhoRoxo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/saladaAbacate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  saladaRepolhoRoxoImg  -->
+    <ImageView
+        android:id="@+id/saladaRepolhoRoxoImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saladarepolhoroxo"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toTopOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        android:contentDescription="@string/organicSaladaRepolhoRoxoDesc" />
+
+
+    <!--  saladaRepolhoRoxoName  -->
+    <TextView
+        android:id="@+id/saladaRepolhoRoxoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaRepolhoRoxo"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoImg"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  saladaRepolhoRoxoDescription  -->
+    <TextView
+        android:id="@+id/saladaRepolhoRoxoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organic"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoName"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  saladaRepolhoRoxoWrap  -->
+    <View
+        android:id="@+id/saladaRepolhoRoxoWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintBottom_toBottomOf="@+id/saladaRepolhoRoxo"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  saladaRepolhoRoxoPrice  -->
+    <TextView
+        android:id="@+id/saladaRepolhoRoxoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaRepolhoRoxoPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <!--  SALADA DE GRÃO DE BICO -->
+    <View
+        android:id="@+id/saladaGraoDeBico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  saladaGraoDeBicoImg  -->
+    <ImageView
+        android:id="@+id/saladaGraoDeBicoImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saladagraodebico"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toTopOf="@+id/saladaGraoDeBico"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        android:contentDescription="@string/organicSaladaGraoDeBicoDesc" />
+
+
+    <!--  saladaGraoDeBicoName  -->
+    <TextView
+        android:id="@+id/saladaGraoDeBicoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaGraoDeBico"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoImg"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  saladaGraoDeBicoDescription  -->
+    <TextView
+        android:id="@+id/saladaGraoDeBicoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organic"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoName"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  saladaGraoDeBicoWrap  -->
+    <View
+        android:id="@+id/saladaGraoDeBicoWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        app:layout_constraintBottom_toBottomOf="@+id/saladaGraoDeBico"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  saladaGraoDeBicoPrice  -->
+    <TextView
+        android:id="@+id/saladaGraoDeBicoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organicSaladaGraoDeBicoPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
