@@ -106,9 +106,9 @@
 
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
@@ -122,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaAbacatePrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
@@ -194,9 +194,9 @@
     <!--  saladaOvoWrap  -->
     <View
         android:id="@+id/saladaOvoWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/saladaOvo"
         app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
@@ -212,7 +212,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaOvoPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/saladaOvo"
         app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
@@ -284,9 +284,9 @@
     <!--  saladaRepolhoRoxoWrap  -->
     <View
         android:id="@+id/saladaRepolhoRoxoWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
         app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
@@ -302,7 +302,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaRepolhoRoxoPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
         app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
@@ -373,9 +373,9 @@
     <!--  saladaGraoDeBicoWrap  -->
     <View
         android:id="@+id/saladaGraoDeBicoWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
         app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
@@ -391,7 +391,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaGraoDeBicoPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
         app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"

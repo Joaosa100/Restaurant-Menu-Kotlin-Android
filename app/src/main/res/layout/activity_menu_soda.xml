@@ -106,9 +106,9 @@
 
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
         app:layout_constraintTop_toBottomOf="@+id/sodaDescription"
         app:layout_constraintEnd_toEndOf="@+id/cocaCola"
@@ -122,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sodaCocaColaPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
         app:layout_constraintTop_toBottomOf="@+id/sodaDescription"
         app:layout_constraintEnd_toEndOf="@+id/cocaCola"
@@ -194,9 +194,9 @@
     <!--  pepsiWrap  -->
     <View
         android:id="@+id/pepsiWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
         app:layout_constraintTop_toBottomOf="@+id/pepsiDescription"
         app:layout_constraintEnd_toEndOf="@+id/pepsi"
@@ -212,7 +212,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sodaPepsiPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
         app:layout_constraintTop_toBottomOf="@+id/pepsiDescription"
         app:layout_constraintEnd_toEndOf="@+id/pepsi"
@@ -284,9 +284,9 @@
     <!--  guaranaJesusWrap  -->
     <View
         android:id="@+id/guaranaJesusWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
         app:layout_constraintTop_toBottomOf="@+id/guaranaJesusDescription"
         app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
@@ -302,7 +302,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sodaGuaranaJesusPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
         app:layout_constraintTop_toBottomOf="@+id/guaranaJesusDescription"
         app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
@@ -313,21 +313,20 @@
 
 
     <!--  SÃO GERALDO -->
+
+    <!--  saoGeraldoImg  -->
     <View
         android:id="@+id/saoGeraldo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/pepsi"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
-        />
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/pepsi"
+        app:layout_constraintWidth_percent="0.45" />
 
-    <!--  saoGeraldoImg  -->
     <ImageView
         android:id="@+id/saoGeraldoImg"
         android:layout_width="185dp"
@@ -373,9 +372,9 @@
     <!--  saoGeraldoWrap  -->
     <View
         android:id="@+id/saoGeraldoWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
         app:layout_constraintTop_toBottomOf="@+id/saoGeraldoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
@@ -391,7 +390,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sodaSaoGeraldoPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
         app:layout_constraintTop_toBottomOf="@+id/saoGeraldoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"

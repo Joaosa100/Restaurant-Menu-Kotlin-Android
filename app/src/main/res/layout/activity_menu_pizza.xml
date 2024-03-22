@@ -107,9 +107,9 @@
 
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaMista"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaMistaPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaMista"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
@@ -195,9 +195,9 @@
     <!--  pizzaQuatroQueijosWrap  -->
     <View
         android:id="@+id/pizzaQuatroQueijosWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
         app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
@@ -213,7 +213,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaQuatroQueijosPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
         app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
@@ -285,9 +285,9 @@
     <!--  pizzaCalabresaWrap  -->
     <View
         android:id="@+id/pizzaCalabresaWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
         app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
@@ -303,7 +303,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaCalabresaPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
         app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
@@ -374,9 +374,9 @@
     <!--  pizzaCarneSolWrap  -->
     <View
         android:id="@+id/pizzaCarneSolWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
         app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
@@ -392,7 +392,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaCarneSolPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
         app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"

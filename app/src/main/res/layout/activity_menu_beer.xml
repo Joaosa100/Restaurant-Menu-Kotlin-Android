@@ -105,9 +105,9 @@
 
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/itaipava"
@@ -121,7 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerItaipavaPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/itaipava"
@@ -193,9 +193,9 @@
     <!--  budweiserWrap  -->
     <View
         android:id="@+id/budweiserWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/budweiser"
         app:layout_constraintTop_toBottomOf="@+id/budweiserDescription"
         app:layout_constraintEnd_toEndOf="@+id/budweiser"
@@ -211,7 +211,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerBudweiserPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/budweiser"
         app:layout_constraintTop_toBottomOf="@+id/budweiserDescription"
         app:layout_constraintEnd_toEndOf="@+id/budweiser"
@@ -283,9 +283,9 @@
     <!--  heinekenWrap  -->
     <View
         android:id="@+id/heinekenWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/heineken"
         app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
         app:layout_constraintEnd_toEndOf="@+id/heineken"
@@ -301,7 +301,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerHeinekenPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/heineken"
         app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
         app:layout_constraintEnd_toEndOf="@+id/heineken"
@@ -372,9 +372,9 @@
     <!--  stellaArtoisWrap  -->
     <View
         android:id="@+id/stellaArtoisWrap"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="32dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/stellaArtois"
         app:layout_constraintTop_toBottomOf="@+id/stellaArtoisDescription"
         app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
@@ -390,7 +390,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerStellaArtoisPrice"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/stellaArtois"
         app:layout_constraintTop_toBottomOf="@+id/stellaArtoisDescription"
         app:layout_constraintEnd_toEndOf="@+id/stellaArtois"

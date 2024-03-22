@@ -34,6 +34,31 @@ class Menu : AppCompatActivity() {
             startActivity(goToMenuHamb)
         }
 
+        binding.cervejas.setOnClickListener{
+            val goToMenuBeer = Intent(this, MenuBeer::class.java)
+            startActivity(goToMenuBeer)
+        }
+
+        binding.soda.setOnClickListener{
+            val goToMenuSoda = Intent(this, MenuSoda::class.java)
+            startActivity(goToMenuSoda)
+        }
+
+        binding.ice.setOnClickListener{
+            val goToMenuIce = Intent(this, MenuDessert::class.java)
+            startActivity(goToMenuIce)
+        }
+
+        binding.organic.setOnClickListener{
+            val goToMenuOrganic = Intent(this, MenuSaladas::class.java)
+            startActivity(goToMenuOrganic)
+        }
+
+        binding.pizza.setOnClickListener{
+            val goToMenuPizza = Intent(this, MenuPizza::class.java)
+            startActivity(goToMenuPizza)
+        }
+
 
     }
 }

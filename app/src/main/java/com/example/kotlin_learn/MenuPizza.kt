@@ -1,20 +1,31 @@
 package com.example.kotlin_learn
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.kotlin_learn.databinding.ActivityMenuPizzaBinding
 
 class MenuPizza : AppCompatActivity() {
+    private lateinit var binding: ActivityMenuPizzaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMenuPizzaBinding.inflate(layoutInflater)
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_menu_pizza)
+        setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        binding.backButton.setOnClickListener {
+            val goBackToMenu = Intent(this, Menu::class.java)
+            startActivity(goBackToMenu)
+        }
+
     }
 }
