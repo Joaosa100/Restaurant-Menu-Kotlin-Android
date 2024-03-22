@@ -107,6 +107,26 @@
     <string name="organicSaladaRepolhoRoxoDesc">Salada de Repolho Roxo orgânicos</string>
     <string name="organicSaladaGraoDeBicoDesc">Salada de Grão de Bico orgânicos</string>
 
+
+    <!--  pizza products  -->
+    <string name="pizzaMista">Presunto e Queijo</string>
+    <string name="pizzaQuatroQueijos">Quatro Queijos</string>
+    <string name="pizzaCalabresa">Calabresa</string>
+    <string name="pizzaCarneSol">Carne de Sol</string>
+
+    <!--  pizza prices  -->
+    <string name="pizzaMistaPrice">R$ 25.90</string>
+    <string name="pizzaQuatroQueijosPrice">R$ 27.90</string>
+    <string name="pizzaCalabresaPrice">R$ 26.90</string>
+    <string name="pizzaCarneSolPrice">R$ 31.90</string>
+
+    <!--  pizza image descriptions  -->
+    <string name="pizzaMistaDesc">Pizza Presunto e Queijo</string>
+    <string name="pizzaQuatroQueijosDesc">Pizza Quatro Queijos</string>
+    <string name="pizzaCalabresaDesc">Pizza Calabresa</string>
+    <string name="pizzaCarneSolDesc">Pizza Carne de Sol</string>
+
+
     <!-- strings view elements -->
     <string name="backbutton"></string>
 </resources>

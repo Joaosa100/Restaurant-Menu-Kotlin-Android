@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Kotlinlearn"
         tools:targetApi="31">
         <activity
+            android:name=".MenuPizza"
+            android:exported="false" />
+        <activity
             android:name=".MenuSaladas"
             android:exported="false" />
         <activity
