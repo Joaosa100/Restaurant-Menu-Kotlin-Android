@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_card"
+    tools:context=".MenuDessert">
+
+
+
+    <View
+        android:id="@+id/headerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/red_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+
+        />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/backbutton" />
+
+    <TextView
+        android:id="@+id/restaurantTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="@string/title"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+
+        />
+
+
+    <!--  BOLO DE LIMÃO  -->
+    <View
+        android:id="@+id/boloDeLimao"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/boloDeLimaoImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bololimao"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+        app:layout_constraintTop_toTopOf="@+id/boloDeLimao"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+
+        android:contentDescription="@string/dessertBoloLimaoDesc"/>
+
+    <TextView
+        android:id="@+id/boloDeLimaoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertBoloLimao"
+        app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoImg"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/beerDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ice"
+        app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoName"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <View
+        android:id="@+id/wrapPrice"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+        app:layout_constraintBottom_toBottomOf="@+id/boloDeLimao"
+        android:background="@drawable/rounded_price"
+
+        />
+
+    <TextView
+        android:id="@+id/boloDeLimaoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertBoloLimaoPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+
+    <!--  BOLO DE MORANGO -->
+    <View
+        android:id="@+id/boloDeMorango"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  boloDeMorangoImg  -->
+    <ImageView
+        android:id="@+id/boloDeMorangoImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bolomorango"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+        app:layout_constraintTop_toTopOf="@+id/boloDeMorango"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+        android:contentDescription="@string/dessertBoloMorangoDesc" />
+
+
+    <!--  boloDeMorangoName  -->
+    <TextView
+        android:id="@+id/boloDeMorangoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertBoloMorango"
+        app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoImg"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  boloDeMorangoDescription  -->
+    <TextView
+        android:id="@+id/boloDeMorangoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ice"
+        app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoName"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  boloDeMorangoWrap  -->
+    <View
+        android:id="@+id/boloDeMorangoWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+        app:layout_constraintBottom_toBottomOf="@+id/boloDeMorango"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  boloDeMorangoPrice  -->
+    <TextView
+        android:id="@+id/boloDeMorangoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertBoloMorangoPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+
+    <!-- SOBREMESA MARACUJÁ -->
+    <View
+        android:id="@+id/sobremesaMaracuja"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeLimao"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  sobremesaMaracujaImg  -->
+    <ImageView
+        android:id="@+id/sobremesaMaracujaImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sobremesamaracuja"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+        app:layout_constraintTop_toTopOf="@+id/sobremesaMaracuja"
+        app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+        android:contentDescription="@string/dessertMaracujaDesc" />
+
+
+    <!--  sobremesaMaracujaName  -->
+    <TextView
+        android:id="@+id/sobremesaMaracujaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertMaracuja"
+        app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+        app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaImg"
+        app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  sobremesaMaracujaDescription  -->
+    <TextView
+        android:id="@+id/sobremesaMaracujaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ice"
+        app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+        app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaName"
+        app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  sobremesaMaracujaWrap  -->
+    <View
+        android:id="@+id/sobremesaMaracujaWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+        app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+        app:layout_constraintBottom_toBottomOf="@+id/sobremesaMaracuja"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  sobremesaMaracujaPrice  -->
+    <TextView
+        android:id="@+id/sobremesaMaracujaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertMaracujaPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+        app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <!--  BOLO DE BANANA -->
+    <View
+        android:id="@+id/boloBanana"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeMorango"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  boloBananaImg  -->
+    <ImageView
+        android:id="@+id/boloBananaImg"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bolobanana"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/boloBanana"
+        app:layout_constraintTop_toTopOf="@+id/boloBanana"
+        app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+        android:contentDescription="@string/dessertBoloBananaDesc" />
+
+
+    <!--  boloBananaName  -->
+    <TextView
+        android:id="@+id/boloBananaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertBoloBanana"
+        app:layout_constraintStart_toStartOf="@+id/boloBanana"
+        app:layout_constraintTop_toBottomOf="@+id/boloBananaImg"
+        app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  boloBananaDescription  -->
+    <TextView
+        android:id="@+id/boloBananaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ice"
+        app:layout_constraintStart_toStartOf="@+id/boloBanana"
+        app:layout_constraintTop_toBottomOf="@+id/boloBananaName"
+        app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <!--  boloBananaWrap  -->
+    <View
+        android:id="@+id/boloBananaWrap"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="@+id/boloBanana"
+        app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+        app:layout_constraintBottom_toBottomOf="@+id/boloBanana"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  boloBananaPrice  -->
+    <TextView
+        android:id="@+id/boloBananaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dessertBoloBananaPrice"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/boloBanana"
+        app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

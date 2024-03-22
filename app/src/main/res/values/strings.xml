@@ -13,7 +13,6 @@
     <string name="pizza">Pizzas</string>
 
 
-
     <!-- burger products -->
     <string name="hambbasicao">Basicão</string>
     <string name="hambBigPicanha">Big Picanha</string>
@@ -31,7 +30,6 @@
     <string name="hambBigPicanhaImgDesc">Our Big Picanha burger</string>
     <string name="hambDoublePicanhaImgDesc">Our Double Picanha burger</string>
     <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
-
 
 
     <!--  beer products  -->
@@ -53,7 +51,6 @@
     <string name="beerStellaArtoisDesc">Stella Artois beer</string>
 
 
-
     <!--  soda products  -->
     <string name="sodaCocaCola">Coca Cola 350ml</string>
     <string name="sodaPepsi">Pepsi 350ml</string>
@@ -71,6 +68,25 @@
     <string name="sodaPepsiDesc">Pepsi soda</string>
     <string name="sodaGuaranaJesusDesc">Guaraná Jesus soda</string>
     <string name="sodaSaoGeraldoDesc">São Geraldo soda</string>
+
+
+    <!--  dessert products  -->
+    <string name="dessertBoloLimao">Bolo de Limão</string>
+    <string name="dessertBoloMorango">Bolo de Morango</string>
+    <string name="dessertMaracuja">Doce de Maracujá</string>
+    <string name="dessertBoloBanana">Bolo de Banana</string>
+
+    <!--  dessert prices  -->
+    <string name="dessertBoloLimaoPrice">R$ 5.90</string>
+    <string name="dessertBoloMorangoPrice">R$ 6.90</string>
+    <string name="dessertMaracujaPrice">R$ 4.90</string>
+    <string name="dessertBoloBananaPrice">R$ 8.90</string>
+
+    <!--  dessert image descriptions  -->
+    <string name="dessertBoloLimaoDesc">Bolo de Limão sobremesa</string>
+    <string name="dessertBoloMorangoDesc">Bolo de Morango sobremesa</string>
+    <string name="dessertMaracujaDesc">Guaraná Jesus soda</string>
+    <string name="dessertBoloBananaDesc">Bolo de Banana sobremesa</string>
 
     <!-- strings view elements -->
     <string name="backbutton"></string>
