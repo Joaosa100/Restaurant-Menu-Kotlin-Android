@@ -66,7 +66,7 @@
 
     <ImageView
         android:id="@+id/saladaAbacateImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/saladaabacate"
         android:background="@drawable/rounded_corners"
@@ -151,7 +151,7 @@
     <!--  saladaOvoImg  -->
     <ImageView
         android:id="@+id/saladaOvoImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/saladadeovo"
         android:background="@drawable/rounded_corners"
@@ -241,7 +241,7 @@
     <!--  saladaRepolhoRoxoImg  -->
     <ImageView
         android:id="@+id/saladaRepolhoRoxoImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/saladarepolhoroxo"
         android:background="@drawable/rounded_corners"
@@ -330,7 +330,7 @@
     <!--  saladaGraoDeBicoImg  -->
     <ImageView
         android:id="@+id/saladaGraoDeBicoImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/saladagraodebico"
         android:background="@drawable/rounded_corners"

@@ -65,7 +65,7 @@
 
     <ImageView
         android:id="@+id/basicao"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/hambbasicao"
         android:background="@drawable/rounded_corners"
@@ -149,9 +149,9 @@
 
     <ImageView
         android:id="@+id/bigPicanhaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/bigpicanha"
+        android:src="@drawable/hambbigpicanha"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
         app:layout_constraintTop_toTopOf="@+id/bigPicanha"
@@ -239,9 +239,9 @@
     <!--  doublePicanhaImg  -->
     <ImageView
         android:id="@+id/doublePicanhaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/doublepicanha"
+        android:src="@drawable/hambdoublepicanha"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
         app:layout_constraintTop_toTopOf="@+id/doublePicanha"
@@ -328,9 +328,9 @@
     <!--  smokedClassicImg  -->
     <ImageView
         android:id="@+id/smokedClassicImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/smokedclassic"
+        android:src="@drawable/hambsmokedclassic"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
         app:layout_constraintTop_toTopOf="@+id/smokedClassic"

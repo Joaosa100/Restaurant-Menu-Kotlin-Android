@@ -67,9 +67,9 @@
 
     <ImageView
         android:id="@+id/cocaColaImg"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cocacola"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:src="@drawable/sodacocacola"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
         app:layout_constraintTop_toTopOf="@+id/cocaCola"
@@ -151,9 +151,9 @@
     <!--  pepsiImg  -->
     <ImageView
         android:id="@+id/pepsiImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/pepsi"
+        android:src="@drawable/sodapepsi"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
         app:layout_constraintTop_toTopOf="@+id/pepsi"
@@ -241,9 +241,9 @@
     <!--  guaranaJesusImg  -->
     <ImageView
         android:id="@+id/guaranaJesusImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/guaranajesus"
+        android:src="@drawable/sodajesus"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
         app:layout_constraintTop_toTopOf="@+id/guaranaJesus"
@@ -329,9 +329,9 @@
 
     <ImageView
         android:id="@+id/saoGeraldoImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/caju"
+        android:src="@drawable/sodacaju"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
         app:layout_constraintTop_toTopOf="@+id/saoGeraldo"

@@ -66,7 +66,7 @@
 
     <ImageView
         android:id="@+id/boloDeLimaoImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/bololimao"
         android:background="@drawable/rounded_corners"
@@ -151,7 +151,7 @@
     <!--  boloDeMorangoImg  -->
     <ImageView
         android:id="@+id/boloDeMorangoImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/bolomorango"
         android:background="@drawable/rounded_corners"
@@ -241,7 +241,7 @@
     <!--  sobremesaMaracujaImg  -->
     <ImageView
         android:id="@+id/sobremesaMaracujaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/sobremesamaracuja"
         android:background="@drawable/rounded_corners"
@@ -330,7 +330,7 @@
     <!--  boloBananaImg  -->
     <ImageView
         android:id="@+id/boloBananaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/bolobanana"
         android:background="@drawable/rounded_corners"

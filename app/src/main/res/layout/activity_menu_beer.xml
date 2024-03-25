@@ -65,9 +65,9 @@
 
     <ImageView
         android:id="@+id/itaipavaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/itaipava"
+        android:src="@drawable/beeritaipava"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
         app:layout_constraintTop_toTopOf="@+id/itaipava"
@@ -150,9 +150,9 @@
     <!--  budweiserImg  -->
     <ImageView
         android:id="@+id/budweiserImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/budweiser"
+        android:src="@drawable/beerbudweiser"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/budweiser"
         app:layout_constraintTop_toTopOf="@+id/budweiser"
@@ -240,9 +240,9 @@
     <!--  heinekenImg  -->
     <ImageView
         android:id="@+id/heinekenImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/heineken"
+        android:src="@drawable/beerheineken"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/heineken"
         app:layout_constraintTop_toTopOf="@+id/heineken"
@@ -329,9 +329,9 @@
     <!--  stellaArtoisImg  -->
     <ImageView
         android:id="@+id/stellaArtoisImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/stellaartois"
+        android:src="@drawable/beerstellaartois"
         android:background="@drawable/rounded_corners"
         app:layout_constraintStart_toStartOf="@+id/stellaArtois"
         app:layout_constraintTop_toTopOf="@+id/stellaArtois"

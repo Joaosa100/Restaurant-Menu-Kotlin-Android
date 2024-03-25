@@ -67,7 +67,7 @@
 
     <ImageView
         android:id="@+id/pizzaMistaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/pizzamista"
         android:background="@drawable/rounded_corners"
@@ -152,7 +152,7 @@
     <!--  pizzaQuatroQueijosImg  -->
     <ImageView
         android:id="@+id/pizzaQuatroQueijosImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/pizzafourqueijos"
         android:background="@drawable/rounded_corners"
@@ -242,7 +242,7 @@
     <!--  pizzaCalabresaImg  -->
     <ImageView
         android:id="@+id/pizzaCalabresaImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/pizzacalabresa"
         android:background="@drawable/rounded_corners"
@@ -331,7 +331,7 @@
     <!--  pizzaCarneSolImg  -->
     <ImageView
         android:id="@+id/pizzaCarneSolImg"
-        android:layout_width="185dp"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:src="@drawable/pizzacarnesol"
         android:background="@drawable/rounded_corners"
