@@ -56,6 +56,11 @@ class MenuHamb : AppCompatActivity() {
             val goBackToMenu = Intent(this, Menu::class.java)
             startActivity(goBackToMenu)
         }
+
+        binding.cart.setOnClickListener {
+            val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+            startActivity(goToCartMenu)
+        }
     }
     private fun abrirCarrinho(nomeProduto: String, tipoProduto: String, precoProduto: String) {
         // Abre a atividade do carrinho e envia o nome e o preço do produto selecionado

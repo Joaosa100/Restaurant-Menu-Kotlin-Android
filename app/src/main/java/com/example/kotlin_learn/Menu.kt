@@ -59,6 +59,11 @@ class Menu : AppCompatActivity() {
             startActivity(goToMenuPizza)
         }
 
+        binding.cart.setOnClickListener {
+            val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+            startActivity(goToCartMenu)
+        }
+
 
     }
 }

@@ -42,8 +42,21 @@
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@+id/headerContainer"
         app:layout_constraintStart_toEndOf="@+id/backButton"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+
+        />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        app:layout_constraintTop_toTopOf="@id/headerContainer"
+        app:layout_constraintBottom_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
+        android:layout_marginStart="35dp"
+        android:contentDescription="@string/cartIcon"
 
         />
 

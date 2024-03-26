@@ -28,5 +28,9 @@ class MenuBeer : AppCompatActivity() {
         }
 
 
+        binding.cart.setOnClickListener {
+            val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+            startActivity(goToCartMenu)
+        }
     }
 }
