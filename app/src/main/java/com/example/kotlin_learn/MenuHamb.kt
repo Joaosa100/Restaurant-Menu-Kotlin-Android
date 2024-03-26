@@ -23,32 +23,56 @@ class MenuHamb : AppCompatActivity() {
             insets
         }
 
+//        binding.hambBasicao.setOnClickListener {
+//            val produto = Produto(
+//                getString(R.string.hambbasicao),
+//                getString(R.string.hamb),
+//                getString(R.string.hambbasicaoprice).substring(2)
+//            )
+//            CarrinhoSingleton.adicionarProduto(produto)
+//            abrirCarrinho()
+//        }
+
         binding.hambBasicao.setOnClickListener {
-            val nomeProduto = getString(R.string.hambbasicao)
-            val tipoProduto =  getString(R.string.hamb)
-            val precoProduto = getString(R.string.hambbasicaoprice)
-            abrirCarrinho(nomeProduto, tipoProduto, precoProduto)
+            val precoString = getString(R.string.hambbasicaoprice)
+            val produto = Produto(
+                getString(R.string.hambbasicao),
+                getString(R.string.hamb),
+                precoString
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
         }
 
+
         binding.bigPicanha.setOnClickListener {
-            val nomeProduto = getString(R.string.hambBigPicanha)
-            val tipoProduto =  getString(R.string.hamb)
-            val precoProduto = getString(R.string.hambbigpicanhaprice)
-            abrirCarrinho(nomeProduto, tipoProduto, precoProduto)
+            val produto = Produto(
+                getString(R.string.hambBigPicanha),
+                getString(R.string.hamb),
+                getString(R.string.hambbigpicanhaprice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
         }
 
         binding.doublePicanha.setOnClickListener {
-            val nomeProduto = getString(R.string.hambDoublePicanha)
-            val tipoProduto =  getString(R.string.hamb)
-            val precoProduto = getString(R.string.hambdoublepicanhaprice)
-            abrirCarrinho(nomeProduto, tipoProduto, precoProduto)
+            val produto = Produto(
+                getString(R.string.hambDoublePicanha),
+                getString(R.string.hamb),
+                getString(R.string.hambdoublepicanhaprice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
         }
 
         binding.smokedClassic.setOnClickListener {
-            val nomeProduto = getString(R.string.hambSmokedClassic)
-            val tipoProduto =  getString(R.string.hamb)
-            val precoProduto = getString(R.string.hambsmokedclassicprice)
-            abrirCarrinho(nomeProduto, tipoProduto, precoProduto)
+            val produto = Produto(
+                getString(R.string.hambSmokedClassic),
+                getString(R.string.hamb),
+                getString(R.string.hambsmokedclassicprice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
         }
 
 
@@ -58,17 +82,14 @@ class MenuHamb : AppCompatActivity() {
         }
 
         binding.cart.setOnClickListener {
-            val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
-            startActivity(goToCartMenu)
+            //val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+            //startActivity(goToCartMenu)
+            abrirCarrinho()
         }
     }
-    private fun abrirCarrinho(nomeProduto: String, tipoProduto: String, precoProduto: String) {
-        // Abre a atividade do carrinho e envia o nome e o preço do produto selecionado
-        val intent = Intent(this, CarrinhoActivity::class.java)
-        intent.putExtra("nome_produto", nomeProduto)
-        intent.putExtra("tipo_produto", tipoProduto)
-        intent.putExtra("preco_produto", precoProduto)
-        startActivity(intent)
+    private fun abrirCarrinho() {
+        val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+        startActivity(goToCartMenu)
     }
 
 }

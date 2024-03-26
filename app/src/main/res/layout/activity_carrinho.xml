@@ -5,10 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     tools:context=".CarrinhoActivity">
 
-    <!-- Header -->
+    <!-- Header Container -->
     <View
         android:id="@+id/headerContainer"
         android:layout_width="0dp"
@@ -19,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1" />
 
+    <!-- Back Button -->
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
@@ -30,6 +30,7 @@
         android:layout_marginStart="10dp"
         android:contentDescription="@string/backbutton" />
 
+    <!-- Title -->
     <TextView
         android:id="@+id/restaurantTitle"
         android:layout_width="wrap_content"
@@ -37,42 +38,34 @@
         android:fontFamily="times"
         android:text="@string/title"
         android:textSize="32sp"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@+id/headerContainer"
         app:layout_constraintStart_toEndOf="@+id/backButton"
         android:layout_marginStart="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer" />
 
-    <!-- Conteúdo do carrinho -->
+    <!-- Product Container -->
     <LinearLayout
-        android:id="@+id/llItems"
+        android:id="@+id/productContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintBottom_toTopOf="@id/payButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:padding="16dp"
-        android:background="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@id/btnPay" />
+        android:background="@color/white" />
 
-    <!-- Botão de pagamento -->
-    <TextView
-        android:id="@+id/btnPay"
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/payButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/payButton"
-        android:textSize="18sp"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:paddingVertical="16dp"
-        android:background="@color/red_primary"
+        android:backgroundTint="@color/red_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
