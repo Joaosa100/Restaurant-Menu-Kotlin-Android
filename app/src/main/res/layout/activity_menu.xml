@@ -40,8 +40,21 @@
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@+id/headerContainer"
         app:layout_constraintStart_toEndOf="@+id/backButton"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+
+        />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        app:layout_constraintTop_toTopOf="@id/headerContainer"
+        app:layout_constraintBottom_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
+        android:layout_marginStart="35dp"
+        android:contentDescription="@string/cartIcon"
 
         />
 
@@ -69,7 +82,7 @@
         app:layout_constraintStart_toStartOf="@+id/hamburgueres"
         app:layout_constraintTop_toTopOf="@+id/hamburgueres"
         app:layout_constraintEnd_toEndOf="@+id/hamburgueres"
-        android:contentDescription="a simple burger" />
+        android:contentDescription="@string/burgerIcon" />
 
     <TextView
         android:id="@+id/hamburgueresName"
@@ -112,8 +125,7 @@
         app:layout_constraintStart_toStartOf="@+id/cervejas"
         app:layout_constraintTop_toTopOf="@+id/cervejas"
         app:layout_constraintEnd_toEndOf="@+id/cervejas"
-
-        />
+        android:contentDescription="@string/beerIcon" />
 
     <TextView
         android:id="@+id/cervejasName"
@@ -158,8 +170,7 @@
         app:layout_constraintStart_toStartOf="@+id/soda"
         app:layout_constraintTop_toTopOf="@+id/soda"
         app:layout_constraintEnd_toEndOf="@+id/soda"
-
-        />
+        android:contentDescription="@string/sodaIcon" />
 
     <TextView
         android:id="@+id/sodaName"
@@ -200,8 +211,7 @@
         app:layout_constraintStart_toStartOf="@+id/ice"
         app:layout_constraintTop_toTopOf="@+id/ice"
         app:layout_constraintEnd_toEndOf="@+id/ice"
-
-        />
+        android:contentDescription="@string/iceIcon" />
 
     <TextView
         android:id="@+id/iceName"
@@ -242,8 +252,7 @@
         app:layout_constraintStart_toStartOf="@+id/organic"
         app:layout_constraintTop_toTopOf="@+id/organic"
         app:layout_constraintEnd_toEndOf="@+id/organic"
-
-        />
+        android:contentDescription="@string/saladIcon" />
 
     <TextView
         android:id="@+id/organicName"
@@ -284,8 +293,7 @@
         app:layout_constraintStart_toStartOf="@+id/pizza"
         app:layout_constraintTop_toTopOf="@+id/pizza"
         app:layout_constraintEnd_toEndOf="@+id/pizza"
-
-        />
+        android:contentDescription="@string/pizzaIcon" />
 
     <TextView
         android:id="@+id/pizzaName"
