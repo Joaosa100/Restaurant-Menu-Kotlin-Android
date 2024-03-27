@@ -130,12 +130,29 @@
 
         />
 
+
+    <TextView
+        android:id="@+id/cifra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
     <TextView
         android:id="@+id/saladaAbacatePrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaAbacatePrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
@@ -221,11 +238,28 @@
 
     <!--  saladaOvoPrice  -->
     <TextView
+        android:id="@+id/cifra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
         android:id="@+id/saladaOvoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaOvoPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/saladaOvo"
         app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
@@ -311,11 +345,28 @@
 
     <!--  saladaRepolhoRoxoPrice  -->
     <TextView
+        android:id="@+id/cifra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
         android:id="@+id/saladaRepolhoRoxoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaRepolhoRoxoPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
         app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
@@ -400,11 +451,27 @@
 
     <!--  saladaGraoDeBicoPrice  -->
     <TextView
+        android:id="@+id/cifra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+    <TextView
         android:id="@+id/saladaGraoDeBicoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organicSaladaGraoDeBicoPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
         app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
         app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"

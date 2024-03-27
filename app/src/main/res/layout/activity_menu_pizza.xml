@@ -131,12 +131,29 @@
 
         />
 
+
+    <TextView
+        android:id="@+id/cifra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
     <TextView
         android:id="@+id/pizzaMistaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaMistaPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaMista"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
@@ -222,11 +239,28 @@
 
     <!--  pizzaQuatroQueijosPrice  -->
     <TextView
+        android:id="@+id/cifra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
         android:id="@+id/pizzaQuatroQueijosPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaQuatroQueijosPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
         app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
@@ -312,11 +346,27 @@
 
     <!--  pizzaCalabresaPrice  -->
     <TextView
+        android:id="@+id/cifra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+    <TextView
         android:id="@+id/pizzaCalabresaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaCalabresaPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
         app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
@@ -401,11 +451,27 @@
 
     <!--  pizzaCarneSolPrice  -->
     <TextView
+        android:id="@+id/cifra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+    <TextView
         android:id="@+id/pizzaCarneSolPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizzaCarneSolPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
         app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"

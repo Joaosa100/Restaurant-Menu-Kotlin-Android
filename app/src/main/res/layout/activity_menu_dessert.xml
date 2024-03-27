@@ -130,12 +130,29 @@
 
         />
 
+
+    <TextView
+        android:id="@+id/cifra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
     <TextView
         android:id="@+id/boloDeLimaoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dessertBoloLimaoPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
@@ -221,11 +238,28 @@
 
     <!--  boloDeMorangoPrice  -->
     <TextView
+        android:id="@+id/cifra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+        app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
         android:id="@+id/boloDeMorangoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dessertBoloMorangoPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
         app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
         app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
@@ -311,11 +345,28 @@
 
     <!--  sobremesaMaracujaPrice  -->
     <TextView
+        android:id="@+id/cifra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+        app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
         android:id="@+id/sobremesaMaracujaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dessertMaracujaPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
         app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
         app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
@@ -400,11 +451,28 @@
 
     <!--  boloBananaPrice  -->
     <TextView
+        android:id="@+id/cifra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifra"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintStart_toStartOf="@+id/boloBanana"
+        app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
         android:id="@+id/boloBananaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dessertBoloBananaPrice"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="@+id/boloBanana"
         app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
         app:layout_constraintEnd_toEndOf="@+id/boloBanana"
