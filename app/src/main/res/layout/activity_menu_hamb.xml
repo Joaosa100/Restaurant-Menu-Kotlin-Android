@@ -129,20 +129,7 @@
 
         />
 
-    <TextView
-        android:id="@+id/cifra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
+
 
     <TextView
         android:id="@+id/hambBasicaoPrice"
@@ -150,8 +137,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hambbasicaoprice"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="45dp"
-        app:layout_constraintStart_toStartOf="@+id/cifra"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
         app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         android:textColor="@color/white"
@@ -235,29 +221,11 @@
 
     <!--  bigPicanhaPrice  -->
     <TextView
-        android:id="@+id/cifra2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
-
-
-
-    <TextView
         android:id="@+id/bigPicanhaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hambbigpicanhaprice"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="0dp"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
         app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
@@ -343,28 +311,11 @@
 
     <!--  doublePicanhaPrice  -->
     <TextView
-        android:id="@+id/cifra3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
-
-
-    <TextView
         android:id="@+id/doublePicanhaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hambdoublepicanhaprice"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="4dp"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
         app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
@@ -449,28 +400,11 @@
 
     <!--  smokedClassicPrice  -->
     <TextView
-        android:id="@+id/cifra4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
-
-
-    <TextView
         android:id="@+id/smokedClassicPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hambsmokedclassicprice"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
         app:layout_constraintEnd_toEndOf="@+id/smokedClassic"

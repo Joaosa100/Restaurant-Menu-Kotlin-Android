@@ -129,21 +129,6 @@
 
         />
 
-    <TextView
-        android:id="@+id/cifra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintStart_toStartOf="@+id/itaipava"
-        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-    />
-
 
     <TextView
         android:id="@+id/itaipavaPrice"
@@ -151,7 +136,7 @@
         android:layout_height="wrap_content"
         android:text="@string/beerItaipavaPrice"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="5dp"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
         app:layout_constraintEnd_toEndOf="@+id/itaipava"
@@ -237,28 +222,12 @@
 
     <!--  budweiserPrice  -->
     <TextView
-        android:id="@+id/cifra2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintStart_toStartOf="@+id/budweiser"
-        app:layout_constraintTop_toBottomOf="@+id/budweiserDescription"
-        app:layout_constraintEnd_toEndOf="@+id/budweiser"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
-
-
-    <TextView
         android:id="@+id/budweiserPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerBudweiserPrice"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="2dp"
         app:layout_constraintStart_toStartOf="@+id/budweiser"
         app:layout_constraintTop_toBottomOf="@+id/budweiserDescription"
         app:layout_constraintEnd_toEndOf="@+id/budweiser"
@@ -344,27 +313,12 @@
 
     <!--  heinekenPrice  -->
     <TextView
-        android:id="@+id/cifra3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintStart_toStartOf="@+id/heineken"
-        app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
-
-    <TextView
         android:id="@+id/heinekenPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerHeinekenPrice"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="5dp"
         app:layout_constraintStart_toStartOf="@+id/heineken"
         app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
         app:layout_constraintEnd_toEndOf="@+id/heineken"
@@ -449,28 +403,12 @@
 
     <!--  stellaArtoisPrice  -->
     <TextView
-        android:id="@+id/cifra4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cifra"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintStart_toStartOf="@+id/stellaArtois"
-        app:layout_constraintTop_toBottomOf="@+id/stellaArtoisDescription"
-        app:layout_constraintEnd_toEndOf="@+id/stellaArtois"
-        android:textColor="@color/white"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
-        />
-
-
-    <TextView
         android:id="@+id/stellaArtoisPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beerStellaArtoisPrice"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="5dp"
         app:layout_constraintStart_toStartOf="@+id/stellaArtois"
         app:layout_constraintTop_toBottomOf="@+id/stellaArtoisDescription"
         app:layout_constraintEnd_toEndOf="@+id/stellaArtois"

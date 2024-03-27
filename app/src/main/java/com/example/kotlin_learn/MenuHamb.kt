@@ -23,22 +23,12 @@ class MenuHamb : AppCompatActivity() {
             insets
         }
 
-//        binding.hambBasicao.setOnClickListener {
-//            val produto = Produto(
-//                getString(R.string.hambbasicao),
-//                getString(R.string.hamb),
-//                getString(R.string.hambbasicaoprice).substring(2)
-//            )
-//            CarrinhoSingleton.adicionarProduto(produto)
-//            abrirCarrinho()
-//        }
-
         binding.hambBasicao.setOnClickListener {
-            val precoString = getString(R.string.hambbasicaoprice)
+            //val precoString = getString(R.string.hambbasicaoprice)
             val produto = Produto(
                 getString(R.string.hambbasicao),
                 getString(R.string.hamb),
-                precoString
+                getString(R.string.hambbasicaoprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
             abrirCarrinho()
@@ -82,8 +72,6 @@ class MenuHamb : AppCompatActivity() {
         }
 
         binding.cart.setOnClickListener {
-            //val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
-            //startActivity(goToCartMenu)
             abrirCarrinho()
         }
     }

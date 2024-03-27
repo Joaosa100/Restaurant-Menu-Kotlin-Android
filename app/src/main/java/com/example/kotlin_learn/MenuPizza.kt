@@ -22,6 +22,46 @@ class MenuPizza : AppCompatActivity() {
             insets
         }
 
+        binding.pizzaMista.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.pizzaMista),
+                getString(R.string.pizza),
+                getString(R.string.pizzaMistaPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.pizzaQuatroQueijos.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.pizzaQuatroQueijos),
+                getString(R.string.pizza),
+                getString(R.string.pizzaQuatroQueijosPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.pizzaCalabresa.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.pizzaCalabresa),
+                getString(R.string.pizza),
+                getString(R.string.pizzaCalabresaPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.pizzaCarneSol.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.pizzaCarneSol),
+                getString(R.string.pizza),
+                getString(R.string.pizzaCarneSolPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
         binding.backButton.setOnClickListener {
             val goBackToMenu = Intent(this, Menu::class.java)
             startActivity(goBackToMenu)
@@ -32,5 +72,10 @@ class MenuPizza : AppCompatActivity() {
             startActivity(goToCartMenu)
         }
 
+    }
+
+    private fun abrirCarrinho() {
+        val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+        startActivity(goToCartMenu)
     }
 }

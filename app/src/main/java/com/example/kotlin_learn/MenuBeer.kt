@@ -22,6 +22,47 @@ class MenuBeer : AppCompatActivity() {
             insets
         }
 
+        binding.itaipava.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.beerItaipava),
+                getString(R.string.beer2),
+                getString(R.string.beerItaipavaPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.budweiser.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.beerBudweiser),
+                getString(R.string.beer2),
+                getString(R.string.beerBudweiserPrice),
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.heineken.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.beerHeineken),
+                getString(R.string.beer2),
+                getString(R.string.beerHeinekenPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.stellaArtois.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.beerStellaArtois),
+                getString(R.string.beer2),
+                getString(R.string.beerStellaArtoisPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+
         binding.backButton.setOnClickListener {
             val goBackToMenu = Intent(this, Menu::class.java)
             startActivity(goBackToMenu)
@@ -32,5 +73,10 @@ class MenuBeer : AppCompatActivity() {
             val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
             startActivity(goToCartMenu)
         }
+    }
+
+    private fun abrirCarrinho() {
+        val goToCartMenu = Intent(this, CarrinhoActivity::class.java)
+        startActivity(goToCartMenu)
     }
 }

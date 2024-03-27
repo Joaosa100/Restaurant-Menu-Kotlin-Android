@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,6 +28,10 @@ class CarrinhoActivity : AppCompatActivity() {
         binding.backButton.setOnClickListener {
             val goBackToMenu = Intent(this, Menu::class.java)
             startActivity(goBackToMenu)
+        }
+
+        binding.payButton.setOnClickListener{
+            processarPagamento()
         }
 
         exibirProdutosNoCarrinho()
@@ -53,12 +58,6 @@ class CarrinhoActivity : AppCompatActivity() {
         }
     }
 
-//    @SuppressLint("SetTextI18n")
-//    private fun exibirTotalDoCarrinho() {
-//        val totalTextView = TextView(this)
-//        totalTextView.text = "Total: R$ ${CarrinhoSingleton.getTotal()}"
-//        binding.productContainer.addView(totalTextView)
-//    }
     @SuppressLint("SetTextI18n")
     private fun exibirTotalDoCarrinho() {
         val total = CarrinhoSingleton.getTotal()
@@ -68,5 +67,11 @@ class CarrinhoActivity : AppCompatActivity() {
         binding.productContainer.addView(totalTextView)
     }
 
+    private fun processarPagamento(){
+        Toast.makeText(this, "Pedido pago com sucesso!", Toast.LENGTH_SHORT).show()
+        CarrinhoSingleton.limparCarrinho()
+        binding.productContainer.removeAllViews()
+        exibirTotalDoCarrinho()
+    }
 
 }

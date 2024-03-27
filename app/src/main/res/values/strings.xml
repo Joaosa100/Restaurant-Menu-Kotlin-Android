@@ -39,10 +39,10 @@
     <string name="beerStellaArtois">St. Artois 600ml</string>
 
     <!--  beer prices  -->
-    <string name="beerItaipavaPrice">4.90</string>
-    <string name="beerBudweiserPrice">7.90</string>
-    <string name="beerHeinekenPrice">8.90</string>
-    <string name="beerStellaArtoisPrice">9.90</string>
+    <string name="beerItaipavaPrice">R$4.90</string>
+    <string name="beerBudweiserPrice">R$7.90</string>
+    <string name="beerHeinekenPrice">R$8.90</string>
+    <string name="beerStellaArtoisPrice">R$9.90</string>
 
     <!--  beer image descriptions  -->
     <string name="beerItaipavaDesc">Itaipava beer</string>
@@ -58,10 +58,10 @@
     <string name="sodaSaoGeraldo">São Geraldo 1L</string>
 
     <!--  soda prices  -->
-    <string name="sodaCocaColaPrice">3.90</string>
-    <string name="sodaPepsiPrice">3.90</string>
-    <string name="sodaGuaranaJesusPrice">2.90</string>
-    <string name="sodaSaoGeraldoPrice">7.90</string>
+    <string name="sodaCocaColaPrice">R$3.90</string>
+    <string name="sodaPepsiPrice">R$3.90</string>
+    <string name="sodaGuaranaJesusPrice">R$2.90</string>
+    <string name="sodaSaoGeraldoPrice">R$7.90</string>
 
     <!--  soda image descriptions  -->
     <string name="sodaCocaColaDesc">Coca Cola soda</string>
@@ -77,10 +77,10 @@
     <string name="dessertBoloBanana">Bolo de Banana</string>
 
     <!--  dessert prices  -->
-    <string name="dessertBoloLimaoPrice">5.90</string>
-    <string name="dessertBoloMorangoPrice">6.90</string>
-    <string name="dessertMaracujaPrice">4.90</string>
-    <string name="dessertBoloBananaPrice">8.90</string>
+    <string name="dessertBoloLimaoPrice">R$5.90</string>
+    <string name="dessertBoloMorangoPrice">R$6.90</string>
+    <string name="dessertMaracujaPrice">R$4.90</string>
+    <string name="dessertBoloBananaPrice">R$8.90</string>
 
     <!--  dessert image descriptions  -->
     <string name="dessertBoloLimaoDesc">Bolo de Limão sobremesa</string>
@@ -96,10 +96,10 @@
     <string name="organicSaladaGraoDeBico">Grão de Bico</string>
 
     <!--  organic prices  -->
-    <string name="organicSaladaAbacatePrice">7.90</string>
-    <string name="organicSaladaOvoPrice">8.90</string>
-    <string name="organicSaladaRepolhoRoxoPrice">6.90</string>
-    <string name="organicSaladaGraoDeBicoPrice">5.90</string>
+    <string name="organicSaladaAbacatePrice">R$7.90</string>
+    <string name="organicSaladaOvoPrice">R$8.90</string>
+    <string name="organicSaladaRepolhoRoxoPrice">R$6.90</string>
+    <string name="organicSaladaGraoDeBicoPrice">R$5.90</string>
 
     <!--  organic image descriptions  -->
     <string name="organicSaladaAbacateDesc">Salada de Abacate orgânicos</string>
@@ -115,10 +115,10 @@
     <string name="pizzaCarneSol">Carne de Sol</string>
 
     <!--  pizza prices  -->
-    <string name="pizzaMistaPrice">25.90</string>
-    <string name="pizzaQuatroQueijosPrice">27.90</string>
-    <string name="pizzaCalabresaPrice">26.90</string>
-    <string name="pizzaCarneSolPrice">31.90</string>
+    <string name="pizzaMistaPrice">R$25.90</string>
+    <string name="pizzaQuatroQueijosPrice">R$27.90</string>
+    <string name="pizzaCalabresaPrice">R$26.90</string>
+    <string name="pizzaCarneSolPrice">R$31.90</string>
 
     <!--  pizza image descriptions  -->
     <string name="pizzaMistaDesc">Pizza Presunto e Queijo</string>
