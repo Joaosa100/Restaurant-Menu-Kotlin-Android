@@ -68,7 +68,7 @@ class CarrinhoActivity : AppCompatActivity() {
     }
 
     private fun processarPagamento(){
-        Toast.makeText(this, "Pedido pago com sucesso!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Seu pedido foi enviado ao balcão do restaurante!", Toast.LENGTH_LONG).show()
         CarrinhoSingleton.limparCarrinho()
         binding.productContainer.removeAllViews()
         exibirTotalDoCarrinho()

@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="times"
         android:text="@string/title"
-        android:textSize="32sp"
+        android:textSize="22sp"
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@+id/headerContainer"
         app:layout_constraintStart_toEndOf="@+id/backButton"
@@ -115,6 +115,20 @@
         android:textSize="15sp"
 
         />
+
+    <TextView
+        android:id="@+id/hambBasicaoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fastTime"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
 
     <View
         android:id="@+id/wrapPrice"
@@ -201,6 +215,19 @@
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/hambBigPicanhaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fastTime"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
 
         />
 
@@ -294,6 +321,19 @@
 
         />
 
+    <TextView
+        android:id="@+id/hambDoublePicanhaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fastTime"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
     <!--  doublePicanhaWrap  -->
     <View
         android:id="@+id/doublePicanhaWrap"
@@ -380,6 +420,19 @@
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/hambSmokedClassicTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderateTime"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
 
         />
 

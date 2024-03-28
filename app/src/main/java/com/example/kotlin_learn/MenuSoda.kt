@@ -27,7 +27,7 @@ class MenuSoda : AppCompatActivity() {
         binding.cocaCola.setOnClickListener {
             val produto = Produto(
                 getString(R.string.sodaCocaCola),
-                getString(R.string.beer2),
+                getString(R.string.soda),
                 getString(R.string.sodaCocaColaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -37,7 +37,7 @@ class MenuSoda : AppCompatActivity() {
         binding.pepsi.setOnClickListener {
             val produto = Produto(
                 getString(R.string.sodaPepsi),
-                getString(R.string.beer2),
+                getString(R.string.soda),
                 getString(R.string.sodaPepsiPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -47,7 +47,7 @@ class MenuSoda : AppCompatActivity() {
         binding.guaranaJesus.setOnClickListener {
             val produto = Produto(
                 getString(R.string.sodaGuaranaJesus),
-                getString(R.string.beer2),
+                getString(R.string.soda),
                 getString(R.string.sodaGuaranaJesusPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -57,8 +57,28 @@ class MenuSoda : AppCompatActivity() {
         binding.saoGeraldo.setOnClickListener {
             val produto = Produto(
                 getString(R.string.sodaSaoGeraldo),
-                getString(R.string.beer2),
+                getString(R.string.soda),
                 getString(R.string.sodaSaoGeraldoPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.itaipava.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.sodaItaipava),
+                getString(R.string.soda),
+                getString(R.string.sodaItaipavaPrice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.heineken.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.sodaHeineken),
+                getString(R.string.soda),
+                getString(R.string.sodaHeinekenPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
             abrirCarrinho()

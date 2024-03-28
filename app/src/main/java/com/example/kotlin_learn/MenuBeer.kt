@@ -22,41 +22,41 @@ class MenuBeer : AppCompatActivity() {
             insets
         }
 
-        binding.itaipava.setOnClickListener {
+        binding.paoDeAlho.setOnClickListener {
             val produto = Produto(
-                getString(R.string.beerItaipava),
-                getString(R.string.beer2),
-                getString(R.string.beerItaipavaPrice)
+                getString(R.string.entPaoDeAlho),
+                getString(R.string.ent),
+                getString(R.string.entPaoDeAlhoPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
             abrirCarrinho()
         }
 
-        binding.budweiser.setOnClickListener {
+        binding.arancine.setOnClickListener {
             val produto = Produto(
-                getString(R.string.beerBudweiser),
-                getString(R.string.beer2),
-                getString(R.string.beerBudweiserPrice),
+                getString(R.string.entArancine),
+                getString(R.string.ent),
+                getString(R.string.entArancinePrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
             abrirCarrinho()
         }
 
-        binding.heineken.setOnClickListener {
+        binding.rosbife.setOnClickListener {
             val produto = Produto(
-                getString(R.string.beerHeineken),
-                getString(R.string.beer2),
-                getString(R.string.beerHeinekenPrice)
+                getString(R.string.entRosbife),
+                getString(R.string.ent),
+                getString(R.string.entRosbifePrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
             abrirCarrinho()
         }
 
-        binding.stellaArtois.setOnClickListener {
+        binding.brusqueta.setOnClickListener {
             val produto = Produto(
-                getString(R.string.beerStellaArtois),
-                getString(R.string.beer2),
-                getString(R.string.beerStellaArtoisPrice)
+                getString(R.string.entBrusqueta),
+                getString(R.string.ent),
+                getString(R.string.entBrusquetaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
             abrirCarrinho()

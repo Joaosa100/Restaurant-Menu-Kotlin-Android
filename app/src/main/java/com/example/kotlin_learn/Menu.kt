@@ -34,7 +34,7 @@ class Menu : AppCompatActivity() {
             startActivity(goToMenuHamb)
         }
 
-        binding.cervejas.setOnClickListener{
+        binding.entradas.setOnClickListener{
             val goToMenuBeer = Intent(this, MenuBeer::class.java)
             startActivity(goToMenuBeer)
         }

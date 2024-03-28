@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="times"
         android:text="@string/title"
-        android:textSize="32sp"
+        android:textSize="22sp"
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@+id/headerContainer"
         app:layout_constraintStart_toEndOf="@+id/backButton"
@@ -105,7 +105,7 @@
         />
 
     <TextView
-        android:id="@+id/beerDescription"
+        android:id="@+id/pizzaMistaDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pizza"
@@ -124,7 +124,7 @@
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
         app:layout_constraintBottom_toBottomOf="@+id/pizzaMista"
         android:background="@drawable/rounded_price"
@@ -139,7 +139,7 @@
         android:text="@string/pizzaMistaPrice"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
         app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
         android:textColor="@color/white"
         android:fontFamily="@font/interbold"

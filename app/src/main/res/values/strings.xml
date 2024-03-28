@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">Kotlin-learn</string>
-    <string name="title">FAST LANCHES</string>
+    <string name="title">Burger Haven &amp; More</string>
     <string name="inicialButton">CARDÁPIO</string>
+
+    <!-- TIMES -->
+    <string name="fastTime">Rápido</string>
+    <string name="moderateTime">Moderado</string>
+    <string name="longTime">Demorado</string>
+
 
     <!-- strings menu & category products -->
     <string name="hamb">Hambúrgueres</string>
-    <string name="beer">Bebidas\nAlcoólicas</string>
-    <string name="beer2">Bebidas Alcoólicas</string>
-    <string name="soda">Refrigerantes</string>
+    <string name="ent">Entradas</string>
+    <string name="soda">Bebidas</string>
     <string name="ice">Sobremesas</string>
     <string name="organic">Saladas</string>
     <string name="pizza">Pizzas</string>
@@ -32,23 +37,23 @@
     <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
 
 
-    <!--  beer products  -->
-    <string name="beerItaipava">Itaipava 600ml</string>
-    <string name="beerBudweiser">Budweiser 600ml</string>
-    <string name="beerHeineken">Heineken 600ml</string>
-    <string name="beerStellaArtois">St. Artois 600ml</string>
+    <!--  ent products  -->
+    <string name="entPaoDeAlho">Pão de Alho</string>
+    <string name="entArancine">Arancine</string>
+    <string name="entRosbife">Rosbife</string>
+    <string name="entBrusqueta">Brusqueta</string>
 
-    <!--  beer prices  -->
-    <string name="beerItaipavaPrice">R$4.90</string>
-    <string name="beerBudweiserPrice">R$7.90</string>
-    <string name="beerHeinekenPrice">R$8.90</string>
-    <string name="beerStellaArtoisPrice">R$9.90</string>
+    <!--  ent prices  -->
+    <string name="entPaoDeAlhoPrice">R$4.90</string>
+    <string name="entArancinePrice">R$7.90</string>
+    <string name="entRosbifePrice">R$8.90</string>
+    <string name="entBrusquetaPrice">R$9.90</string>
 
-    <!--  beer image descriptions  -->
-    <string name="beerItaipavaDesc">Itaipava beer</string>
-    <string name="beerBudweiserDesc">Budweiser beer</string>
-    <string name="beerHeinekenDesc">Heineken beer</string>
-    <string name="beerStellaArtoisDesc">Stella Artois beer</string>
+    <!--  ent image descriptions  -->
+    <string name="entPaoDeAlhoDesc">PaoDeAlho ent</string>
+    <string name="entArancineDesc">Arancine ent</string>
+    <string name="entRosbifeDesc">Rosbife ent</string>
+    <string name="entBrusquetaDesc">Brusqueta ent</string>
 
 
     <!--  soda products  -->
@@ -56,18 +61,24 @@
     <string name="sodaPepsi">Pepsi 350ml</string>
     <string name="sodaGuaranaJesus">Gua. Jesus 350ml</string>
     <string name="sodaSaoGeraldo">São Geraldo 1L</string>
+    <string name="sodaItaipava">Itaipava 600ml</string>
+    <string name="sodaHeineken">Heineken 600ml</string>
 
     <!--  soda prices  -->
     <string name="sodaCocaColaPrice">R$3.90</string>
     <string name="sodaPepsiPrice">R$3.90</string>
     <string name="sodaGuaranaJesusPrice">R$2.90</string>
     <string name="sodaSaoGeraldoPrice">R$7.90</string>
+    <string name="sodaItaipavaPrice">R$5.90</string>
+    <string name="sodaHeinekenPrice">R$6.90</string>
 
     <!--  soda image descriptions  -->
     <string name="sodaCocaColaDesc">Coca Cola soda</string>
     <string name="sodaPepsiDesc">Pepsi soda</string>
     <string name="sodaGuaranaJesusDesc">Guaraná Jesus soda</string>
     <string name="sodaSaoGeraldoDesc">São Geraldo soda</string>
+    <string name="sodaItaipavaDesc">Itaipava soda</string>
+    <string name="sodaHeinekenDesc">Heineken soda</string>
 
 
     <!--  dessert products  -->
@@ -130,7 +141,7 @@
     <!-- strings view elements -->
     <string name="backbutton">simple back button</string>
     <string name="burgerIcon">simple burgerIcon</string>
-    <string name="beerIcon">simple beerIcon</string>
+    <string name="entIcon">simple entIcon</string>
     <string name="sodaIcon">simple sodaIcon</string>
     <string name="iceIcon">simple iceIcon</string>
     <string name="saladIcon">simple saladIcon</string>
@@ -138,7 +149,7 @@
 
     <!-- CARRINHO -->
     <string name="cartTitle">Carrinho</string>
-    <string name="payButton">Pagar</string>
+    <string name="payButton">Realizar pedido</string>
     <string name="cartIcon">cart icon</string>
     <string name="cifra">R$</string>
 

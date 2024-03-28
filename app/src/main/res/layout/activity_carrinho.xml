@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="times"
         android:text="@string/title"
-        android:textSize="32sp"
+        android:textSize="22sp"
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@+id/headerContainer"
         app:layout_constraintStart_toEndOf="@+id/backButton"
