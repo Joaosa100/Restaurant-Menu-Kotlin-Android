@@ -26,6 +26,7 @@ class MenuPizza : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.pizzaMista),
                 getString(R.string.pizza),
+                getString(R.string.longTime),
                 getString(R.string.pizzaMistaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -36,6 +37,7 @@ class MenuPizza : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.pizzaQuatroQueijos),
                 getString(R.string.pizza),
+                getString(R.string.longTime),
                 getString(R.string.pizzaQuatroQueijosPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -46,6 +48,7 @@ class MenuPizza : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.pizzaCalabresa),
                 getString(R.string.pizza),
+                getString(R.string.longTime),
                 getString(R.string.pizzaCalabresaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -56,6 +59,7 @@ class MenuPizza : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.pizzaCarneSol),
                 getString(R.string.pizza),
+                getString(R.string.longTime),
                 getString(R.string.pizzaCarneSolPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)

@@ -27,6 +27,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertBoloLimao),
                 getString(R.string.ice),
+                getString(R.string.fastTime),
                 getString(R.string.dessertBoloLimaoPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -37,6 +38,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertBoloMorango),
                 getString(R.string.ice),
+                getString(R.string.fastTime),
                 getString(R.string.dessertBoloMorangoPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -47,6 +49,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertMaracuja),
                 getString(R.string.ice),
+                getString(R.string.fastTime),
                 getString(R.string.dessertMaracujaPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -57,6 +60,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertBoloBanana),
                 getString(R.string.ice),
+                getString(R.string.fastTime),
                 getString(R.string.dessertBoloBananaPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -67,6 +71,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertDoceDeChurros),
                 getString(R.string.ice),
+                getString(R.string.moderateTime),
                 getString(R.string.dessertDoceDeChurrosPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -77,6 +82,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertDoceDeLeiteNinho),
                 getString(R.string.ice),
+                getString(R.string.longTime),
                 getString(R.string.dessertDoceDeLeiteNinhoPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -87,6 +93,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertPaoDeMel),
                 getString(R.string.ice),
+                getString(R.string.longTime),
                 getString(R.string.dessertPaoDeMelPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -97,6 +104,7 @@ class MenuDessert : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.dessertPaveDeAmendoim),
                 getString(R.string.ice),
+                getString(R.string.moderateTime),
                 getString(R.string.dessertPaveDeAmendoimPrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)

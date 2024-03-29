@@ -28,6 +28,7 @@ class MenuSoda : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.sodaCocaCola),
                 getString(R.string.soda),
+                getString(R.string.fastTime),
                 getString(R.string.sodaCocaColaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -38,6 +39,7 @@ class MenuSoda : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.sodaPepsi),
                 getString(R.string.soda),
+                getString(R.string.fastTime),
                 getString(R.string.sodaPepsiPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -48,6 +50,7 @@ class MenuSoda : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.sodaGuaranaJesus),
                 getString(R.string.soda),
+                getString(R.string.fastTime),
                 getString(R.string.sodaGuaranaJesusPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -58,6 +61,7 @@ class MenuSoda : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.sodaSaoGeraldo),
                 getString(R.string.soda),
+                getString(R.string.fastTime),
                 getString(R.string.sodaSaoGeraldoPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -68,6 +72,7 @@ class MenuSoda : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.sodaItaipava),
                 getString(R.string.soda),
+                getString(R.string.fastTime),
                 getString(R.string.sodaItaipavaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -78,6 +83,7 @@ class MenuSoda : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.sodaHeineken),
                 getString(R.string.soda),
+                getString(R.string.fastTime),
                 getString(R.string.sodaHeinekenPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)

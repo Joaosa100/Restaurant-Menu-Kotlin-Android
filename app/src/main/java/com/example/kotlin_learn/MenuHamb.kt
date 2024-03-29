@@ -28,6 +28,7 @@ class MenuHamb : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.hambbasicao),
                 getString(R.string.hamb),
+                getString(R.string.moderateTime),
                 getString(R.string.hambbasicaoprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -39,6 +40,7 @@ class MenuHamb : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.hambBigPicanha),
                 getString(R.string.hamb),
+                getString(R.string.moderateTime),
                 getString(R.string.hambbigpicanhaprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -49,6 +51,7 @@ class MenuHamb : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.hambDoublePicanha),
                 getString(R.string.hamb),
+                getString(R.string.moderateTime),
                 getString(R.string.hambdoublepicanhaprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -59,6 +62,7 @@ class MenuHamb : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.hambSmokedClassic),
                 getString(R.string.hamb),
+                getString(R.string.moderateTime),
                 getString(R.string.hambsmokedclassicprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -69,6 +73,7 @@ class MenuHamb : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.hambBaconito),
                 getString(R.string.hamb),
+                getString(R.string.moderateTime),
                 getString(R.string.hambBaconitoprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -79,6 +84,7 @@ class MenuHamb : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.hambChicko),
                 getString(R.string.hamb),
+                getString(R.string.moderateTime),
                 getString(R.string.hambChickoprice)
             )
             CarrinhoSingleton.adicionarProduto(produto)

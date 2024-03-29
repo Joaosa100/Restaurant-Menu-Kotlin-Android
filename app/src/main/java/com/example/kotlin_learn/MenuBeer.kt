@@ -26,6 +26,7 @@ class MenuBeer : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.entPaoDeAlho),
                 getString(R.string.ent),
+                getString(R.string.fastTime),
                 getString(R.string.entPaoDeAlhoPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -36,6 +37,7 @@ class MenuBeer : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.entArancine),
                 getString(R.string.ent),
+                getString(R.string.fastTime),
                 getString(R.string.entArancinePrice),
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -46,6 +48,7 @@ class MenuBeer : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.entRosbife),
                 getString(R.string.ent),
+                getString(R.string.fastTime),
                 getString(R.string.entRosbifePrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -56,6 +59,7 @@ class MenuBeer : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.entBrusqueta),
                 getString(R.string.ent),
+                getString(R.string.fastTime),
                 getString(R.string.entBrusquetaPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)

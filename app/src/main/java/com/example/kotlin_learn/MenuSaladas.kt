@@ -26,6 +26,7 @@ class MenuSaladas : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.organicSaladaAbacate),
                 getString(R.string.organic),
+                getString(R.string.moderateTime),
                 getString(R.string.organicSaladaAbacatePrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -36,6 +37,7 @@ class MenuSaladas : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.organicSaladaOvo),
                 getString(R.string.organic),
+                getString(R.string.longTime),
                 getString(R.string.organicSaladaOvoPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -46,6 +48,7 @@ class MenuSaladas : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.organicSaladaRepolhoRoxo),
                 getString(R.string.organic),
+                getString(R.string.moderateTime),
                 getString(R.string.organicSaladaRepolhoRoxoPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)
@@ -56,6 +59,7 @@ class MenuSaladas : AppCompatActivity() {
             val produto = Produto(
                 getString(R.string.organicSaladaGraoDeBico),
                 getString(R.string.organic),
+                getString(R.string.moderateTime),
                 getString(R.string.organicSaladaGraoDeBicoPrice)
             )
             CarrinhoSingleton.adicionarProduto(produto)

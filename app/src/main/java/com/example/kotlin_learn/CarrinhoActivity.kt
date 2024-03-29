@@ -49,12 +49,16 @@ class CarrinhoActivity : AppCompatActivity() {
             binding.productContainer.addView(nomeTextView)
 
             val tipoTextView = TextView(this)
-            tipoTextView.text = "Tipo: ${produto.tipo}"
+            tipoTextView.text = "Tipo: ${produto.tipo}   Tempo: ${produto.tempo}   Preço: ${produto.preco}\n"
             binding.productContainer.addView(tipoTextView)
 
-            val precoTextView = TextView(this)
-            precoTextView.text = "Preço: ${produto.preco}"
-            binding.productContainer.addView(precoTextView)
+//            val tempoTextView = TextView(this)
+//            tempoTextView.text = "Tempo: ${produto.tempo}"
+//            binding.productContainer.addView(tempoTextView)
+
+//            val precoTextView = TextView(this)
+//            precoTextView.text = "Preço: ${produto.preco}\n"
+//            binding.productContainer.addView(precoTextView)
         }
     }
 
