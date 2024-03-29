@@ -63,6 +63,47 @@ class MenuDessert : AppCompatActivity() {
             abrirCarrinho()
         }
 
+        binding.doceDeChurros.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.dessertDoceDeChurros),
+                getString(R.string.ice),
+                getString(R.string.dessertDoceDeChurrosPrice),
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.doceDeLeiteNinho.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.dessertDoceDeLeiteNinho),
+                getString(R.string.ice),
+                getString(R.string.dessertDoceDeLeiteNinhoPrice),
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.paoDeMel.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.dessertPaoDeMel),
+                getString(R.string.ice),
+                getString(R.string.dessertPaoDeMelPrice),
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.paveDeAmendoim.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.dessertPaveDeAmendoim),
+                getString(R.string.ice),
+                getString(R.string.dessertPaveDeAmendoimPrice),
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+
         binding.backButton.setOnClickListener {
             val goBackToMenu = Intent(this, Menu::class.java)
             startActivity(goBackToMenu)

@@ -65,6 +65,26 @@ class MenuHamb : AppCompatActivity() {
             abrirCarrinho()
         }
 
+        binding.baconito.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.hambBaconito),
+                getString(R.string.hamb),
+                getString(R.string.hambBaconitoprice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
+        binding.chicko.setOnClickListener {
+            val produto = Produto(
+                getString(R.string.hambChicko),
+                getString(R.string.hamb),
+                getString(R.string.hambChickoprice)
+            )
+            CarrinhoSingleton.adicionarProduto(produto)
+            abrirCarrinho()
+        }
+
 
         binding.backButton.setOnClickListener {
             val goBackToMenu = Intent(this, Menu::class.java)
