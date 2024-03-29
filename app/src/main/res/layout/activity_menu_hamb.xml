@@ -465,4 +465,210 @@
         android:fontFamily="@font/interbold"
         android:textSize="20sp"
         />
+
+
+
+    <!--  BACONITO -->
+    <View
+        android:id="@+id/baconito"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  baconitoImg  -->
+    <ImageView
+        android:id="@+id/baconitoImg"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baconito"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toTopOf="@+id/baconito"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:contentDescription="@string/hambBaconitoImgDesc" />
+
+
+    <!--  baconitoName  -->
+    <TextView
+        android:id="@+id/baconitoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambBaconito"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoImg"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  baconitoDescription  -->
+    <TextView
+        android:id="@+id/baconitoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoName"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/baconitoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fastTime"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
+    <!--  baconitoWrap  -->
+    <View
+        android:id="@+id/baconitoWrap"
+        android:layout_width="177dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        app:layout_constraintBottom_toBottomOf="@+id/baconito"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  baconitoPrice  -->
+    <TextView
+        android:id="@+id/baconitoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambBaconitoprice"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
+
+
+
+    <!--  CHICKO -->
+    <View
+        android:id="@+id/chicko"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  chickoImg  -->
+    <ImageView
+        android:id="@+id/chickoImg"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chicko"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toTopOf="@+id/chicko"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:contentDescription="@string/hambChickoImgDesc" />
+
+
+    <!--  chickoName  -->
+    <TextView
+        android:id="@+id/chickoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambChicko"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoImg"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+
+        />
+
+    <!--  chickoDescription  -->
+    <TextView
+        android:id="@+id/chickoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamb"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoName"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:textColor="@color/description"
+        android:fontFamily="@font/interbold"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/chickoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fastTime"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
+    <!--  chickoWrap  -->
+    <View
+        android:id="@+id/chickoWrap"
+        android:layout_width="177dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        app:layout_constraintBottom_toBottomOf="@+id/chicko"
+        android:background="@drawable/rounded_price"
+
+        />
+
+
+    <!--  chickoPrice  -->
+    <TextView
+        android:id="@+id/chickoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hambChickoprice"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="20sp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -118,6 +118,20 @@
 
         />
 
+    <TextView
+        android:id="@+id/pizzaMistaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longTime"
+        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
+
     <View
         android:id="@+id/wrapPrice"
         android:layout_width="177dp"
@@ -203,6 +217,19 @@
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/pizzaQuatroQueijosTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longTime"
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
 
         />
 
@@ -296,6 +323,20 @@
 
         />
 
+    <TextView
+        android:id="@+id/pizzaCalabresaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longTime"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
+
     <!--  pizzaCalabresaWrap  -->
     <View
         android:id="@+id/pizzaCalabresaWrap"
@@ -384,6 +425,20 @@
         android:textSize="15sp"
 
         />
+
+    <TextView
+        android:id="@+id/pizzaCarneSolTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longTime"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
 
     <!--  pizzaCarneSolWrap  -->
     <View

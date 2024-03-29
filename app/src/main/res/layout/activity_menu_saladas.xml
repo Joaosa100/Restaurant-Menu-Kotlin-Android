@@ -117,6 +117,20 @@
 
         />
 
+    <TextView
+        android:id="@+id/saladaAbacateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderateTime"
+        app:layout_constraintStart_toStartOf="@+id/saladaAbacate"
+        app:layout_constraintTop_toBottomOf="@+id/saladaAbacateDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaAbacate"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
+
     <View
         android:id="@+id/wrapPrice"
         android:layout_width="177dp"
@@ -204,6 +218,20 @@
         android:textSize="15sp"
 
         />
+
+    <TextView
+        android:id="@+id/saladaOvoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longTime"
+        app:layout_constraintStart_toStartOf="@+id/saladaOvo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaOvoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaOvo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
 
     <!--  saladaOvoWrap  -->
     <View
@@ -295,6 +323,19 @@
 
         />
 
+    <TextView
+        android:id="@+id/saladaRepolhoRoxoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderateTime"
+        app:layout_constraintStart_toStartOf="@+id/saladaRepolhoRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/saladaRepolhoRoxoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaRepolhoRoxo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+
+        />
+
     <!--  saladaRepolhoRoxoWrap  -->
     <View
         android:id="@+id/saladaRepolhoRoxoWrap"
@@ -381,6 +422,19 @@
         android:textColor="@color/description"
         android:fontFamily="@font/interbold"
         android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/saladaGraoDeBicoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderateTime"
+        app:layout_constraintStart_toStartOf="@+id/saladaGraoDeBico"
+        app:layout_constraintTop_toBottomOf="@+id/saladaGraoDeBicoDescription"
+        app:layout_constraintEnd_toEndOf="@+id/saladaGraoDeBico"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
 
         />
 

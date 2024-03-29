@@ -18,23 +18,29 @@
     <string name="pizza">Pizzas</string>
 
 
-    <!-- burger products -->
+    <!-- hamb products -->
     <string name="hambbasicao">Basicão</string>
     <string name="hambBigPicanha">Big Picanha</string>
     <string name="hambDoublePicanha">Double Picanha</string>
     <string name="hambSmokedClassic">Smoked Classic</string>
+    <string name="hambBaconito">Baconito</string>
+    <string name="hambChicko">Chicko</string>
 
     <!-- hamb prices -->
     <string name="hambbasicaoprice">R$12.90</string>
     <string name="hambbigpicanhaprice">R$17.90</string>
     <string name="hambdoublepicanhaprice">R$21.90</string>
     <string name="hambsmokedclassicprice">R$24.90</string>
+    <string name="hambBaconitoprice">R$18.90</string>
+    <string name="hambChickoprice">R$15.90</string>
 
     <!--  hamb image descriptions  -->
     <string name="hambBasicaoImgDesc">Our basic burger</string>
     <string name="hambBigPicanhaImgDesc">Our Big Picanha burger</string>
     <string name="hambDoublePicanhaImgDesc">Our Double Picanha burger</string>
     <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
+    <string name="hambBaconitoImgDesc">Our unique bacon burger</string>
+    <string name="hambChickoImgDesc">Our best chicken burger</string>
 
 
     <!--  ent products  -->
