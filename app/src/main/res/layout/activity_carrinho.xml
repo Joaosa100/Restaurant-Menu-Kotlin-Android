@@ -44,6 +44,8 @@
         android:layout_marginStart="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer" />
 
+
+
     <!-- Product Container -->
     <LinearLayout
         android:id="@+id/productContainer"
@@ -55,6 +57,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/white" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/nomeProdutoTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="40sp"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/productContainer"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/productContainer"-->
+<!--        />-->
+
+<!--    &lt;!&ndash; Exemplo de TextView com texto grande &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/tipoProdutoTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="36sp"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:padding="8dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nomeProdutoTextView"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/productContainer"/>-->
+
+
 
     <!-- Pay Button -->
     <Button
