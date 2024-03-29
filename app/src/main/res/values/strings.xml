@@ -86,18 +86,30 @@
     <string name="dessertBoloMorango">Bolo de Morango</string>
     <string name="dessertMaracuja">Doce de Maracujá</string>
     <string name="dessertBoloBanana">Bolo de Banana</string>
+    <string name="dessertDoceDeChurros">Doce de Churros</string>
+    <string name="dessertDoceDeLeiteNinho">Doce Leite Ninho</string>
+    <string name="dessertPaoDeMel">Pão de Mel</string>
+    <string name="dessertPaveDeAmendoim">Pavê Amendoim</string>
 
     <!--  dessert prices  -->
     <string name="dessertBoloLimaoPrice">R$5.90</string>
     <string name="dessertBoloMorangoPrice">R$6.90</string>
     <string name="dessertMaracujaPrice">R$4.90</string>
     <string name="dessertBoloBananaPrice">R$8.90</string>
+    <string name="dessertDoceDeChurrosPrice">R$11.90</string>
+    <string name="dessertDoceDeLeiteNinhoPrice">R$12.90</string>
+    <string name="dessertPaoDeMelPrice">R$14.90</string>
+    <string name="dessertPaveDeAmendoimPrice">R$7.90</string>
 
     <!--  dessert image descriptions  -->
     <string name="dessertBoloLimaoDesc">Bolo de Limão sobremesa</string>
     <string name="dessertBoloMorangoDesc">Bolo de Morango sobremesa</string>
-    <string name="dessertMaracujaDesc">Guaraná Jesus soda</string>
+    <string name="dessertMaracujaDesc">Doce de Maracujá sobremesa</string>
     <string name="dessertBoloBananaDesc">Bolo de Banana sobremesa</string>
+    <string name="dessertDoceDeChurrosDesc">Doce de Churros sobremesa</string>
+    <string name="dessertDoceDeLeiteNinhoDesc">Doce Leite Ninho sobremesa</string>
+    <string name="dessertPaoDeMelDesc">Pão de Mel sobremesa</string>
+    <string name="dessertPaveDeAmendoimDesc">Pavê de Amendoim sobremesa</string>
 
 
     <!--  organic products  -->
