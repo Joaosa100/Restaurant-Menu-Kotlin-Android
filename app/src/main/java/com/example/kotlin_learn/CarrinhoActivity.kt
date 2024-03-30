@@ -53,16 +53,16 @@ class CarrinhoActivity : AppCompatActivity() {
 
 
             nomeTextView.text = "Nome: ${produto.nome}"
-            nomeTextView.textSize = 25f
+            nomeTextView.textSize = 24f
             nomeTextView.setTypeface(null, Typeface.BOLD)
             nomeTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
 
             tipoTextView.text = "Tipo: ${produto.tipo}\nTempo: ${produto.tempo}"
-            tipoTextView.textSize = 23f
+            tipoTextView.textSize = 22f
             tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
 
             precoTextView.text = "Preço: ${produto.preco}"
-            precoTextView.textSize = 23f
+            precoTextView.textSize = 22f
             precoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
 
             nomeTextView.setShadowLayer(
@@ -125,6 +125,10 @@ class CarrinhoActivity : AppCompatActivity() {
             binding.productContainer.addView(tipoTextView)
             binding.productContainer.addView(precoTextView)
 
+
+
+
+
 //            val tempoTextView = TextView(this)
 //            tempoTextView.text = "Tempo: ${produto.tempo}"
 //            binding.productContainer.addView(tempoTextView)
@@ -140,13 +144,6 @@ class CarrinhoActivity : AppCompatActivity() {
         totalTextView.textSize = 30f
         binding.productContainer.addView(totalTextView)
     }
-
-//    private fun processarPagamento(){
-//        Toast.makeText(this, "Seu pedido foi enviado ao balcão do restaurante!", Toast.LENGTH_LONG).show()
-//        CarrinhoSingleton.limparCarrinho()
-//        binding.productContainer.removeAllViews()
-//        exibirTotalDoCarrinho()
-//    }
 
     private fun processarPagamento(){
         val total = CarrinhoSingleton.getTotal()
