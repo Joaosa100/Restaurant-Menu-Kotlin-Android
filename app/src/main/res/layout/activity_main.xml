@@ -48,7 +48,7 @@
         android:height="96sp"
         android:width="250dp"
         android:text="@string/inicialButton"
-        android:fontFamily="times"
+        android:fontFamily="@font/georamasemibold"
         android:textColor="@color/black"
         android:textSize="36sp"
         />

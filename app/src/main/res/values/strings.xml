@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Kotlin-learn</string>
     <string name="title">Burger Haven &amp; More</string>
-    <string name="inicialButton">CARDÁPIO</string>
+    <string name="inicialButton">MENU</string>
 
     <!-- TIMES -->
     <string name="fastTime">Rápido</string>
