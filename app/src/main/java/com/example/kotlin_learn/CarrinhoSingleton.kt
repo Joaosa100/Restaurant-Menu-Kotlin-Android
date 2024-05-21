@@ -19,16 +19,6 @@ object CarrinhoSingleton {
         return listaProdutos.toList()
     }
 
-//    fun getTotal(): Double {
-//        var total = 0.0
-//        for (produto in listaProdutos) {
-//            // Remover o símbolo "R$" e converter para Double
-//            val precoNumerico = produto.preco.substring(2).toDoubleOrNull() ?: 0.0
-//            total += precoNumerico
-//        }
-//        return total
-//    }
-
     fun getTotal(): Double {
         var total = 0.0
         for (produto in listaProdutos) {

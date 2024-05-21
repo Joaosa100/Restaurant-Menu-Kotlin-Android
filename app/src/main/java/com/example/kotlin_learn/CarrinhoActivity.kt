@@ -141,17 +141,13 @@ class CarrinhoActivity : AppCompatActivity() {
             binding.productContainer.addView(nomeTextView)
             binding.productContainer.addView(tipoTextView)
             binding.productContainer.addView(precoTextView)
-
-//            val tempoTextView = TextView(this)
-//            tempoTextView.text = "Tempo: ${produto.tempo}"
-//            binding.productContainer.addView(tempoTextView)
         }
     }
 
     @SuppressLint("SetTextI18n")
     private fun exibirTotalDoCarrinho() {
         val total = CarrinhoSingleton.getTotal()
-        val totalFormatado = String.format("%.2f", total) // Formata o total para duas casas decimais
+        val totalFormatado = String.format("%.2f", total)
         val totalTextView = TextView(this)
         totalTextView.text = "Total: $ $totalFormatado"
         totalTextView.textSize = 30f
