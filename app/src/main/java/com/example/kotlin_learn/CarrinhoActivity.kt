@@ -52,24 +52,41 @@ class CarrinhoActivity : AppCompatActivity() {
             val precoTextView = TextView(this)
 
 
-            nomeTextView.text = "Nome: ${produto.nome}"
+            nomeTextView.text = "  ${produto.nome}"
             nomeTextView.textSize = 24f
             nomeTextView.setTypeface(null, Typeface.BOLD)
             nomeTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
 
-            tipoTextView.text = "Tipo: ${produto.tipo}\nTempo: ${produto.tempo}"
-            tipoTextView.textSize = 22f
-            tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
+            when(produto.tempo) {
+                getString(R.string.fastTime) -> {
+                    tipoTextView.text = "     Tipo: ${produto.tipo}\n     Espera: ${produto.tempo} (até 5min)"
+                    tipoTextView.textSize = 22f
+                    tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
+                }
 
-            precoTextView.text = "Preço: ${produto.preco}"
+                getString(R.string.moderateTime) -> {
+                    tipoTextView.text = "     Tipo: ${produto.tipo}\n     Espera: ${produto.tempo} (até 10min)"
+                    tipoTextView.textSize = 22f
+                    tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
+                }
+
+                getString(R.string.longTime) -> {
+                    tipoTextView.text = "     Tipo: ${produto.tipo}\n     Espera: ${produto.tempo} (até 20min)"
+                    tipoTextView.textSize = 22f
+                    tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
+                }
+            }
+
+
+            precoTextView.text = "     Preço: ${produto.preco}"
             precoTextView.textSize = 22f
             precoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
 
             nomeTextView.setShadowLayer(
-                10f, // Raio do contorno
-                0f, // Deslocamento horizontal do contorno
-                0f, // Deslocamento vertical do contorno
-                Color.BLACK // Cor do contorno
+                10f,
+                0f,
+                0f,
+                Color.BLACK
             )
             tipoTextView.setShadowLayer(
                 10f, // Raio do contorno
@@ -78,10 +95,10 @@ class CarrinhoActivity : AppCompatActivity() {
                 Color.BLACK // Cor do contorno
             )
             precoTextView.setShadowLayer(
-                10f, // Raio do contorno
-                0f, // Deslocamento horizontal do contorno
-                0f, // Deslocamento vertical do contorno
-                Color.BLACK // Cor do contorno
+                10f,
+                0f,
+                0f,
+                Color.BLACK
             )
 
 
@@ -124,10 +141,6 @@ class CarrinhoActivity : AppCompatActivity() {
             binding.productContainer.addView(nomeTextView)
             binding.productContainer.addView(tipoTextView)
             binding.productContainer.addView(precoTextView)
-
-
-
-
 
 //            val tempoTextView = TextView(this)
 //            tempoTextView.text = "Tempo: ${produto.tempo}"
