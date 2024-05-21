@@ -59,26 +59,26 @@ class CarrinhoActivity : AppCompatActivity() {
 
             when(produto.tempo) {
                 getString(R.string.fastTime) -> {
-                    tipoTextView.text = "     Tipo: ${produto.tipo}\n     Espera: ${produto.tempo} (até 5min)"
+                    tipoTextView.text = "     Type: ${produto.tipo}\n     Wait time: ${produto.tempo} (up to 5min)"
                     tipoTextView.textSize = 22f
                     tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
                 }
 
                 getString(R.string.moderateTime) -> {
-                    tipoTextView.text = "     Tipo: ${produto.tipo}\n     Espera: ${produto.tempo} (até 10min)"
+                    tipoTextView.text = "     Type: ${produto.tipo}\n     Wait time: ${produto.tempo} (up to 10min)"
                     tipoTextView.textSize = 22f
                     tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
                 }
 
                 getString(R.string.longTime) -> {
-                    tipoTextView.text = "     Tipo: ${produto.tipo}\n     Espera: ${produto.tempo} (até 20min)"
+                    tipoTextView.text = "     Type: ${produto.tipo}\n     Wait time: ${produto.tempo} (up to 20min)"
                     tipoTextView.textSize = 22f
                     tipoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
                 }
             }
 
 
-            precoTextView.text = "     Preço: ${produto.preco}"
+            precoTextView.text = "     Price: ${produto.preco}"
             precoTextView.textSize = 22f
             precoTextView.setTextColor(ContextCompat.getColor(this, R.color.white))
 
@@ -153,7 +153,7 @@ class CarrinhoActivity : AppCompatActivity() {
         val total = CarrinhoSingleton.getTotal()
         val totalFormatado = String.format("%.2f", total) // Formata o total para duas casas decimais
         val totalTextView = TextView(this)
-        totalTextView.text = "Total: R$ $totalFormatado"
+        totalTextView.text = "Total: $ $totalFormatado"
         totalTextView.textSize = 30f
         binding.productContainer.addView(totalTextView)
     }
@@ -161,9 +161,9 @@ class CarrinhoActivity : AppCompatActivity() {
     private fun processarPagamento(){
         val total = CarrinhoSingleton.getTotal()
         if (total == 0.0) {
-            Toast.makeText(this, "Você precisa selecionar um produto", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "The cart is empty.", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(this, "Seu pedido foi enviado ao balcão do restaurante!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Your order has been sent to the restaurant counter!", Toast.LENGTH_LONG).show()
             CarrinhoSingleton.limparCarrinho()
             binding.productContainer.removeAllViews()
             exibirTotalDoCarrinho()

@@ -1,160 +1,8 @@
 <resources>
-    <string name="app_name">Kotlin-learn</string>
+    <!-- NEUTRAL ELEMENTS -->
+    <string name="app_name">Burger Haven</string>
     <string name="title">Burger Haven &amp; More</string>
     <string name="inicialButton">MENU</string>
-
-    <!-- TIMES -->
-    <string name="fastTime">Rápido</string>
-    <string name="moderateTime">Moderado</string>
-    <string name="longTime">Demorado</string>
-
-
-    <!-- strings menu & category products -->
-    <string name="hamb">Hambúrgueres</string>
-    <string name="ent">Entradas</string>
-    <string name="soda">Bebidas</string>
-    <string name="ice">Sobremesas</string>
-    <string name="organic">Saladas</string>
-    <string name="pizza">Pizzas</string>
-
-
-    <!-- hamb products -->
-    <string name="hambbasicao">Basicão</string>
-    <string name="hambBigPicanha">Big Picanha</string>
-    <string name="hambDoublePicanha">Double Picanha</string>
-    <string name="hambSmokedClassic">Smoked Classic</string>
-    <string name="hambBaconito">Baconito</string>
-    <string name="hambChicko">Chicko</string>
-
-    <!-- hamb prices -->
-    <string name="hambbasicaoprice">R$12.90</string>
-    <string name="hambbigpicanhaprice">R$17.90</string>
-    <string name="hambdoublepicanhaprice">R$21.90</string>
-    <string name="hambsmokedclassicprice">R$24.90</string>
-    <string name="hambBaconitoprice">R$18.90</string>
-    <string name="hambChickoprice">R$15.90</string>
-
-    <!--  hamb image descriptions  -->
-    <string name="hambBasicaoImgDesc">Our basic burger</string>
-    <string name="hambBigPicanhaImgDesc">Our Big Picanha burger</string>
-    <string name="hambDoublePicanhaImgDesc">Our Double Picanha burger</string>
-    <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
-    <string name="hambBaconitoImgDesc">Our unique bacon burger</string>
-    <string name="hambChickoImgDesc">Our best chicken burger</string>
-
-
-    <!--  ent products  -->
-    <string name="entPaoDeAlho">Pão de Alho</string>
-    <string name="entArancine">Arancine</string>
-    <string name="entRosbife">Rosbife</string>
-    <string name="entBrusqueta">Brusqueta</string>
-
-    <!--  ent prices  -->
-    <string name="entPaoDeAlhoPrice">R$4.90</string>
-    <string name="entArancinePrice">R$7.90</string>
-    <string name="entRosbifePrice">R$8.90</string>
-    <string name="entBrusquetaPrice">R$9.90</string>
-
-    <!--  ent image descriptions  -->
-    <string name="entPaoDeAlhoDesc">PaoDeAlho ent</string>
-    <string name="entArancineDesc">Arancine ent</string>
-    <string name="entRosbifeDesc">Rosbife ent</string>
-    <string name="entBrusquetaDesc">Brusqueta ent</string>
-
-
-    <!--  soda products  -->
-    <string name="sodaCocaCola">Coca Cola 350ml</string>
-    <string name="sodaPepsi">Pepsi 350ml</string>
-    <string name="sodaGuaranaJesus">Gua. Jesus 350ml</string>
-    <string name="sodaSaoGeraldo">São Geraldo 1L</string>
-    <string name="sodaItaipava">Itaipava 600ml</string>
-    <string name="sodaHeineken">Heineken 600ml</string>
-
-    <!--  soda prices  -->
-    <string name="sodaCocaColaPrice">R$3.90</string>
-    <string name="sodaPepsiPrice">R$3.90</string>
-    <string name="sodaGuaranaJesusPrice">R$2.90</string>
-    <string name="sodaSaoGeraldoPrice">R$7.90</string>
-    <string name="sodaItaipavaPrice">R$5.90</string>
-    <string name="sodaHeinekenPrice">R$6.90</string>
-
-    <!--  soda image descriptions  -->
-    <string name="sodaCocaColaDesc">Coca Cola soda</string>
-    <string name="sodaPepsiDesc">Pepsi soda</string>
-    <string name="sodaGuaranaJesusDesc">Guaraná Jesus soda</string>
-    <string name="sodaSaoGeraldoDesc">São Geraldo soda</string>
-    <string name="sodaItaipavaDesc">Itaipava soda</string>
-    <string name="sodaHeinekenDesc">Heineken soda</string>
-
-
-    <!--  dessert products  -->
-    <string name="dessertBoloLimao">Bolo de Limão</string>
-    <string name="dessertBoloMorango">Bolo de Morango</string>
-    <string name="dessertMaracuja">Doce de Maracujá</string>
-    <string name="dessertBoloBanana">Bolo de Banana</string>
-    <string name="dessertDoceDeChurros">Doce de Churros</string>
-    <string name="dessertDoceDeLeiteNinho">Doce Leite Ninho</string>
-    <string name="dessertPaoDeMel">Pão de Mel</string>
-    <string name="dessertPaveDeAmendoim">Pavê Amendoim</string>
-
-    <!--  dessert prices  -->
-    <string name="dessertBoloLimaoPrice">R$5.90</string>
-    <string name="dessertBoloMorangoPrice">R$6.90</string>
-    <string name="dessertMaracujaPrice">R$4.90</string>
-    <string name="dessertBoloBananaPrice">R$8.90</string>
-    <string name="dessertDoceDeChurrosPrice">R$11.90</string>
-    <string name="dessertDoceDeLeiteNinhoPrice">R$12.90</string>
-    <string name="dessertPaoDeMelPrice">R$14.90</string>
-    <string name="dessertPaveDeAmendoimPrice">R$7.90</string>
-
-    <!--  dessert image descriptions  -->
-    <string name="dessertBoloLimaoDesc">Bolo de Limão sobremesa</string>
-    <string name="dessertBoloMorangoDesc">Bolo de Morango sobremesa</string>
-    <string name="dessertMaracujaDesc">Doce de Maracujá sobremesa</string>
-    <string name="dessertBoloBananaDesc">Bolo de Banana sobremesa</string>
-    <string name="dessertDoceDeChurrosDesc">Doce de Churros sobremesa</string>
-    <string name="dessertDoceDeLeiteNinhoDesc">Doce Leite Ninho sobremesa</string>
-    <string name="dessertPaoDeMelDesc">Pão de Mel sobremesa</string>
-    <string name="dessertPaveDeAmendoimDesc">Pavê de Amendoim sobremesa</string>
-
-
-    <!--  organic products  -->
-    <string name="organicSaladaAbacate">Salada Abacate</string>
-    <string name="organicSaladaOvo">Batata e Ovo</string>
-    <string name="organicSaladaRepolhoRoxo">Repolho Roxo</string>
-    <string name="organicSaladaGraoDeBico">Grão de Bico</string>
-
-    <!--  organic prices  -->
-    <string name="organicSaladaAbacatePrice">R$7.90</string>
-    <string name="organicSaladaOvoPrice">R$8.90</string>
-    <string name="organicSaladaRepolhoRoxoPrice">R$6.90</string>
-    <string name="organicSaladaGraoDeBicoPrice">R$5.90</string>
-
-    <!--  organic image descriptions  -->
-    <string name="organicSaladaAbacateDesc">Salada de Abacate orgânicos</string>
-    <string name="organicSaladaOvoDesc">Salada de Ovo orgânicos</string>
-    <string name="organicSaladaRepolhoRoxoDesc">Salada de Repolho Roxo orgânicos</string>
-    <string name="organicSaladaGraoDeBicoDesc">Salada de Grão de Bico orgânicos</string>
-
-
-    <!--  pizza products  -->
-    <string name="pizzaMista">Presunto e Queijo</string>
-    <string name="pizzaQuatroQueijos">Quatro Queijos</string>
-    <string name="pizzaCalabresa">Calabresa</string>
-    <string name="pizzaCarneSol">Carne de Sol</string>
-
-    <!--  pizza prices  -->
-    <string name="pizzaMistaPrice">R$25.90</string>
-    <string name="pizzaQuatroQueijosPrice">R$27.90</string>
-    <string name="pizzaCalabresaPrice">R$26.90</string>
-    <string name="pizzaCarneSolPrice">R$31.90</string>
-
-    <!--  pizza image descriptions  -->
-    <string name="pizzaMistaDesc">Pizza Presunto e Queijo</string>
-    <string name="pizzaQuatroQueijosDesc">Pizza Quatro Queijos</string>
-    <string name="pizzaCalabresaDesc">Pizza Calabresa</string>
-    <string name="pizzaCarneSolDesc">Pizza Carne de Sol</string>
-
 
     <!-- strings view elements -->
     <string name="backbutton">simple back button</string>
@@ -165,10 +13,353 @@
     <string name="saladIcon">simple saladIcon</string>
     <string name="pizzaIcon">simple pizzaIcon</string>
 
-    <!-- CARRINHO -->
+
+
+
+
+    <!-- ***** PT-BR ***** -->
+    <!-- Rapidez do pedido
+    <string name="fastTime">Rápido</string>
+    <string name="moderateTime">Moderado</string>
+    <string name="longTime">Demorado</string>
+    -->
+
+
+    <!-- strings menu & category products
+    <string name="hamb">Hambúrgueres</string>
+    <string name="ent">Entradas</string>
+    <string name="soda">Bebidas</string>
+    <string name="ice">Sobremesas</string>
+    <string name="organic">Saladas</string>
+    <string name="pizza">Pizzas</string>
+    -->
+
+
+    <!-- hamb produtos
+    <string name="hambbasicao">Basicão</string>
+    <string name="hambBigPicanha">Big Picanha</string>
+    <string name="hambDoublePicanha">Double Picanha</string>
+    <string name="hambSmokedClassic">Smoked Classic</string>
+    <string name="hambBaconito">Baconito</string>
+    <string name="hambChicko">Chicko</string>
+    -->
+
+    <!-- hamb precos
+    <string name="hambbasicaoprice">R$12.90</string>
+    <string name="hambbigpicanhaprice">R$17.90</string>
+    <string name="hambdoublepicanhaprice">R$21.90</string>
+    <string name="hambsmokedclassicprice">R$24.90</string>
+    <string name="hambBaconitoprice">R$18.90</string>
+    <string name="hambChickoprice">R$15.90</string>
+    -->
+
+    <!--  hamb descrição das imagens
+    <string name="hambBasicaoImgDesc">Our basic burger</string>
+    <string name="hambBigPicanhaImgDesc">Our Big Picanha burger</string>
+    <string name="hambDoublePicanhaImgDesc">Our Double Picanha burger</string>
+    <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
+    <string name="hambBaconitoImgDesc">Our unique bacon burger</string>
+    <string name="hambChickoImgDesc">Our best chicken burger</string>
+    -->
+
+
+    <!--  entrada produtos
+    <string name="entPaoDeAlho">Pão de Alho</string>
+    <string name="entArancine">Arancine</string>
+    <string name="entRosbife">Rosbife</string>
+    <string name="entBrusqueta">Brusqueta</string>
+    -->
+
+    <!--  entrada precos
+    <string name="entPaoDeAlhoPrice">R$4.90</string>
+    <string name="entArancinePrice">R$7.90</string>
+    <string name="entRosbifePrice">R$8.90</string>
+    <string name="entBrusquetaPrice">R$9.90</string>
+    -->
+
+    <!--  entradas descrição das imagens
+    <string name="entPaoDeAlhoDesc">PaoDeAlho ent</string>
+    <string name="entArancineDesc">Arancine ent</string>
+    <string name="entRosbifeDesc">Rosbife ent</string>
+    <string name="entBrusquetaDesc">Brusqueta ent</string>
+    -->
+
+
+    <!--  soda produtos
+    <string name="sodaCocaCola">Coca Cola 350ml</string>
+    <string name="sodaPepsi">Pepsi 350ml</string>
+    <string name="sodaGuaranaJesus">Gua. Jesus 350ml</string>
+    <string name="sodaSaoGeraldo">São Geraldo 1L</string>
+    <string name="sodaItaipava">Itaipava 600ml</string>
+    <string name="sodaHeineken">Heineken 600ml</string>
+    -->
+
+    <!--  soda prices
+    <string name="sodaCocaColaPrice">R$3.90</string>
+    <string name="sodaPepsiPrice">R$3.90</string>
+    <string name="sodaGuaranaJesusPrice">R$2.90</string>
+    <string name="sodaSaoGeraldoPrice">R$7.90</string>
+    <string name="sodaItaipavaPrice">R$5.90</string>
+    <string name="sodaHeinekenPrice">R$6.90</string>
+    -->
+
+    <!--  soda descrição das imagens
+    <string name="sodaCocaColaDesc">Coca Cola soda</string>
+    <string name="sodaPepsiDesc">Pepsi soda</string>
+    <string name="sodaGuaranaJesusDesc">Guaraná Jesus soda</string>
+    <string name="sodaSaoGeraldoDesc">São Geraldo soda</string>
+    <string name="sodaItaipavaDesc">Itaipava soda</string>
+    <string name="sodaHeinekenDesc">Heineken soda</string>
+    -->
+
+
+    <!--  sobremesa produtos
+    <string name="dessertBoloLimao">Bolo de Limão</string>
+    <string name="dessertBoloMorango">Bolo de Morango</string>
+    <string name="dessertMaracuja">Doce de Maracujá</string>
+    <string name="dessertBoloBanana">Bolo de Banana</string>
+    <string name="dessertDoceDeChurros">Doce de Churros</string>
+    <string name="dessertDoceDeLeiteNinho">Doce Leite Ninho</string>
+    <string name="dessertPaoDeMel">Pão de Mel</string>
+    <string name="dessertPaveDeAmendoim">Pavê Amendoim</string>
+    -->
+
+    <!--  sobremesa precos
+    <string name="dessertBoloLimaoPrice">R$5.90</string>
+    <string name="dessertBoloMorangoPrice">R$6.90</string>
+    <string name="dessertMaracujaPrice">R$4.90</string>
+    <string name="dessertBoloBananaPrice">R$8.90</string>
+    <string name="dessertDoceDeChurrosPrice">R$11.90</string>
+    <string name="dessertDoceDeLeiteNinhoPrice">R$12.90</string>
+    <string name="dessertPaoDeMelPrice">R$14.90</string>
+    <string name="dessertPaveDeAmendoimPrice">R$7.90</string>
+    -->
+
+    <!--  sobremesa descrição das imagens
+    <string name="dessertBoloLimaoDesc">Bolo de Limão sobremesa</string>
+    <string name="dessertBoloMorangoDesc">Bolo de Morango sobremesa</string>
+    <string name="dessertMaracujaDesc">Doce de Maracujá sobremesa</string>
+    <string name="dessertBoloBananaDesc">Bolo de Banana sobremesa</string>
+    <string name="dessertDoceDeChurrosDesc">Doce de Churros sobremesa</string>
+    <string name="dessertDoceDeLeiteNinhoDesc">Doce Leite Ninho sobremesa</string>
+    <string name="dessertPaoDeMelDesc">Pão de Mel sobremesa</string>
+    <string name="dessertPaveDeAmendoimDesc">Pavê de Amendoim sobremesa</string>
+    -->
+
+
+    <!--  organicos produtos
+    <string name="organicSaladaAbacate">Salada Abacate</string>
+    <string name="organicSaladaOvo">Batata e Ovo</string>
+    <string name="organicSaladaRepolhoRoxo">Repolho Roxo</string>
+    <string name="organicSaladaGraoDeBico">Grão de Bico</string>
+    -->
+
+    <!--  organicos precos
+    <string name="organicSaladaAbacatePrice">R$7.90</string>
+    <string name="organicSaladaOvoPrice">R$8.90</string>
+    <string name="organicSaladaRepolhoRoxoPrice">R$6.90</string>
+    <string name="organicSaladaGraoDeBicoPrice">R$5.90</string>
+    -->
+
+    <!--  organicis descrição das imagens
+    <string name="organicSaladaAbacateDesc">Salada de Abacate orgânicos</string>
+    <string name="organicSaladaOvoDesc">Salada de Ovo orgânicos</string>
+    <string name="organicSaladaRepolhoRoxoDesc">Salada de Repolho Roxo orgânicos</string>
+    <string name="organicSaladaGraoDeBicoDesc">Salada de Grão de Bico orgânicos</string>
+    -->
+
+
+    <!--  pizza produtos
+    <string name="pizzaMista">Presunto e Queijo</string>
+    <string name="pizzaQuatroQueijos">Quatro Queijos</string>
+    <string name="pizzaCalabresa">Calabresa</string>
+    <string name="pizzaCarneSol">Carne de Sol</string>
+    -->
+
+    <!--  pizza preços
+    <string name="pizzaMistaPrice">R$25.90</string>
+    <string name="pizzaQuatroQueijosPrice">R$27.90</string>
+    <string name="pizzaCalabresaPrice">R$26.90</string>
+    <string name="pizzaCarneSolPrice">R$31.90</string>
+    -->
+
+    <!--  pizza descrição das imagens
+    <string name="pizzaMistaDesc">Pizza Presunto e Queijo</string>
+    <string name="pizzaQuatroQueijosDesc">Pizza Quatro Queijos</string>
+    <string name="pizzaCalabresaDesc">Pizza Calabresa</string>
+    <string name="pizzaCarneSolDesc">Pizza Carne de Sol</string>
+    -->
+
+
+    <!-- CARRINHO
     <string name="cartTitle">Carrinho</string>
     <string name="payButton">Realizar pedido</string>
     <string name="cartIcon">cart icon</string>
     <string name="cifra">R$</string>
+    -->
+    <!-- ***** ***** -->
+
+
+
+
+
+    <!-- ***** EN ***** -->
+    <!-- Order speed -->
+    <string name="fastTime">Fast</string>
+    <string name="moderateTime">Moderate</string>
+    <string name="longTime">Slow</string>
+
+    <!-- strings menu & category products -->
+    <string name="hamb">Burgers</string>
+    <string name="ent">Appetizers</string>
+    <string name="soda">Drinks</string>
+    <string name="ice">Desserts</string>
+    <string name="organic">Organic</string>
+    <string name="pizza">Pizzas</string>
+
+
+    <!-- hamb products -->
+    <string name="hambbasicao">Basic</string>
+    <string name="hambBigPicanha">Big Picanha</string>
+    <string name="hambDoublePicanha">Double Picanha</string>
+    <string name="hambSmokedClassic">Smoked Classic</string>
+    <string name="hambBaconito">Baconito</string>
+    <string name="hambChicko">Chicko</string>
+
+    <!-- hamb prices -->
+    <string name="hambbasicaoprice">$7.90</string>
+    <string name="hambbigpicanhaprice">$9.90</string>
+    <string name="hambdoublepicanhaprice">$11.90</string>
+    <string name="hambsmokedclassicprice">$12.90</string>
+    <string name="hambBaconitoprice">$8.90</string>
+    <string name="hambChickoprice">$10.90</string>
+
+    <!--  hamb image descriptions  -->
+    <string name="hambBasicaoImgDesc">Our basic burger</string>
+    <string name="hambBigPicanhaImgDesc">Our Big Picanha burger</string>
+    <string name="hambDoublePicanhaImgDesc">Our Double Picanha burger</string>
+    <string name="hambSmokedClassicImgDesc">Our favorite burger</string>
+    <string name="hambBaconitoImgDesc">Our unique bacon burger</string>
+    <string name="hambChickoImgDesc">Our best chicken burger</string>
+
+
+    <!--  Appetizers products  -->
+    <string name="entPaoDeAlho">Garlic Bread</string>
+    <string name="entArancine">Arancine</string>
+    <string name="entRosbife">Rosbife</string>
+    <string name="entBrusqueta">Brusqueta</string>
+
+    <!--  Appetizers prices  -->
+    <string name="entPaoDeAlhoPrice">$4.90</string>
+    <string name="entArancinePrice">$3.90</string>
+    <string name="entRosbifePrice">$2.90</string>
+    <string name="entBrusquetaPrice">$5.90</string>
+
+    <!--  Appetizers image descriptions  -->
+    <string name="entPaoDeAlhoDesc">PaoDeAlho ent</string>
+    <string name="entArancineDesc">Arancine ent</string>
+    <string name="entRosbifeDesc">Rosbife ent</string>
+    <string name="entBrusquetaDesc">Brusqueta ent</string>
+
+
+    <!--  soda products -->
+    <string name="sodaCocaCola">Coca Cola 350ml</string>
+    <string name="sodaPepsi">Pepsi 350ml</string>
+    <string name="sodaGuaranaJesus">Guarana 350ml</string>
+    <string name="sodaSaoGeraldo">São Geraldo 1L</string>
+    <string name="sodaItaipava">Itaipava 600ml</string>
+    <string name="sodaHeineken">Heineken 600ml</string>
+
+    <!--  soda prices  -->
+    <string name="sodaCocaColaPrice">$1.00</string>
+    <string name="sodaPepsiPrice">$1.00</string>
+    <string name="sodaGuaranaJesusPrice">$2.50</string>
+    <string name="sodaSaoGeraldoPrice">$4.90</string>
+    <string name="sodaItaipavaPrice">$1.50</string>
+    <string name="sodaHeinekenPrice">$1.00</string>
+
+    <!--  soda image descriptions -->
+    <string name="sodaCocaColaDesc">Coca Cola soda</string>
+    <string name="sodaPepsiDesc">Pepsi soda</string>
+    <string name="sodaGuaranaJesusDesc">Guaraná Jesus soda</string>
+    <string name="sodaSaoGeraldoDesc">São Geraldo soda</string>
+    <string name="sodaItaipavaDesc">Itaipava soda</string>
+    <string name="sodaHeinekenDesc">Heineken soda</string>
+
+
+    <!--  dessert products  -->
+    <string name="dessertBoloLimao">Lemon Cake</string>
+    <string name="dessertBoloMorango">Strawberry Cake</string>
+    <string name="dessertMaracuja">Passion Frt Sweet</string>
+    <string name="dessertBoloBanana">Banana Cake</string>
+    <string name="dessertDoceDeChurros">Churro Sweet</string>
+    <string name="dessertDoceDeLeiteNinho">Milk Powder Sweet</string>
+    <string name="dessertPaoDeMel">Honey Bread</string>
+    <string name="dessertPaveDeAmendoim">Peanut Tiramisu</string>
+
+    <!--  dessert prices  -->
+    <string name="dessertBoloLimaoPrice">$8.90</string>
+    <string name="dessertBoloMorangoPrice">$6.90</string>
+    <string name="dessertMaracujaPrice">$1.90</string>
+    <string name="dessertBoloBananaPrice">$7.90</string>
+    <string name="dessertDoceDeChurrosPrice">$3.90</string>
+    <string name="dessertDoceDeLeiteNinhoPrice">$5.90</string>
+    <string name="dessertPaoDeMelPrice">$4.90</string>
+    <string name="dessertPaveDeAmendoimPrice">$7.90</string>
+
+    <!--  dessert image descriptions  -->
+    <string name="dessertBoloLimaoDesc">Lemon Cake dessert</string>
+    <string name="dessertBoloMorangoDesc">Strawberry Cake dessert</string>
+    <string name="dessertMaracujaDesc">Passion Fruit Sweet dessert</string>
+    <string name="dessertBoloBananaDesc">Banana Cake dessert</string>
+    <string name="dessertDoceDeChurrosDesc">Churro Sweet dessert</string>
+    <string name="dessertDoceDeLeiteNinhoDesc">Milk Powder Sweet dessert</string>
+    <string name="dessertPaoDeMelDesc">Honey Bread dessert</string>
+    <string name="dessertPaveDeAmendoimDesc">Peanut Tiramisu dessert</string>
+
+
+    <!--  organic products  -->
+    <string name="organicSaladaAbacate">Avocado</string>
+    <string name="organicSaladaOvo">Egg and Potato</string>
+    <string name="organicSaladaRepolhoRoxo">Purple Cabbage</string>
+    <string name="organicSaladaGraoDeBico">Chickpea</string>
+
+    <!--  organic prices -->
+    <string name="organicSaladaAbacatePrice">R$7.90</string>
+    <string name="organicSaladaOvoPrice">R$8.90</string>
+    <string name="organicSaladaRepolhoRoxoPrice">R$10.90</string>
+    <string name="organicSaladaGraoDeBicoPrice">R$12.90</string>
+
+    <!--  organic image descriptions  -->
+    <string name="organicSaladaAbacateDesc">Avocado Salad organic</string>
+    <string name="organicSaladaOvoDesc">Egg Salad organic</string>
+    <string name="organicSaladaRepolhoRoxoDesc">Purple Cabbage organic</string>
+    <string name="organicSaladaGraoDeBicoDesc">Chickpea Salad organic</string>
+
+
+    <!--  pizza products  -->
+    <string name="pizzaMista">Ham and Cheese</string>
+    <string name="pizzaQuatroQueijos">Four Cheese</string>
+    <string name="pizzaCalabresa">Pepperoni</string>
+    <string name="pizzaCarneSol"> Beef Jerky</string>
+
+    <!--  pizza prices  -->
+    <string name="pizzaMistaPrice">$15.90</string>
+    <string name="pizzaQuatroQueijosPrice">$14.90</string>
+    <string name="pizzaCalabresaPrice">$16.90</string>
+    <string name="pizzaCarneSolPrice">$19.90</string>
+
+    <!--  pizza image descriptions  -->
+    <string name="pizzaMistaDesc">Ham and Cheese Pizza</string>
+    <string name="pizzaQuatroQueijosDesc">Four Cheese Pizza</string>
+    <string name="pizzaCalabresaDesc">Pepperoni Pizza</string>
+    <string name="pizzaCarneSolDesc">Beef Jerky Pizza</string>
+
+
+    <!-- CART -->
+    <string name="cartTitle">Cart</string>
+    <string name="payButton">Order</string>
+    <string name="cartIcon">cart icon</string>
+    <string name="cifra">$</string>
 
 </resources>

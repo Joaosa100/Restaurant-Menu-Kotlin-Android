@@ -19,17 +19,32 @@ object CarrinhoSingleton {
         return listaProdutos.toList()
     }
 
+//    fun getTotal(): Double {
+//        var total = 0.0
+//        for (produto in listaProdutos) {
+//            // Remover o símbolo "R$" e converter para Double
+//            val precoNumerico = produto.preco.substring(2).toDoubleOrNull() ?: 0.0
+//            total += precoNumerico
+//        }
+//        return total
+//    }
+
     fun getTotal(): Double {
         var total = 0.0
         for (produto in listaProdutos) {
-            // Remover o símbolo "R$" e converter para Double
-            val precoNumerico = produto.preco.substring(2).toDoubleOrNull() ?: 0.0
+            // Verifica se o preço começa com "$" ou "R$"
+            val precoString = produto.preco.trim()
+            val precoNumerico = if (precoString.startsWith("$")) {
+                precoString.substring(1).toDoubleOrNull() ?: 0.0
+            } else if (precoString.startsWith("R$")) {
+                precoString.substring(2).toDoubleOrNull() ?: 0.0
+            } else {
+                0.0
+            }
             total += precoNumerico
         }
         return total
     }
-
-
 
 }
 
