@@ -99,13 +99,13 @@
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
         app:layout_constraintTop_toBottomOf="@id/paoDeAlhoImg"
-        app:layout_constraintBottom_toTopOf="@id/beerDescription"
+        app:layout_constraintBottom_toTopOf="@id/garlicBreadDescription"
 
         />
 
     <!-- garlicBreadDescription -->
     <TextView
-        android:id="@+id/beerDescription"
+        android:id="@+id/garlicBreadDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/interbold"
@@ -116,13 +116,13 @@
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
         app:layout_constraintTop_toBottomOf="@+id/paoDeAlhoName"
-        app:layout_constraintBottom_toTopOf="@id/beerItaipavaTime"
+        app:layout_constraintBottom_toTopOf="@id/garlicBreadTime"
 
         />
 
     <!-- garlicBreadTime -->
     <TextView
-        android:id="@+id/beerItaipavaTime"
+        android:id="@+id/garlicBreadTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/interbold"
@@ -131,7 +131,7 @@
         android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
-        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
+        app:layout_constraintTop_toBottomOf="@+id/garlicBreadDescription"
         app:layout_constraintBottom_toTopOf="@id/wrapPrice"
         />
 
@@ -143,7 +143,7 @@
         android:background="@drawable/rounded_price"
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
-        app:layout_constraintTop_toBottomOf="@+id/beerItaipavaTime"
+        app:layout_constraintTop_toBottomOf="@+id/garlicBreadTime"
         app:layout_constraintBottom_toBottomOf="@+id/paoDeAlho"
 
         />
@@ -220,12 +220,12 @@
         app:layout_constraintEnd_toEndOf="@+id/arancine"
         app:layout_constraintStart_toStartOf="@+id/arancine"
         app:layout_constraintTop_toBottomOf="@+id/arancineName"
-        app:layout_constraintBottom_toTopOf="@id/beerBudweiserTime"
+        app:layout_constraintBottom_toTopOf="@id/arancineTime"
         />
 
     <!--  arancineTime  -->
     <TextView
-        android:id="@+id/beerBudweiserTime"
+        android:id="@+id/arancineTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/interbold"
@@ -246,7 +246,7 @@
         android:background="@drawable/rounded_price"
         app:layout_constraintStart_toStartOf="@+id/arancine"
         app:layout_constraintEnd_toEndOf="@+id/arancine"
-        app:layout_constraintTop_toBottomOf="@+id/beerBudweiserTime"
+        app:layout_constraintTop_toBottomOf="@+id/arancineTime"
         app:layout_constraintBottom_toBottomOf="@+id/arancine"
 
         />
@@ -323,12 +323,12 @@
         app:layout_constraintStart_toStartOf="@+id/rosbife"
         app:layout_constraintEnd_toEndOf="@+id/rosbife"
         app:layout_constraintTop_toBottomOf="@+id/rosbifeName"
-        app:layout_constraintBottom_toTopOf="@id/beerHeinekenTime"
+        app:layout_constraintBottom_toTopOf="@id/rosbifeTime"
         />
 
     <!--  rosbifeDescription  -->
     <TextView
-        android:id="@+id/beerHeinekenTime"
+        android:id="@+id/rosbifeTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/interbold"
@@ -428,12 +428,12 @@
         app:layout_constraintStart_toStartOf="@+id/brusqueta"
         app:layout_constraintEnd_toEndOf="@+id/brusqueta"
         app:layout_constraintTop_toBottomOf="@+id/brusquetaName"
-        app:layout_constraintBottom_toTopOf="@id/beerStellaArtoisTime"
+        app:layout_constraintBottom_toTopOf="@id/brusquetaTime"
         />
 
     <!-- brusquetaTime -->
     <TextView
-        android:id="@+id/beerStellaArtoisTime"
+        android:id="@+id/brusquetaTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/interbold"
