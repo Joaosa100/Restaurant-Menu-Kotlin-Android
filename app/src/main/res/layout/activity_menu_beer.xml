@@ -67,12 +67,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/guideline5"
         app:layout_constraintBottom_toTopOf="@id/guideline6"
-        app:layout_constraintWidth_percent="0.45" />
+         />
 
     <ImageView
         android:id="@+id/paoDeAlhoImg"
@@ -81,9 +80,10 @@
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/entPaoDeAlhoDesc"
         android:src="@drawable/paodealho"
-        app:layout_constraintEnd_toEndOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/paoDeAlho" />
+        app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
+        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
+        app:layout_constraintTop_toTopOf="@+id/paoDeAlho"
+        app:layout_constraintBottom_toTopOf="@id/paoDeAlhoName"/>
 
     <TextView
         android:id="@+id/paoDeAlhoName"
@@ -93,9 +93,11 @@
         android:text="@string/entPaoDeAlho"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
-        app:layout_constraintTop_toBottomOf="@+id/paoDeAlhoImg"
+        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
+        app:layout_constraintTop_toBottomOf="@id/paoDeAlhoImg"
+        app:layout_constraintBottom_toTopOf="@id/beerDescription"
 
         />
 
@@ -107,9 +109,11 @@
         android:text="@string/ent"
         android:textColor="@color/description"
         android:textSize="15sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintTop_toBottomOf="@+id/paoDeAlhoName"
+        app:layout_constraintBottom_toTopOf="@id/beerItaipavaTime"
 
         />
 
@@ -120,22 +124,22 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintTop_toBottomOf="@+id/beerDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/wrapPrice"
         />
 
     <View
         android:id="@+id/wrapPrice"
         android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
+        app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
+        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
+        app:layout_constraintTop_toBottomOf="@+id/beerItaipavaTime"
         app:layout_constraintBottom_toBottomOf="@+id/paoDeAlho"
-        app:layout_constraintEnd_toEndOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/beerDescription"
 
         />
 
@@ -144,15 +148,16 @@
         android:id="@+id/paoDeAlhoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="0dp"
         android:fontFamily="@font/interbold"
         android:text="@string/entPaoDeAlhoPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
-        app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
-        app:layout_constraintTop_toBottomOf="@+id/beerDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/wrapPrice"
+        app:layout_constraintEnd_toEndOf="@+id/wrapPrice"
+        app:layout_constraintTop_toTopOf="@+id/wrapPrice"
+        app:layout_constraintBottom_toBottomOf="@id/wrapPrice"/>
 
 
     <!--  ARANCINE -->
@@ -161,12 +166,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
         app:layout_constraintStart_toStartOf="@id/guideline3"
         app:layout_constraintEnd_toEndOf="@id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/guideline5"
         app:layout_constraintBottom_toTopOf="@id/guideline6"
-        app:layout_constraintWidth_percent="0.45" />
+        />
 
     <!--  arancineImg  -->
     <ImageView
@@ -178,7 +182,9 @@
         android:src="@drawable/arancine"
         app:layout_constraintEnd_toEndOf="@+id/arancine"
         app:layout_constraintStart_toStartOf="@+id/arancine"
-        app:layout_constraintTop_toTopOf="@+id/arancine" />
+        app:layout_constraintTop_toTopOf="@+id/arancine"
+        app:layout_constraintBottom_toTopOf="@id/arancineName"
+        />
 
 
     <!--  arancineName  -->
@@ -190,10 +196,11 @@
         android:text="@string/entArancine"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/arancine"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/arancine"
-        app:layout_constraintTop_toBottomOf="@+id/arancineImg"
-
+        app:layout_constraintEnd_toEndOf="@+id/arancine"
+        app:layout_constraintTop_toBottomOf="@id/arancineImg"
+        app:layout_constraintBottom_toTopOf="@id/arancineDescription"
         />
 
     <!--  arancineDescription  -->
@@ -205,10 +212,11 @@
         android:text="@string/ent"
         android:textColor="@color/description"
         android:textSize="15sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/arancine"
         app:layout_constraintStart_toStartOf="@+id/arancine"
         app:layout_constraintTop_toBottomOf="@+id/arancineName"
-
+        app:layout_constraintBottom_toTopOf="@id/beerBudweiserTime"
         />
 
     <TextView
@@ -218,10 +226,11 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/arancine"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/arancine"
+        app:layout_constraintEnd_toEndOf="@+id/arancine"
         app:layout_constraintTop_toBottomOf="@+id/arancineDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/arancineWrap"
         />
 
     <!--  arancineWrap  -->
@@ -229,12 +238,11 @@
         android:id="@+id/arancineWrap"
         android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
+        app:layout_constraintStart_toStartOf="@+id/arancine"
+        app:layout_constraintEnd_toEndOf="@+id/arancine"
+        app:layout_constraintTop_toBottomOf="@+id/beerBudweiserTime"
         app:layout_constraintBottom_toBottomOf="@+id/arancine"
-        app:layout_constraintEnd_toEndOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/arancineDescription"
 
         />
 
@@ -244,15 +252,16 @@
         android:id="@+id/arancinePrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="0dp"
         android:fontFamily="@font/interbold"
         android:text="@string/entArancinePrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/arancine"
-        app:layout_constraintStart_toStartOf="@+id/arancine"
-        app:layout_constraintTop_toBottomOf="@+id/arancineDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/arancineWrap"
+        app:layout_constraintEnd_toEndOf="@+id/arancineWrap"
+        app:layout_constraintTop_toTopOf="@+id/arancineWrap"
+        app:layout_constraintBottom_toBottomOf="@id/arancineWrap"/>
 
 
     <!-- HEINEKEN -->
@@ -261,12 +270,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/guideline7"
         app:layout_constraintBottom_toTopOf="@id/guideline8"
-        app:layout_constraintWidth_percent="0.45" />
+         />
 
     <!--  rosbifeImg  -->
     <ImageView
@@ -286,13 +294,16 @@
         android:id="@+id/rosbifeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/interbold"
         android:text="@string/entRosbife"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/rosbife"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/rosbife"
-        app:layout_constraintTop_toBottomOf="@+id/rosbifeImg"
+        app:layout_constraintEnd_toEndOf="@+id/rosbife"
+        app:layout_constraintTop_toTopOf="@+id/rosbife"
+        app:layout_constraintBottom_toBottomOf="@id/rosbife"
 
         />
 
@@ -305,6 +316,7 @@
         android:text="@string/ent"
         android:textColor="@color/description"
         android:textSize="15sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/rosbife"
         app:layout_constraintStart_toStartOf="@+id/rosbife"
         app:layout_constraintTop_toBottomOf="@+id/rosbifeName"
@@ -318,6 +330,7 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/rosbife"
         app:layout_constraintStart_toStartOf="@+id/rosbife"
         app:layout_constraintTop_toBottomOf="@+id/rosbifeDescription"
@@ -345,14 +358,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/entRosbifePrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/rosbife"
-        app:layout_constraintStart_toStartOf="@+id/rosbife"
-        app:layout_constraintTop_toBottomOf="@+id/rosbifeDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/rosbifeWrap"
+        app:layout_constraintEnd_toEndOf="@+id/rosbifeWrap"
+        app:layout_constraintTop_toTopOf="@+id/rosbifeWrap"
+        app:layout_constraintBottom_toBottomOf="@id/rosbifeWrap"/>
 
 
     <!--  STELLA ARTOIS -->
@@ -361,12 +375,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
         app:layout_constraintStart_toStartOf="@id/guideline3"
         app:layout_constraintEnd_toEndOf="@id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/guideline7"
         app:layout_constraintBottom_toTopOf="@id/guideline8"
-        app:layout_constraintWidth_percent="0.45" />
+         />
 
     <!--  brusquetaImg  -->
     <ImageView
@@ -386,13 +399,16 @@
         android:id="@+id/brusquetaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/interbold"
         android:text="@string/entBrusqueta"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/brusqueta"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/brusqueta"
-        app:layout_constraintTop_toBottomOf="@+id/brusquetaImg"
+        app:layout_constraintEnd_toEndOf="@+id/brusqueta"
+        app:layout_constraintTop_toTopOf="@+id/brusqueta"
+        app:layout_constraintBottom_toBottomOf="@id/brusqueta"
 
         />
 
@@ -405,6 +421,7 @@
         android:text="@string/ent"
         android:textColor="@color/description"
         android:textSize="15sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/brusqueta"
         app:layout_constraintStart_toStartOf="@+id/brusqueta"
         app:layout_constraintTop_toBottomOf="@+id/brusquetaName"
@@ -418,6 +435,7 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/brusqueta"
         app:layout_constraintStart_toStartOf="@+id/brusqueta"
         app:layout_constraintTop_toBottomOf="@+id/brusquetaDescription"
@@ -444,15 +462,15 @@
         android:id="@+id/brusquetaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/entBrusquetaPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/brusqueta"
-        app:layout_constraintStart_toStartOf="@+id/brusqueta"
-        app:layout_constraintTop_toBottomOf="@+id/brusquetaDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/brusquetaWrap"
+        app:layout_constraintStart_toStartOf="@+id/brusquetaWrap"
+        app:layout_constraintTop_toTopOf="@+id/brusquetaWrap"
+        app:layout_constraintBottom_toBottomOf="@id/brusquetaWrap"/>
 
     <!-- VERTICAL GUIDELINES -->
     <androidx.constraintlayout.widget.Guideline
@@ -496,7 +514,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.37" />
+        app:layout_constraintGuide_percent="0.36" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
@@ -510,7 +528,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.64" />
+        app:layout_constraintGuide_percent="0.63" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
