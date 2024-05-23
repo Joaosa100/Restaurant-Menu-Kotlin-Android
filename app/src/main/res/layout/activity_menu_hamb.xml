@@ -14,10 +14,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/red_primary"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
         />
 
@@ -25,25 +25,25 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_back"
-        app:layout_constraintTop_toTopOf="@+id/headerContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
         android:layout_marginStart="10dp"
-        android:contentDescription="@string/backbutton" />
+        android:contentDescription="@string/backbutton"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer" />
 
     <TextView
         android:id="@+id/restaurantTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
         android:fontFamily="times"
         android:text="@string/title"
-        android:textSize="22sp"
         android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="@+id/headerContainer"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
-        android:layout_marginStart="35dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer"
 
         />
 
@@ -51,12 +51,12 @@
         android:id="@+id/cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_add_shopping_cart_24"
-        app:layout_constraintTop_toTopOf="@id/headerContainer"
-        app:layout_constraintBottom_toBottomOf="@id/headerContainer"
-        app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
         android:layout_marginStart="35dp"
         android:contentDescription="@string/cartIcon"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        app:layout_constraintBottom_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
+        app:layout_constraintTop_toTopOf="@id/headerContainer"
 
         />
 
@@ -66,39 +66,38 @@
         android:id="@+id/hambBasicao"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
-        />
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
+        app:layout_constraintWidth_percent="0.45" />
 
     <ImageView
         android:id="@+id/basicao"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/hambbasicao"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toTopOf="@+id/hambBasicao"
+        android:contentDescription="@string/hambBasicaoImgDesc"
+        android:src="@drawable/hambbasicao"
         app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
 
-        android:contentDescription="@string/hambBasicaoImgDesc" />
+        app:layout_constraintTop_toTopOf="@+id/hambBasicao" />
 
     <TextView
         android:id="@+id/hambBasicaoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hambbasicao"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/basicao"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
 
         />
 
@@ -106,13 +105,13 @@
         android:id="@+id/hamburgueresDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hamb"
+        android:textColor="@color/description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hambBasicaoName"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        android:textColor="@color/description"
-        android:fontFamily="@font/interbold"
-        android:textSize="15sp"
 
         />
 
@@ -120,12 +119,12 @@
         android:id="@+id/hambBasicaoTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
 
         />
 
@@ -135,30 +134,27 @@
         android:layout_width="177dp"
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_price"
+        app:layout_constraintBottom_toBottomOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        app:layout_constraintBottom_toBottomOf="@+id/hambBasicao"
-        android:background="@drawable/rounded_price"
 
         />
-
 
 
     <TextView
         android:id="@+id/hambBasicaoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambbasicaoprice"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/hambbasicaoprice"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
-
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription" />
 
 
     <!--  BIG PICANHA -->
@@ -180,12 +176,12 @@
         android:id="@+id/bigPicanhaImg"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/hambbigpicanha"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toTopOf="@+id/bigPicanha"
+        android:contentDescription="@string/hambBigPicanhaImgDesc"
+        android:src="@drawable/hambbigpicanha"
         app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:contentDescription="@string/hambBigPicanhaImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toTopOf="@+id/bigPicanha" />
 
 
     <!--  bigPicanhaName  -->
@@ -193,13 +189,13 @@
         android:id="@+id/bigPicanhaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hambBigPicanha"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/bigPicanhaImg"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
 
         />
 
@@ -208,13 +204,13 @@
         android:id="@+id/bigPicanhaDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hamb"
+        android:textColor="@color/description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/bigPicanhaName"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:textColor="@color/description"
-        android:fontFamily="@font/interbold"
-        android:textSize="15sp"
 
         />
 
@@ -222,12 +218,12 @@
         android:id="@+id/hambBigPicanhaTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
 
         />
 
@@ -237,11 +233,11 @@
         android:layout_width="177dp"
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_price"
+        app:layout_constraintBottom_toBottomOf="@+id/bigPicanha"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        app:layout_constraintBottom_toBottomOf="@+id/bigPicanha"
-        android:background="@drawable/rounded_price"
 
         />
 
@@ -251,16 +247,14 @@
         android:id="@+id/bigPicanhaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambbigpicanhaprice"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/hambbigpicanhaprice"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
-
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription" />
 
 
     <!--  DOUBLE PICANHA -->
@@ -268,27 +262,26 @@
         android:id="@+id/doublePicanha"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/hambBasicao"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
-        />
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hambBasicao"
+        app:layout_constraintWidth_percent="0.45" />
 
     <!--  doublePicanhaImg  -->
     <ImageView
         android:id="@+id/doublePicanhaImg"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/hambdoublepicanha"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toTopOf="@+id/doublePicanha"
+        android:contentDescription="@string/hambDoublePicanhaImgDesc"
+        android:src="@drawable/hambdoublepicanha"
         app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:contentDescription="@string/hambDoublePicanhaImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toTopOf="@+id/doublePicanha" />
 
 
     <!--  doublePicanhaName  -->
@@ -296,13 +289,13 @@
         android:id="@+id/doublePicanhaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hambDoublePicanha"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaImg"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
 
         />
 
@@ -311,13 +304,13 @@
         android:id="@+id/doublePicanhaDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hamb"
+        android:textColor="@color/description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaName"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:textColor="@color/description"
-        android:fontFamily="@font/interbold"
-        android:textSize="15sp"
 
         />
 
@@ -325,12 +318,12 @@
         android:id="@+id/hambDoublePicanhaTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
 
         />
 
@@ -340,11 +333,11 @@
         android:layout_width="177dp"
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_price"
+        app:layout_constraintBottom_toBottomOf="@+id/doublePicanha"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        app:layout_constraintBottom_toBottomOf="@+id/doublePicanha"
-        android:background="@drawable/rounded_price"
 
         />
 
@@ -354,15 +347,14 @@
         android:id="@+id/doublePicanhaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambdoublepicanhaprice"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/hambdoublepicanhaprice"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription" />
 
 
     <!--  SMOKED CLASSIC -->
@@ -370,27 +362,26 @@
         android:id="@+id/smokedClassic"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanha"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
-        />
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/bigPicanha"
+        app:layout_constraintWidth_percent="0.45" />
 
     <!--  smokedClassicImg  -->
     <ImageView
         android:id="@+id/smokedClassicImg"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/hambsmokedclassic"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toTopOf="@+id/smokedClassic"
+        android:contentDescription="@string/hambSmokedClassicImgDesc"
+        android:src="@drawable/hambsmokedclassic"
         app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:contentDescription="@string/hambSmokedClassicImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toTopOf="@+id/smokedClassic" />
 
 
     <!--  SmokedClassicName  -->
@@ -398,13 +389,13 @@
         android:id="@+id/smokedClassicName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hambSmokedClassic"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicImg"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
 
         />
 
@@ -413,13 +404,13 @@
         android:id="@+id/smokedClassicDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hamb"
+        android:textColor="@color/description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicName"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:textColor="@color/description"
-        android:fontFamily="@font/interbold"
-        android:textSize="15sp"
 
         />
 
@@ -427,12 +418,12 @@
         android:id="@+id/hambSmokedClassicTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
 
         />
 
@@ -442,11 +433,11 @@
         android:layout_width="177dp"
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_price"
+        app:layout_constraintBottom_toBottomOf="@+id/smokedClassic"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        app:layout_constraintBottom_toBottomOf="@+id/smokedClassic"
-        android:background="@drawable/rounded_price"
 
         />
 
@@ -456,16 +447,14 @@
         android:id="@+id/smokedClassicPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambsmokedclassicprice"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/hambsmokedclassicprice"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
-
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription" />
 
 
     <!--  BACONITO -->
@@ -473,27 +462,26 @@
         android:id="@+id/baconito"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanha"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
-        />
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doublePicanha"
+        app:layout_constraintWidth_percent="0.45" />
 
     <!--  baconitoImg  -->
     <ImageView
         android:id="@+id/baconitoImg"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/baconito"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/baconito"
-        app:layout_constraintTop_toTopOf="@+id/baconito"
+        android:contentDescription="@string/hambBaconitoImgDesc"
+        android:src="@drawable/baconito"
         app:layout_constraintEnd_toEndOf="@+id/baconito"
-        android:contentDescription="@string/hambBaconitoImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toTopOf="@+id/baconito" />
 
 
     <!--  baconitoName  -->
@@ -501,13 +489,13 @@
         android:id="@+id/baconitoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hambBaconito"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintStart_toStartOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoImg"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
 
         />
 
@@ -516,13 +504,13 @@
         android:id="@+id/baconitoDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hamb"
+        android:textColor="@color/description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintStart_toStartOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoName"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
-        android:textColor="@color/description"
-        android:fontFamily="@font/interbold"
-        android:textSize="15sp"
 
         />
 
@@ -530,12 +518,12 @@
         android:id="@+id/baconitoTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintStart_toStartOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
 
         />
 
@@ -545,11 +533,11 @@
         android:layout_width="177dp"
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_price"
+        app:layout_constraintBottom_toBottomOf="@+id/baconito"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintStart_toStartOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
-        app:layout_constraintBottom_toBottomOf="@+id/baconito"
-        android:background="@drawable/rounded_price"
 
         />
 
@@ -559,16 +547,14 @@
         android:id="@+id/baconitoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambBaconitoprice"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/baconito"
-        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/hambBaconitoprice"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
-
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription" />
 
 
     <!--  CHICKO -->
@@ -576,27 +562,26 @@
         android:id="@+id/chicko"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassic"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
         android:layout_marginTop="20dp"
-        />
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/smokedClassic"
+        app:layout_constraintWidth_percent="0.45" />
 
     <!--  chickoImg  -->
     <ImageView
         android:id="@+id/chickoImg"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/chicko"
         android:background="@drawable/rounded_corners"
-        app:layout_constraintStart_toStartOf="@+id/chicko"
-        app:layout_constraintTop_toTopOf="@+id/chicko"
+        android:contentDescription="@string/hambChickoImgDesc"
+        android:src="@drawable/chicko"
         app:layout_constraintEnd_toEndOf="@+id/chicko"
-        android:contentDescription="@string/hambChickoImgDesc" />
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toTopOf="@+id/chicko" />
 
 
     <!--  chickoName  -->
@@ -604,13 +589,13 @@
         android:id="@+id/chickoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hambChicko"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintStart_toStartOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoImg"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
-        android:textSize="20sp"
 
         />
 
@@ -619,13 +604,13 @@
         android:id="@+id/chickoDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/hamb"
+        android:textColor="@color/description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintStart_toStartOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoName"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
-        android:textColor="@color/description"
-        android:fontFamily="@font/interbold"
-        android:textSize="15sp"
 
         />
 
@@ -633,12 +618,12 @@
         android:id="@+id/chickoTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintStart_toStartOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
-        android:textColor="@color/black"
-        android:fontFamily="@font/interbold"
 
         />
 
@@ -648,27 +633,99 @@
         android:layout_width="177dp"
         android:layout_height="32dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_price"
+        app:layout_constraintBottom_toBottomOf="@+id/chicko"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintStart_toStartOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
-        app:layout_constraintBottom_toBottomOf="@+id/chicko"
-        android:background="@drawable/rounded_price"
 
         />
-
 
     <!--  chickoPrice  -->
     <TextView
         android:id="@+id/chickoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hambChickoprice"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/chicko"
-        app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/hambChickoprice"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoDescription" />
+
+
+    <!-- VERTICAL GUIDELINES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+    <!-- HORIZONTAL GUIDELINES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
