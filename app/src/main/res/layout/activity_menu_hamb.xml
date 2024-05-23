@@ -66,27 +66,28 @@
         android:id="@+id/hambBasicao"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        />
 
+    <!-- basicaoImg -->
     <ImageView
         android:id="@+id/basicao"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/hambBasicaoImgDesc"
         android:src="@drawable/hambbasicao"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintTop_toTopOf="@+id/hambBasicao"
+        app:layout_constraintBottom_toTopOf="@id/hambBasicaoName"
+        />
 
-        app:layout_constraintTop_toTopOf="@+id/hambBasicao" />
-
+    <!-- basicaoName -->
     <TextView
         android:id="@+id/hambBasicaoName"
         android:layout_width="wrap_content"
@@ -95,12 +96,14 @@
         android:text="@string/hambbasicao"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/basicao"
-
+        app:layout_constraintBottom_toTopOf="@id/hamburgueresDescription"
         />
 
+    <!-- basicaoDescription -->
     <TextView
         android:id="@+id/hamburgueresDescription"
         android:layout_width="wrap_content"
@@ -109,12 +112,14 @@
         android:text="@string/hamb"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hambBasicaoName"
-
+        app:layout_constraintBottom_toTopOf="@id/hambBasicaoTime"
         />
 
+    <!-- basicaoTime -->
     <TextView
         android:id="@+id/hambBasicaoTime"
         android:layout_width="wrap_content"
@@ -122,67 +127,67 @@
         android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/wrapPrice"
         />
 
-
+    <!-- basicaoWrap -->
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/hambBasicao"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
         app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
+        app:layout_constraintTop_toBottomOf="@+id/hambBasicaoTime"
+        app:layout_constraintBottom_toBottomOf="@+id/hambBasicao"
         />
 
-
+    <!-- basicaoPrice -->
     <TextView
         android:id="@+id/hambBasicaoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/hambbasicaoprice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/hambBasicao"
-        app:layout_constraintStart_toStartOf="@+id/hambBasicao"
-        app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/wrapPrice"
+        app:layout_constraintEnd_toEndOf="@+id/wrapPrice"
+        app:layout_constraintTop_toTopOf="@id/wrapPrice"
+        app:layout_constraintBottom_toBottomOf="@id/wrapPrice"
+        />
 
 
     <!--  BIG PICANHA -->
-
-    <!--  bigPicanhaImg  -->
     <View
         android:id="@+id/bigPicanha"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/white_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        />
 
+    <!--  bigPicanhaImg  -->
     <ImageView
         android:id="@+id/bigPicanhaImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/hambBigPicanhaImgDesc"
         android:src="@drawable/hambbigpicanha"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toTopOf="@+id/bigPicanha" />
-
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        app:layout_constraintTop_toTopOf="@+id/bigPicanha"
+        app:layout_constraintBottom_toTopOf="@id/bigPicanhaName"
+        />
 
     <!--  bigPicanhaName  -->
     <TextView
@@ -193,10 +198,11 @@
         android:text="@string/hambBigPicanha"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/bigPicanhaImg"
-
+        app:layout_constraintBottom_toTopOf="@id/bigPicanhaDescription"
         />
 
     <!--  bigPicanhaDescription  -->
@@ -208,12 +214,14 @@
         android:text="@string/hamb"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/bigPicanhaName"
-
+        app:layout_constraintBottom_toTopOf="@id/hambBigPicanhaTime"
         />
 
+    <!-- bigPicanhaTime -->
     <TextView
         android:id="@+id/hambBigPicanhaTime"
         android:layout_width="wrap_content"
@@ -221,40 +229,40 @@
         android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintTop_toBottomOf="@+id/hamburgueresDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/bigPicanhaWrap"
         />
 
     <!--  bigPicanhaWrap  -->
     <View
         android:id="@+id/bigPicanhaWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/bigPicanha"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
         app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
+        app:layout_constraintTop_toBottomOf="@+id/hambBigPicanhaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/bigPicanha"
         />
-
 
     <!--  bigPicanhaPrice  -->
     <TextView
         android:id="@+id/bigPicanhaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/hambbigpicanhaprice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/bigPicanha"
-        app:layout_constraintStart_toStartOf="@+id/bigPicanha"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanhaDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/bigPicanhaWrap"
+        app:layout_constraintEnd_toEndOf="@+id/bigPicanhaWrap"
+        app:layout_constraintTop_toTopOf="@+id/bigPicanhaWrap"
+        app:layout_constraintBottom_toBottomOf="@id/bigPicanhaWrap"
+        />
 
 
     <!--  DOUBLE PICANHA -->
@@ -262,26 +270,26 @@
         android:id="@+id/doublePicanha"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hambBasicao"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        />
 
     <!--  doublePicanhaImg  -->
     <ImageView
         android:id="@+id/doublePicanhaImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/hambDoublePicanhaImgDesc"
         android:src="@drawable/hambdoublepicanha"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toTopOf="@+id/doublePicanha" />
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        app:layout_constraintTop_toTopOf="@+id/doublePicanha"
+        app:layout_constraintBottom_toTopOf="@id/doublePicanhaName"
+        />
 
 
     <!--  doublePicanhaName  -->
@@ -293,10 +301,11 @@
         android:text="@string/hambDoublePicanha"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaImg"
-
+        app:layout_constraintBottom_toTopOf="@id/doublePicanhaDescription"
         />
 
     <!--  doublePicanhaDescription  -->
@@ -308,12 +317,14 @@
         android:text="@string/hamb"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaName"
-
+        app:layout_constraintBottom_toTopOf="@id/hambDoublePicanhaTime"
         />
 
+    <!--  doublePicanhaTime  -->
     <TextView
         android:id="@+id/hambDoublePicanhaTime"
         android:layout_width="wrap_content"
@@ -321,24 +332,23 @@
         android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/doublePicanhaWrap"
         />
 
     <!--  doublePicanhaWrap  -->
     <View
         android:id="@+id/doublePicanhaWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/doublePicanha"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
         app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
+        app:layout_constraintTop_toBottomOf="@+id/hambDoublePicanhaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/doublePicanha"
         />
 
 
@@ -347,14 +357,16 @@
         android:id="@+id/doublePicanhaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/hambdoublepicanhaprice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/doublePicanha"
-        app:layout_constraintStart_toStartOf="@+id/doublePicanha"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanhaDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/doublePicanhaWrap"
+        app:layout_constraintEnd_toEndOf="@+id/doublePicanhaWrap"
+        app:layout_constraintTop_toTopOf="@+id/doublePicanhaWrap"
+        app:layout_constraintBottom_toBottomOf="@id/doublePicanhaWrap"
+        />
 
 
     <!--  SMOKED CLASSIC -->
@@ -362,27 +374,26 @@
         android:id="@+id/smokedClassic"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/white_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintTop_toBottomOf="@+id/bigPicanha"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        />
 
     <!--  smokedClassicImg  -->
     <ImageView
         android:id="@+id/smokedClassicImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/hambSmokedClassicImgDesc"
         android:src="@drawable/hambsmokedclassic"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toTopOf="@+id/smokedClassic" />
-
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        app:layout_constraintTop_toTopOf="@+id/smokedClassic"
+        app:layout_constraintBottom_toTopOf="@id/smokedClassicName"
+        />
 
     <!--  SmokedClassicName  -->
     <TextView
@@ -393,10 +404,11 @@
         android:text="@string/hambSmokedClassic"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicImg"
-
+        app:layout_constraintBottom_toTopOf="@id/smokedClassicDescription"
         />
 
     <!--  smokedClassicDescription  -->
@@ -408,12 +420,14 @@
         android:text="@string/hamb"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicName"
-
+        app:layout_constraintBottom_toTopOf="@id/hambSmokedClassicTime"
         />
 
+    <!--  smokedClassicTime  -->
     <TextView
         android:id="@+id/hambSmokedClassicTime"
         android:layout_width="wrap_content"
@@ -421,40 +435,41 @@
         android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
         app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/smokedClassicWrap"
         />
 
     <!--  smokedClassicWrap  -->
     <View
         android:id="@+id/smokedClassicWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
         app:layout_constraintBottom_toBottomOf="@+id/smokedClassic"
         app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription"
-
+        app:layout_constraintTop_toBottomOf="@+id/hambSmokedClassicTime"
         />
-
 
     <!--  smokedClassicPrice  -->
     <TextView
         android:id="@+id/smokedClassicPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/hambsmokedclassicprice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/smokedClassic"
-        app:layout_constraintStart_toStartOf="@+id/smokedClassic"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassicDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/smokedClassicWrap"
+        app:layout_constraintEnd_toEndOf="@+id/smokedClassicWrap"
+        app:layout_constraintTop_toTopOf="@+id/smokedClassicWrap"
+        app:layout_constraintBottom_toBottomOf="@id/smokedClassicWrap"
+        />
 
 
     <!--  BACONITO -->
@@ -462,27 +477,26 @@
         android:id="@+id/baconito"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/doublePicanha"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline9"
+        app:layout_constraintBottom_toTopOf="@id/guideline10"
+        />
 
     <!--  baconitoImg  -->
     <ImageView
         android:id="@+id/baconitoImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/hambBaconitoImgDesc"
         android:src="@drawable/baconito"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintStart_toStartOf="@+id/baconito"
-        app:layout_constraintTop_toTopOf="@+id/baconito" />
-
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        app:layout_constraintTop_toTopOf="@+id/baconito"
+        app:layout_constraintBottom_toTopOf="@id/baconitoName"
+        />
 
     <!--  baconitoName  -->
     <TextView
@@ -493,10 +507,11 @@
         android:text="@string/hambBaconito"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoImg"
-
+        app:layout_constraintBottom_toTopOf="@id/baconitoDescription"
         />
 
     <!--  baconitoDescription  -->
@@ -508,12 +523,14 @@
         android:text="@string/hamb"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoName"
-
+        app:layout_constraintBottom_toTopOf="@id/baconitoTime"
         />
 
+    <!--  baconitoTime  -->
     <TextView
         android:id="@+id/baconitoTime"
         android:layout_width="wrap_content"
@@ -521,40 +538,40 @@
         android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/baconito"
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/baconitoWrap"
         />
 
     <!--  baconitoWrap  -->
     <View
         android:id="@+id/baconitoWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/baconito"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
         app:layout_constraintStart_toStartOf="@+id/baconito"
-        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/baconito"
+        app:layout_constraintTop_toBottomOf="@+id/baconitoTime"
+        app:layout_constraintBottom_toBottomOf="@+id/baconito"
         />
-
 
     <!--  baconitoPrice  -->
     <TextView
         android:id="@+id/baconitoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/hambBaconitoprice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/baconito"
-        app:layout_constraintStart_toStartOf="@+id/baconito"
-        app:layout_constraintTop_toBottomOf="@+id/baconitoDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/baconitoWrap"
+        app:layout_constraintEnd_toEndOf="@+id/baconitoWrap"
+        app:layout_constraintTop_toTopOf="@+id/baconitoWrap"
+        app:layout_constraintBottom_toBottomOf="@id/baconitoWrap"
+        />
 
 
     <!--  CHICKO -->
@@ -562,27 +579,26 @@
         android:id="@+id/chicko"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/white_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintTop_toBottomOf="@+id/smokedClassic"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline9"
+        app:layout_constraintBottom_toTopOf="@id/guideline10"
+        />
 
     <!--  chickoImg  -->
     <ImageView
         android:id="@+id/chickoImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/hambChickoImgDesc"
         android:src="@drawable/chicko"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintStart_toStartOf="@+id/chicko"
-        app:layout_constraintTop_toTopOf="@+id/chicko" />
-
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        app:layout_constraintTop_toTopOf="@+id/chicko"
+        app:layout_constraintBottom_toTopOf="@id/chickoName"
+        />
 
     <!--  chickoName  -->
     <TextView
@@ -593,10 +609,11 @@
         android:text="@string/hambChicko"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoImg"
-
+        app:layout_constraintBottom_toTopOf="@id/chickoDescription"
         />
 
     <!--  chickoDescription  -->
@@ -608,12 +625,14 @@
         android:text="@string/hamb"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoName"
-
+        app:layout_constraintBottom_toTopOf="@id/chickoTime"
         />
 
+    <!--  chickoTime  -->
     <TextView
         android:id="@+id/chickoTime"
         android:layout_width="wrap_content"
@@ -621,24 +640,23 @@
         android:fontFamily="@font/interbold"
         android:text="@string/moderateTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/chicko"
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/chickoWrap"
         />
 
     <!--  chickoWrap  -->
     <View
         android:id="@+id/chickoWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/chicko"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
         app:layout_constraintStart_toStartOf="@+id/chicko"
-        app:layout_constraintTop_toBottomOf="@+id/chickoDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/chicko"
+        app:layout_constraintTop_toBottomOf="@+id/chickoTime"
+        app:layout_constraintBottom_toBottomOf="@+id/chicko"
         />
 
     <!--  chickoPrice  -->
@@ -646,14 +664,16 @@
         android:id="@+id/chickoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/hambChickoprice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/chicko"
-        app:layout_constraintStart_toStartOf="@+id/chicko"
-        app:layout_constraintTop_toBottomOf="@+id/chickoDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/chickoWrap"
+        app:layout_constraintEnd_toEndOf="@+id/chickoWrap"
+        app:layout_constraintTop_toTopOf="@+id/chickoWrap"
+        app:layout_constraintBottom_toBottomOf="@id/chickoWrap"
+        />
 
 
     <!-- VERTICAL GUIDELINES -->
@@ -662,28 +682,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.49" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.51" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.96" />
 
 
     <!-- HORIZONTAL GUIDELINES -->
@@ -692,40 +712,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.13" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.36" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.40" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.63" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.67" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.90" />
 </androidx.constraintlayout.widget.ConstraintLayout>
