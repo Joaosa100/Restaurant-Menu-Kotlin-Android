@@ -84,7 +84,8 @@
         app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
         app:layout_constraintTop_toTopOf="@+id/paoDeAlho"
-        app:layout_constraintBottom_toTopOf="@id/paoDeAlhoName"/>
+        app:layout_constraintBottom_toTopOf="@id/paoDeAlhoName"
+        />
 
     <!-- garlicBreadName -->
     <TextView
@@ -100,7 +101,6 @@
         app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
         app:layout_constraintTop_toBottomOf="@id/paoDeAlhoImg"
         app:layout_constraintBottom_toTopOf="@id/garlicBreadDescription"
-
         />
 
     <!-- garlicBreadDescription -->
@@ -141,12 +141,11 @@
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
-        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
-        app:layout_constraintTop_toBottomOf="@+id/garlicBreadTime"
         app:layout_constraintBottom_toBottomOf="@+id/paoDeAlho"
-
-        />
+        app:layout_constraintEnd_toEndOf="@+id/paoDeAlho"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/paoDeAlho"
+        app:layout_constraintTop_toBottomOf="@+id/garlicBreadTime" />
 
     <!-- garlicBreadPrice -->
     <TextView
@@ -161,7 +160,8 @@
         app:layout_constraintStart_toStartOf="@+id/wrapPrice"
         app:layout_constraintEnd_toEndOf="@+id/wrapPrice"
         app:layout_constraintTop_toTopOf="@+id/wrapPrice"
-        app:layout_constraintBottom_toBottomOf="@id/wrapPrice"/>
+        app:layout_constraintBottom_toBottomOf="@id/wrapPrice"
+        />
 
 
     <!--  ARANCINE -->
@@ -189,7 +189,6 @@
         app:layout_constraintTop_toTopOf="@+id/arancine"
         app:layout_constraintBottom_toTopOf="@id/arancineName"
         />
-
 
     <!--  arancineName  -->
     <TextView
@@ -248,7 +247,6 @@
         app:layout_constraintEnd_toEndOf="@+id/arancine"
         app:layout_constraintTop_toBottomOf="@+id/arancineTime"
         app:layout_constraintBottom_toBottomOf="@+id/arancine"
-
         />
 
     <!--  arancinePrice  -->
@@ -326,7 +324,7 @@
         app:layout_constraintBottom_toTopOf="@id/rosbifeTime"
         />
 
-    <!--  rosbifeDescription  -->
+    <!--  rosbifeTime  -->
     <TextView
         android:id="@+id/rosbifeTime"
         android:layout_width="wrap_content"
@@ -346,13 +344,11 @@
         android:id="@+id/rosbifeWrap"
         android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/rosbife"
-        app:layout_constraintEnd_toEndOf="@+id/rosbife"
         app:layout_constraintStart_toStartOf="@+id/rosbife"
-        app:layout_constraintTop_toBottomOf="@+id/rosbifeDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/rosbife"
+        app:layout_constraintTop_toBottomOf="@+id/rosbifeTime"
+        app:layout_constraintBottom_toBottomOf="@+id/rosbife"
         />
 
     <!--  rosbifePrice  -->
@@ -397,7 +393,6 @@
         app:layout_constraintBottom_toTopOf="@id/brusquetaName"
         />
 
-
     <!--  BrusquetaName  -->
     <TextView
         android:id="@+id/brusquetaName"
@@ -412,7 +407,6 @@
         app:layout_constraintEnd_toEndOf="@+id/brusqueta"
         app:layout_constraintTop_toBottomOf="@+id/brusquetaImg"
         app:layout_constraintBottom_toTopOf="@id/brusquetaDescription"
-
         />
 
     <!--  brusquetaDescription  -->
@@ -451,13 +445,11 @@
         android:id="@+id/brusquetaWrap"
         android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/brusqueta"
-        app:layout_constraintEnd_toEndOf="@+id/brusqueta"
         app:layout_constraintStart_toStartOf="@+id/brusqueta"
-        app:layout_constraintTop_toBottomOf="@+id/brusquetaDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/brusqueta"
+        app:layout_constraintTop_toBottomOf="@+id/brusquetaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/brusqueta"
         />
 
     <!--  brusquetaPrice  -->
@@ -473,7 +465,8 @@
         app:layout_constraintEnd_toEndOf="@+id/brusquetaWrap"
         app:layout_constraintStart_toStartOf="@+id/brusquetaWrap"
         app:layout_constraintTop_toTopOf="@+id/brusquetaWrap"
-        app:layout_constraintBottom_toBottomOf="@id/brusquetaWrap"/>
+        app:layout_constraintBottom_toBottomOf="@id/brusquetaWrap"
+        />
 
 
     <!-- VERTICAL GUIDELINES -->
@@ -534,6 +527,4 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.63" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
