@@ -68,7 +68,6 @@
             app:layout_constraintBottom_toBottomOf="@id/headerContainer"
             app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
             app:layout_constraintTop_toTopOf="@id/headerContainer"
-
             />
 
 
@@ -77,27 +76,28 @@
             android:id="@+id/boloDeLimao"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="8dp"
             android:background="@drawable/white_card"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@id/guideline4"
+             />
 
+        <!-- boloDeLimaoImg -->
         <ImageView
             android:id="@+id/boloDeLimaoImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertBoloLimaoDesc"
             android:src="@drawable/bololimao"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
             app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+            app:layout_constraintTop_toTopOf="@+id/boloDeLimao"
+            app:layout_constraintBottom_toTopOf="@id/boloDeLimaoName"
+            />
 
-            app:layout_constraintTop_toTopOf="@+id/boloDeLimao" />
-
+        <!-- boloDeLimaoName -->
         <TextView
             android:id="@+id/boloDeLimaoName"
             android:layout_width="wrap_content"
@@ -106,12 +106,14 @@
             android:text="@string/dessertBoloLimao"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
             app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoImg"
-
+            app:layout_constraintBottom_toTopOf="@id/boloDeLimaoDescription"
             />
 
+        <!-- boloDeLimaoDescription -->
         <TextView
             android:id="@+id/boloDeLimaoDescription"
             android:layout_width="wrap_content"
@@ -120,51 +122,55 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
             app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoName"
-
+            app:layout_constraintBottom_toTopOf="@id/boloDeLimaoTime"
             />
 
+        <!-- boloDeLimaoTime -->
         <TextView
             android:id="@+id/boloDeLimaoTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fastTime"
-            app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoDescription"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/fastTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+            app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoDescription"
+            app:layout_constraintBottom_toTopOf="@id/wrapPrice"
             />
 
+        <!-- boloDeLimaoWrap -->
         <View
             android:id="@+id/wrapPrice"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/boloDeLimao"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
             app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
+            app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoTime"
+            app:layout_constraintBottom_toBottomOf="@+id/boloDeLimao"
             />
 
-
+        <!-- boloDeLimaoPrice -->
         <TextView
             android:id="@+id/boloDeLimaoPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertBoloLimaoPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeLimao"
-            app:layout_constraintStart_toStartOf="@+id/boloDeLimao"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeLimaoDescription" />
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/wrapPrice"
+            app:layout_constraintEnd_toEndOf="@+id/wrapPrice"
+            app:layout_constraintTop_toTopOf="@+id/wrapPrice"
+            app:layout_constraintBottom_toBottomOf="@id/wrapPrice"
+            />
 
 
         <!--  BOLO DE MORANGO -->
@@ -172,14 +178,12 @@
             android:id="@+id/boloDeMorango"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/white_card"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintEnd_toEndOf="@id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@id/guideline4"
+            />
 
         <!--  boloDeMorangoImg  -->
         <ImageView
@@ -189,10 +193,11 @@
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertBoloMorangoDesc"
             android:src="@drawable/bolomorango"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
             app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
-            app:layout_constraintTop_toTopOf="@+id/boloDeMorango" />
-
+            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+            app:layout_constraintTop_toTopOf="@+id/boloDeMorango"
+            app:layout_constraintBottom_toTopOf="@id/boloDeMorangoName"
+            />
 
         <!--  boloDeMorangoName  -->
         <TextView
@@ -203,10 +208,11 @@
             android:text="@string/dessertBoloMorango"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
             app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoImg"
-
+            app:layout_constraintBottom_toTopOf="@id/boloDeMorangoDescription"
             />
 
         <!--  boloDeMorangoDescription  -->
@@ -218,53 +224,55 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
             app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoName"
-
+            app:layout_constraintBottom_toTopOf="@id/boloDeMorangoTime"
             />
 
+        <!--  boloDeMorangoTime  -->
         <TextView
             android:id="@+id/boloDeMorangoTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fastTime"
-            app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/fastTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+            app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
+            app:layout_constraintBottom_toTopOf="@id/boloDeMorangoWrap"
             />
 
         <!--  boloDeMorangoWrap  -->
         <View
             android:id="@+id/boloDeMorangoWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/boloDeMorango"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
             app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
+            app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoTime"
+            app:layout_constraintBottom_toBottomOf="@+id/boloDeMorango"
             />
-
 
         <!--  boloDeMorangoPrice  -->
         <TextView
             android:id="@+id/boloDeMorangoPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertBoloMorangoPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloDeMorango"
-            app:layout_constraintStart_toStartOf="@+id/boloDeMorango"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeMorangoDescription" />
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/boloDeMorangoWrap"
+            app:layout_constraintEnd_toEndOf="@+id/boloDeMorangoWrap"
+            app:layout_constraintTop_toTopOf="@+id/boloDeMorangoWrap"
+            app:layout_constraintBottom_toBottomOf="@id/boloDeMorangoWrap"
+            />
 
 
         <!-- SOBREMESA MARACUJÁ -->
@@ -272,27 +280,26 @@
             android:id="@+id/sobremesaMaracuja"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="8dp"
             android:background="@drawable/white_card"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeLimao"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/guideline6"
+            app:layout_constraintBottom_toTopOf="@id/guideline8"
+            />
 
         <!--  sobremesaMaracujaImg  -->
         <ImageView
             android:id="@+id/sobremesaMaracujaImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertMaracujaDesc"
             android:src="@drawable/sobremesamaracuja"
-            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
             app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
-            app:layout_constraintTop_toTopOf="@+id/sobremesaMaracuja" />
-
+            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+            app:layout_constraintTop_toTopOf="@+id/sobremesaMaracuja"
+            app:layout_constraintBottom_toTopOf="@id/sobremesaMaracujaName"
+            />
 
         <!--  sobremesaMaracujaName  -->
         <TextView
@@ -303,10 +310,11 @@
             android:text="@string/dessertMaracuja"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
             app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaImg"
-
+            app:layout_constraintBottom_toTopOf="@id/sobremesaMaracujaDescription"
             />
 
         <!--  sobremesaMaracujaDescription  -->
@@ -318,53 +326,55 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
             app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaName"
-
+            app:layout_constraintBottom_toTopOf="@id/sobremesaMaracujaTime"
             />
 
+        <!--  sobremesaMaracujaTime  -->
         <TextView
             android:id="@+id/sobremesaMaracujaTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fastTime"
-            app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
-            app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
-            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/fastTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
+            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+            app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
+            app:layout_constraintBottom_toTopOf="@id/sobremesaMaracujaWrap"
             />
 
         <!--  sobremesaMaracujaWrap  -->
         <View
             android:id="@+id/sobremesaMaracujaWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/sobremesaMaracuja"
-            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
             app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
-            app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
+            app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaTime"
+            app:layout_constraintBottom_toBottomOf="@+id/sobremesaMaracuja"
             />
-
 
         <!--  sobremesaMaracujaPrice  -->
         <TextView
             android:id="@+id/sobremesaMaracujaPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertMaracujaPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracuja"
-            app:layout_constraintStart_toStartOf="@+id/sobremesaMaracuja"
-            app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracujaDescription" />
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/sobremesaMaracujaWrap"
+            app:layout_constraintEnd_toEndOf="@+id/sobremesaMaracujaWrap"
+            app:layout_constraintTop_toTopOf="@+id/sobremesaMaracujaWrap"
+            app:layout_constraintBottom_toBottomOf="@id/sobremesaMaracujaWrap"
+            />
 
 
         <!--  BOLO DE BANANA -->
@@ -372,27 +382,26 @@
             android:id="@+id/boloBanana"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/white_card"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintTop_toBottomOf="@+id/boloDeMorango"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintEnd_toEndOf="@id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/guideline6"
+            app:layout_constraintBottom_toTopOf="@id/guideline8"
+            />
 
         <!--  boloBananaImg  -->
         <ImageView
             android:id="@+id/boloBananaImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertBoloBananaDesc"
             android:src="@drawable/bolobanana"
-            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
             app:layout_constraintStart_toStartOf="@+id/boloBanana"
-            app:layout_constraintTop_toTopOf="@+id/boloBanana" />
-
+            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+            app:layout_constraintTop_toTopOf="@+id/boloBanana"
+            app:layout_constraintBottom_toTopOf="@id/boloBananaName"
+            />
 
         <!--  boloBananaName  -->
         <TextView
@@ -403,10 +412,10 @@
             android:text="@string/dessertBoloBanana"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
             app:layout_constraintStart_toStartOf="@+id/boloBanana"
+            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
             app:layout_constraintTop_toBottomOf="@+id/boloBananaImg"
-
+            app:layout_constraintBottom_toTopOf="@id/boloBananaDescription"
             />
 
         <!--  boloBananaDescription  -->
@@ -418,54 +427,56 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/boloBanana"
+            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
             app:layout_constraintTop_toBottomOf="@+id/boloBananaName"
-
+            app:layout_constraintBottom_toTopOf="@id/boloBananaTime"
             />
 
+        <!--  boloBananaTime  -->
         <TextView
             android:id="@+id/boloBananaTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fastTime"
-            app:layout_constraintStart_toStartOf="@+id/boloBanana"
-            app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
-            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/fastTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/boloBanana"
+            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+            app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
+            app:layout_constraintBottom_toTopOf="@id/boloBananaWrap"
             />
 
         <!--  boloBananaWrap  -->
         <View
             android:id="@+id/boloBananaWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/boloBanana"
-            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
             app:layout_constraintStart_toStartOf="@+id/boloBanana"
-            app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription"
+            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
+            app:layout_constraintTop_toBottomOf="@+id/boloBananaTime"
+            app:layout_constraintBottom_toBottomOf="@+id/boloBanana"
 
             />
-
 
         <!--  boloBananaPrice  -->
         <TextView
             android:id="@+id/boloBananaPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertBoloBananaPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/boloBanana"
-            app:layout_constraintStart_toStartOf="@+id/boloBanana"
-            app:layout_constraintTop_toBottomOf="@+id/boloBananaDescription" />
-
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/boloBananaWrap"
+            app:layout_constraintEnd_toEndOf="@+id/boloBananaWrap"
+            app:layout_constraintTop_toTopOf="@+id/boloBananaWrap"
+            app:layout_constraintBottom_toBottomOf="@id/boloBananaWrap"
+            />
 
 
         <!-- DOCE DE CHURROS -->
@@ -473,27 +484,26 @@
             android:id="@+id/doceDeChurros"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="8dp"
             android:background="@drawable/white_card"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sobremesaMaracuja"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/guideline10"
+            app:layout_constraintBottom_toTopOf="@id/guideline12"
+            />
 
         <!--  doceDeChurrosImg  -->
         <ImageView
             android:id="@+id/doceDeChurrosImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertDoceDeChurrosDesc"
             android:src="@drawable/docedechurros"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
             app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
-            app:layout_constraintTop_toTopOf="@+id/doceDeChurros" />
-
+            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
+            app:layout_constraintTop_toTopOf="@+id/doceDeChurros"
+            app:layout_constraintBottom_toTopOf="@id/doceDeChurrosName"
+            />
 
         <!--  doceDeChurrosName  -->
         <TextView
@@ -504,10 +514,11 @@
             android:text="@string/dessertDoceDeChurros"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
             app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
             app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
             app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosImg"
-
+            app:layout_constraintBottom_toTopOf="@id/doceDeChurrosDescription"
             />
 
         <!--  doceDeChurrosDescription  -->
@@ -519,55 +530,55 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
+            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
             app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosName"
-
+            app:layout_constraintBottom_toTopOf="@id/doceDeChurrosTime"
             />
 
+        <!--  doceDeChurrosTime  -->
         <TextView
             android:id="@+id/doceDeChurrosTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/moderateTime"
-            app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosDescription"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/moderateTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
+            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
+            app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosDescription"
+            app:layout_constraintBottom_toTopOf="@id/doceDeChurrosWrap"
             />
 
         <!--  doceDeChurrosWrap  -->
         <View
             android:id="@+id/doceDeChurrosWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/doceDeChurros"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
             app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
+            app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosTime"
+            app:layout_constraintBottom_toBottomOf="@+id/doceDeChurros"
             />
-
 
         <!--  doceDeChurrosPrice  -->
         <TextView
             android:id="@+id/doceDeChurrosPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertDoceDeChurrosPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeChurros"
-            app:layout_constraintStart_toStartOf="@+id/doceDeChurros"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosDescription" />
-
-
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/doceDeChurrosWrap"
+            app:layout_constraintEnd_toEndOf="@+id/doceDeChurrosWrap"
+            app:layout_constraintTop_toBottomOf="@+id/doceDeChurrosWrap"
+            app:layout_constraintBottom_toTopOf="@id/doceDeChurrosWrap"
+            />
 
 
         <!--  DOCE DE LEITE NINHO -->
@@ -575,26 +586,26 @@
             android:id="@+id/doceDeLeiteNinho"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/white_card"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintTop_toBottomOf="@+id/boloBanana"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintEnd_toEndOf="@id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/guideline10"
+            app:layout_constraintBottom_toTopOf="@id/guideline12"
+            />
 
         <!--  doceDeLeiteNinhoImg  -->
         <ImageView
             android:id="@+id/doceDeLeiteNinhoImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertDoceDeLeiteNinhoDesc"
             android:src="@drawable/doceleiteninho"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
             app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintTop_toTopOf="@+id/doceDeLeiteNinho" />
-
+            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
+            app:layout_constraintTop_toTopOf="@+id/doceDeLeiteNinho"
+            app:layout_constraintBottom_toTopOf="@id/doceDeLeiteNinhoName"
+            />
 
         <!--  doceDeLeiteNinhoName  -->
         <TextView
@@ -605,10 +616,11 @@
             android:text="@string/dessertDoceDeLeiteNinho"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
+            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
             app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoImg"
-
+            app:layout_constraintBottom_toTopOf="@id/doceDeLeiteNinhoDescription"
             />
 
         <!--  doceDeLeiteNinhoDescription  -->
@@ -620,54 +632,55 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
+            android:autoSizeTextType="uniform"
             app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
             app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
             app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoName"
-
+            app:layout_constraintBottom_toTopOf="@id/doceDeLeiteNinhoTime"
             />
 
+        <!--  doceDeLeiteNinhoTime  -->
         <TextView
             android:id="@+id/doceDeLeiteNinhoTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/longTime"
-            app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoDescription"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/longTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
+            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
+            app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoDescription"
+            app:layout_constraintBottom_toTopOf="@id/doceDeLeiteNinhoWrap"
             />
 
         <!--  doceDeLeiteNinhoWrap  -->
         <View
             android:id="@+id/doceDeLeiteNinhoWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
             app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
+            app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoTime"
+            app:layout_constraintBottom_toBottomOf="@+id/doceDeLeiteNinho"
             />
-
 
         <!--  doceDeLeiteNinhoPrice  -->
         <TextView
             android:id="@+id/doceDeLeiteNinhoPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertDoceDeLeiteNinhoPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinhoDescription" />
-
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/doceDeLeiteNinhoWrap"
+            app:layout_constraintEnd_toEndOf="@+id/doceDeLeiteNinhoWrap"
+            app:layout_constraintTop_toTopOf="@+id/doceDeLeiteNinhoWrap"
+            app:layout_constraintBottom_toBottomOf="@id/doceDeLeiteNinhoWrap"
+            />
 
 
         <!-- PÃO DE MEL -->
@@ -675,27 +688,26 @@
             android:id="@+id/paoDeMel"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="8dp"
             android:background="@drawable/white_card"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeChurros"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/guideline14"
+            app:layout_constraintBottom_toTopOf="@id/guideline16"
+            />
 
         <!--  paoDeMelImg  -->
         <ImageView
             android:id="@+id/paoDeMelImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertPaoDeMelDesc"
             android:src="@drawable/paodemel"
-            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
             app:layout_constraintStart_toStartOf="@+id/paoDeMel"
-            app:layout_constraintTop_toTopOf="@+id/paoDeMel" />
-
+            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
+            app:layout_constraintTop_toTopOf="@+id/paoDeMel"
+            app:layout_constraintBottom_toTopOf="@id/paoDeMelName"
+            />
 
         <!--  paoDeMelName  -->
         <TextView
@@ -706,10 +718,11 @@
             android:text="@string/dessertPaoDeMel"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/paoDeMel"
+            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
             app:layout_constraintTop_toBottomOf="@+id/paoDeMelImg"
-
+            app:layout_constraintBottom_toTopOf="@id/paoDeMelDescription"
             />
 
         <!--  paoDeMelDescription  -->
@@ -721,54 +734,55 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/paoDeMel"
+            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
             app:layout_constraintTop_toBottomOf="@+id/paoDeMelName"
-
+            app:layout_constraintBottom_toTopOf="@id/paoDeMelTime"
             />
 
+        <!--  paoDeMelTime  -->
         <TextView
             android:id="@+id/paoDeMelTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/longTime"
-            app:layout_constraintStart_toStartOf="@+id/paoDeMel"
-            app:layout_constraintTop_toBottomOf="@+id/paoDeMelDescription"
-            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
-
+            android:text="@string/longTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/paoDeMel"
+            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
+            app:layout_constraintTop_toBottomOf="@+id/paoDeMelDescription"
+            app:layout_constraintBottom_toTopOf="@id/paoDeMelWrap"
             />
 
         <!--  paoDeMelWrap  -->
         <View
             android:id="@+id/paoDeMelWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/paoDeMel"
-            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
             app:layout_constraintStart_toStartOf="@+id/paoDeMel"
-            app:layout_constraintTop_toBottomOf="@+id/paoDeMelDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
+            app:layout_constraintTop_toBottomOf="@+id/paoDeMelTime"
+            app:layout_constraintBottom_toBottomOf="@+id/paoDeMel"
             />
-
 
         <!--  paoDeMelPrice  -->
         <TextView
             android:id="@+id/paoDeMelPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertPaoDeMelPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/paoDeMel"
-            app:layout_constraintStart_toStartOf="@+id/paoDeMel"
-            app:layout_constraintTop_toBottomOf="@+id/paoDeMelDescription" />
-
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/paoDeMelWrap"
+            app:layout_constraintEnd_toEndOf="@+id/paoDeMelWrap"
+            app:layout_constraintTop_toTopOf="@+id/paoDeMelWrap"
+            app:layout_constraintBottom_toBottomOf="@id/paoDeMelWrap"
+            />
 
 
         <!--  PAVE DE AMENDOIM -->
@@ -776,26 +790,26 @@
             android:id="@+id/paveDeAmendoim"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/white_card"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="213dp"
-            app:layout_constraintTop_toBottomOf="@+id/doceDeLeiteNinho"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintEnd_toEndOf="@id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/guideline14"
+            app:layout_constraintBottom_toTopOf="@id/guideline16"
+            />
 
         <!--  paveDeAmendoimImg  -->
         <ImageView
             android:id="@+id/paveDeAmendoimImg"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
             android:contentDescription="@string/dessertPaveDeAmendoimDesc"
             android:src="@drawable/pavedeamendoim"
-            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
             app:layout_constraintStart_toStartOf="@+id/paveDeAmendoim"
-            app:layout_constraintTop_toTopOf="@+id/paveDeAmendoim" />
-
+            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
+            app:layout_constraintTop_toTopOf="@+id/paveDeAmendoim"
+            app:layout_constraintBottom_toTopOf="@id/paveDeAmendoimName"
+            />
 
         <!--  paveDeAmendoimName  -->
         <TextView
@@ -806,10 +820,11 @@
             android:text="@string/dessertPaveDeAmendoim"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/paveDeAmendoim"
+            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
             app:layout_constraintTop_toBottomOf="@+id/paveDeAmendoimImg"
-
+            app:layout_constraintBottom_toTopOf="@id/paveDeAmendoimDescription"
             />
 
         <!--  paveDeAmendoimDescription  -->
@@ -821,53 +836,143 @@
             android:text="@string/ice"
             android:textColor="@color/description"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
+            android:autoSizeTextType="uniform"
             app:layout_constraintStart_toStartOf="@+id/paveDeAmendoim"
+            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
             app:layout_constraintTop_toBottomOf="@+id/paveDeAmendoimName"
-
+            app:layout_constraintBottom_toTopOf="@id/paveDeAmendoimTime"
             />
 
+        <!--  paveDeAmendoimTime  -->
         <TextView
             android:id="@+id/paveDeAmendoimTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
             android:text="@string/moderateTime"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
             app:layout_constraintStart_toStartOf="@+id/paveDeAmendoim"
             app:layout_constraintTop_toBottomOf="@+id/paveDeAmendoimDescription"
-            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
-            android:textColor="@color/black"
-            android:fontFamily="@font/interbold"
-
+            app:layout_constraintBottom_toTopOf="@id/paveDeAmendoimWrap"
             />
 
         <!--  doceDeLeiteNinhoWrap  -->
         <View
             android:id="@+id/paveDeAmendoimWrap"
-            android:layout_width="177dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/rounded_price"
-            app:layout_constraintBottom_toBottomOf="@+id/paveDeAmendoim"
-            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
             app:layout_constraintStart_toStartOf="@+id/paveDeAmendoim"
-            app:layout_constraintTop_toBottomOf="@+id/paveDeAmendoimDescription"
-
+            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
+            app:layout_constraintBottom_toBottomOf="@+id/paveDeAmendoim"
+            app:layout_constraintTop_toBottomOf="@+id/paveDeAmendoimTime"
             />
-
 
         <!--  paveDeAmendoimPrice  -->
         <TextView
             android:id="@+id/paveDeAmendoimPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/interbold"
             android:text="@string/dessertPaveDeAmendoimPrice"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoim"
-            app:layout_constraintStart_toStartOf="@+id/paveDeAmendoim"
-            app:layout_constraintTop_toBottomOf="@+id/paveDeAmendoimDescription" />
+            android:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="@+id/paveDeAmendoimWrap"
+            app:layout_constraintEnd_toEndOf="@+id/paveDeAmendoimWrap"
+            app:layout_constraintTop_toTopOf="@+id/paveDeAmendoimWrap"
+            app:layout_constraintBottom_toBottomOf="@id/paveDeAmendoimWrap"
+            />
+
+
+        <!-- VERTICAL GUIDELINES -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.49" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.51" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+
+        <!-- HORIZONTAL GUIDELINES -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.29" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.31" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.51" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.53" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.73" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
