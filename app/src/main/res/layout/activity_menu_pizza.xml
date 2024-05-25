@@ -9,17 +9,15 @@
     tools:context=".MenuPizza">
 
 
-
-
     <View
         android:id="@+id/headerContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/red_primary"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
         />
 
@@ -27,25 +25,25 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_back"
-        app:layout_constraintTop_toTopOf="@+id/headerContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
         android:layout_marginStart="10dp"
-        android:contentDescription="@string/backbutton" />
+        android:contentDescription="@string/backbutton"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer" />
 
     <TextView
         android:id="@+id/restaurantTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
         android:fontFamily="times"
         android:text="@string/title"
-        android:textSize="22sp"
         android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="@+id/headerContainer"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
-        android:layout_marginStart="35dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/headerContainer"
 
         />
 
@@ -53,12 +51,12 @@
         android:id="@+id/cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_add_shopping_cart_24"
-        app:layout_constraintTop_toTopOf="@id/headerContainer"
-        app:layout_constraintBottom_toBottomOf="@id/headerContainer"
-        app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
         android:layout_marginStart="35dp"
         android:contentDescription="@string/cartIcon"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        app:layout_constraintBottom_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toEndOf="@+id/restaurantTitle"
+        app:layout_constraintTop_toTopOf="@id/headerContainer"
 
         />
 
@@ -69,97 +67,100 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
-        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
         />
 
+    <!-- pizzaMistaImg -->
     <ImageView
         android:id="@+id/pizzaMistaImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/pizzamista"
         android:background="@drawable/rounded_corners"
+        android:contentDescription="@string/pizzaMistaDesc"
+        android:src="@drawable/pizzamista"
         app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toTopOf="@+id/pizzaMista"
         app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        app:layout_constraintTop_toTopOf="@+id/pizzaMista"
+        app:layout_constraintBottom_toTopOf="@id/pizzaMistaName"
+        />
 
-        android:contentDescription="@string/pizzaMistaDesc"/>
-
+    <!-- pizzaMistaName -->
     <TextView
         android:id="@+id/pizzaMistaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaMista"
-        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaImg"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaMista"
+        android:textColor="@color/black"
         android:textSize="20sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaImg"
+        app:layout_constraintBottom_toTopOf="@id/pizzaMistaDescription"
         />
 
+    <!-- pizzaMistaDescription -->
     <TextView
         android:id="@+id/pizzaMistaDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizza"
-        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaName"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
-        android:textColor="@color/description"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizza"
+        android:textColor="@color/description"
         android:textSize="15sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaName"
+        app:layout_constraintBottom_toTopOf="@id/pizzaMistaTime"
         />
 
+    <!-- pizzaMistaTime -->
     <TextView
         android:id="@+id/pizzaMistaTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/longTime"
-        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
-
+        android:text="@string/longTime"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
+        app:layout_constraintBottom_toTopOf="@id/wrapPrice"
         />
 
-
+    <!-- pizzaMistaWrap -->
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
-        app:layout_constraintBottom_toBottomOf="@+id/pizzaMista"
         android:background="@drawable/rounded_price"
-
+        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/pizzaMista"
         />
 
-
+    <!-- pizzaMistaPrice -->
     <TextView
         android:id="@+id/pizzaMistaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaMistaPrice"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaMista"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaMistaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaMista"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaMistaPrice"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/wrapPrice"
+        app:layout_constraintEnd_toEndOf="@+id/wrapPrice"
+        app:layout_constraintTop_toTopOf="@+id/wrapPrice"
+        app:layout_constraintBottom_toBottomOf="@id/wrapPrice"
         />
-
 
 
     <!--  PIZZA QUATRO QUEIJOS -->
@@ -168,41 +169,40 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
-        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
         />
 
     <!--  pizzaQuatroQueijosImg  -->
     <ImageView
         android:id="@+id/pizzaQuatroQueijosImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/pizzafourqueijos"
         android:background="@drawable/rounded_corners"
+        android:contentDescription="@string/pizzaQuatroQueijosDesc"
+        android:src="@drawable/pizzafourqueijos"
         app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintTop_toTopOf="@+id/pizzaQuatroQueijos"
         app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
-        android:contentDescription="@string/pizzaQuatroQueijosDesc" />
-
+        app:layout_constraintTop_toTopOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintBottom_toTopOf="@id/pizzaQuatroQueijosName"
+        />
 
     <!--  pizzaQuatroQueijosName  -->
     <TextView
         android:id="@+id/pizzaQuatroQueijosName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaQuatroQueijos"
-        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosImg"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaQuatroQueijos"
+        android:textColor="@color/black"
         android:textSize="20sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosImg"
+        app:layout_constraintBottom_toTopOf="@id/pizzaQuatroQueijosDescription"
         />
 
     <!--  pizzaQuatroQueijosDescription  -->
@@ -210,59 +210,59 @@
         android:id="@+id/pizzaQuatroQueijosDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizza"
-        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosName"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
-        android:textColor="@color/description"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizza"
+        android:textColor="@color/description"
         android:textSize="15sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosName"
+        app:layout_constraintBottom_toTopOf="@id/pizzaQuatroQueijosTime"
         />
 
+    <!--  pizzaQuatroQueijosTime  -->
     <TextView
         android:id="@+id/pizzaQuatroQueijosTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/longTime"
-        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
-
+        android:text="@string/longTime"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
+        app:layout_constraintBottom_toTopOf="@id/pizzaQuatroQueijosWrap"
         />
 
     <!--  pizzaQuatroQueijosWrap  -->
     <View
         android:id="@+id/pizzaQuatroQueijosWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintBottom_toBottomOf="@+id/pizzaQuatroQueijos"
         android:background="@drawable/rounded_price"
-
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosTime"
+        app:layout_constraintBottom_toBottomOf="@+id/pizzaQuatroQueijos"
         />
-
 
     <!--  pizzaQuatroQueijosPrice  -->
     <TextView
         android:id="@+id/pizzaQuatroQueijosPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaQuatroQueijosPrice"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijosDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijos"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaQuatroQueijosPrice"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaQuatroQueijosWrap"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaQuatroQueijosWrap"
+        app:layout_constraintTop_toTopOf="@+id/pizzaQuatroQueijosWrap"
+        app:layout_constraintBottom_toBottomOf="@id/pizzaQuatroQueijosWrap"
         />
-
 
 
     <!-- PIZZA CALABRESA -->
@@ -271,41 +271,40 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaMista"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
-        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
         />
 
     <!--  pizzaCalabresaImg  -->
     <ImageView
         android:id="@+id/pizzaCalabresaImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/pizzacalabresa"
         android:background="@drawable/rounded_corners"
+        android:contentDescription="@string/pizzaCalabresaDesc"
+        android:src="@drawable/pizzacalabresa"
         app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
-        app:layout_constraintTop_toTopOf="@+id/pizzaCalabresa"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
-        android:contentDescription="@string/pizzaCalabresaDesc" />
-
+        app:layout_constraintTop_toTopOf="@+id/pizzaCalabresa"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCalabresaName"
+        />
 
     <!--  pizzaCalabresaName  -->
     <TextView
         android:id="@+id/pizzaCalabresaName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaCalabresa"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaImg"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaCalabresa"
+        android:textColor="@color/black"
         android:textSize="20sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaImg"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCalabresaDescription"
         />
 
     <!--  pizzaCalabresaDescription  -->
@@ -313,58 +312,58 @@
         android:id="@+id/pizzaCalabresaDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizza"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaName"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
-        android:textColor="@color/description"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizza"
+        android:textColor="@color/description"
         android:textSize="15sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaName"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCalabresaTime"
         />
 
+    <!--  pizzaCalabresaTime  -->
     <TextView
         android:id="@+id/pizzaCalabresaTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/longTime"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
-
+        android:text="@string/longTime"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCalabresaWrap"
         />
-
 
     <!--  pizzaCalabresaWrap  -->
     <View
         android:id="@+id/pizzaCalabresaWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
-        app:layout_constraintBottom_toBottomOf="@+id/pizzaCalabresa"
         android:background="@drawable/rounded_price"
-
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/pizzaCalabresa"
         />
-
 
     <!--  pizzaCalabresaPrice  -->
     <TextView
         android:id="@+id/pizzaCalabresaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaCalabresaPrice"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresa"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCalabresaDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresa"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaCalabresaPrice"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCalabresaWrap"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCalabresaWrap"
+        app:layout_constraintTop_toTopOf="@+id/pizzaCalabresaWrap"
+        app:layout_constraintBottom_toBottomOf="@id/pizzaCalabresaWrap"
         />
 
 
@@ -374,41 +373,40 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/white_card"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaQuatroQueijos"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintWidth_percent="0.45"
-        app:layout_constraintHeight_percent="0.25"
-        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
         />
 
     <!--  pizzaCarneSolImg  -->
     <ImageView
         android:id="@+id/pizzaCarneSolImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/pizzacarnesol"
         android:background="@drawable/rounded_corners"
+        android:contentDescription="@string/organicSaladaGraoDeBicoDesc"
+        android:src="@drawable/pizzacarnesol"
         app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
-        app:layout_constraintTop_toTopOf="@+id/pizzaCarneSol"
         app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
-        android:contentDescription="@string/organicSaladaGraoDeBicoDesc" />
-
+        app:layout_constraintTop_toTopOf="@+id/pizzaCarneSol"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCarneSolName"
+        />
 
     <!--  pizzaCarneSolName  -->
     <TextView
         android:id="@+id/pizzaCarneSolName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaCarneSol"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolImg"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaCarneSol"
+        android:textColor="@color/black"
         android:textSize="20sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolImg"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCarneSolDescription"
         />
 
     <!--  pizzaCarneSolDescription  -->
@@ -416,60 +414,118 @@
         android:id="@+id/pizzaCarneSolDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizza"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolName"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
-        android:textColor="@color/description"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizza"
+        android:textColor="@color/description"
         android:textSize="15sp"
-
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolName"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCarneSolTime"
         />
 
+    <!--  pizzaCarneSolTime  -->
     <TextView
         android:id="@+id/pizzaCarneSolTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/longTime"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
-        android:textColor="@color/black"
         android:fontFamily="@font/interbold"
-
+        android:text="@string/longTime"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
+        app:layout_constraintBottom_toTopOf="@id/pizzaCarneSolWrap"
         />
-
 
     <!--  pizzaCarneSolWrap  -->
     <View
         android:id="@+id/pizzaCarneSolWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
-        app:layout_constraintBottom_toBottomOf="@+id/pizzaCarneSol"
         android:background="@drawable/rounded_price"
-
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolTime"
+        app:layout_constraintBottom_toBottomOf="@+id/pizzaCarneSol"
         />
-
 
     <!--  pizzaCarneSolPrice  -->
     <TextView
         android:id="@+id/pizzaCarneSolPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pizzaCarneSolPrice"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSol"
-        app:layout_constraintTop_toBottomOf="@+id/pizzaCarneSolDescription"
-        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSol"
-        android:textColor="@color/white"
         android:fontFamily="@font/interbold"
+        android:text="@string/pizzaCarneSolPrice"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pizzaCarneSolWrap"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaCarneSolWrap"
+        app:layout_constraintTop_toTopOf="@+id/pizzaCarneSolWrap"
+        app:layout_constraintBottom_toBottomOf="@id/pizzaCarneSolWrap"
         />
 
+
+    <!-- VERTICAL GUIDELINES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <!-- HORIZONTAL GUIDELINES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
