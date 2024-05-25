@@ -66,26 +66,28 @@
         android:id="@+id/cocaCola"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        />
 
+    <!-- cocaColaImg -->
     <ImageView
         android:id="@+id/cocaColaImg"
-        android:layout_width="177dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/sodaCocaColaDesc"
         android:src="@drawable/sodacocacola"
-        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
-        app:layout_constraintTop_toTopOf="@+id/cocaCola" />
+        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
+        app:layout_constraintTop_toTopOf="@+id/cocaCola"
+        app:layout_constraintBottom_toTopOf="@id/cocaColaName"
+        />
 
+    <!-- cocaColaName -->
     <TextView
         android:id="@+id/cocaColaName"
         android:layout_width="wrap_content"
@@ -94,12 +96,14 @@
         android:text="@string/sodaCocaCola"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="@+id/cocaCola"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
         app:layout_constraintTop_toBottomOf="@+id/cocaColaImg"
-
+        app:layout_constraintBottom_toTopOf="@id/sodaDescription"
         />
 
+    <!-- cocaColaDescription -->
     <TextView
         android:id="@+id/sodaDescription"
         android:layout_width="wrap_content"
@@ -108,12 +112,14 @@
         android:text="@string/soda"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
+        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
         app:layout_constraintTop_toBottomOf="@+id/cocaColaName"
-
+        app:layout_constraintBottom_toTopOf="@id/sodaCocaTime"
         />
 
+    <!-- cocaColaTime -->
     <TextView
         android:id="@+id/sodaCocaTime"
         android:layout_width="wrap_content"
@@ -121,38 +127,40 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
+        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
         app:layout_constraintTop_toBottomOf="@+id/sodaDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/wrapPrice"
         />
 
+    <!-- cocaColaWrap -->
     <View
         android:id="@+id/wrapPrice"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/cocaCola"
-        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
         app:layout_constraintStart_toStartOf="@+id/cocaCola"
-        app:layout_constraintTop_toBottomOf="@+id/sodaDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
+        app:layout_constraintTop_toBottomOf="@+id/sodaCocaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/cocaCola"
         />
 
+    <!-- cocaColaPrice -->
     <TextView
         android:id="@+id/cocaColaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/sodaCocaColaPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/cocaCola"
-        app:layout_constraintStart_toStartOf="@+id/cocaCola"
-        app:layout_constraintTop_toBottomOf="@+id/sodaDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/wrapPrice"
+        app:layout_constraintEnd_toEndOf="@+id/wrapPrice"
+        app:layout_constraintTop_toTopOf="@+id/wrapPrice"
+        app:layout_constraintBottom_toBottomOf="@id/wrapPrice"
+        />
 
 
     <!--  PEPSI -->
@@ -160,27 +168,26 @@
         android:id="@+id/pepsi"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/white_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintTop_toBottomOf="@+id/headerContainer"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        />
 
     <!--  pepsiImg  -->
     <ImageView
         android:id="@+id/pepsiImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/sodaPepsiDesc"
         android:src="@drawable/sodapepsi"
-        app:layout_constraintEnd_toEndOf="@+id/pepsi"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
-        app:layout_constraintTop_toTopOf="@+id/pepsi" />
-
+        app:layout_constraintEnd_toEndOf="@+id/pepsi"
+        app:layout_constraintTop_toTopOf="@+id/pepsi"
+        app:layout_constraintBottom_toTopOf="@id/pepsiName"
+        />
 
     <!--  pepsiName  -->
     <TextView
@@ -191,10 +198,11 @@
         android:text="@string/sodaPepsi"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/pepsi"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
+        app:layout_constraintEnd_toEndOf="@+id/pepsi"
         app:layout_constraintTop_toBottomOf="@+id/pepsiImg"
-
+        app:layout_constraintBottom_toTopOf="@id/pepsiDescription"
         />
 
     <!--  pepsiDescription  -->
@@ -206,12 +214,14 @@
         android:text="@string/soda"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/pepsi"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
+        app:layout_constraintEnd_toEndOf="@+id/pepsi"
         app:layout_constraintTop_toBottomOf="@+id/pepsiName"
-
+        app:layout_constraintBottom_toTopOf="@id/sodaPepsiTime"
         />
 
+    <!-- pepsiTime -->
     <TextView
         android:id="@+id/sodaPepsiTime"
         android:layout_width="wrap_content"
@@ -219,24 +229,22 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/pepsi"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
+        app:layout_constraintEnd_toEndOf="@+id/pepsi"
         app:layout_constraintTop_toBottomOf="@+id/pepsiDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/pepsiWrap"
         />
 
     <!--  pepsiWrap  -->
     <View
         android:id="@+id/pepsiWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/pepsi"
-        app:layout_constraintEnd_toEndOf="@+id/pepsi"
         app:layout_constraintStart_toStartOf="@+id/pepsi"
-        app:layout_constraintTop_toBottomOf="@+id/pepsiDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/pepsi"
+        app:layout_constraintTop_toBottomOf="@+id/sodaPepsiTime"
+        app:layout_constraintBottom_toBottomOf="@+id/pepsi"
         />
 
 
@@ -245,15 +253,16 @@
         android:id="@+id/pepsiPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/sodaPepsiPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/pepsi"
-        app:layout_constraintStart_toStartOf="@+id/pepsi"
-        app:layout_constraintTop_toBottomOf="@+id/pepsiDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/pepsiWrap"
+        app:layout_constraintEnd_toEndOf="@+id/pepsiWrap"
+        app:layout_constraintTop_toTopOf="@+id/pepsiWrap"
+        app:layout_constraintBottom_toBottomOf="@id/pepsiWrap"
+        />
 
 
     <!-- GUARANÁ JESUS -->
@@ -261,27 +270,26 @@
         android:id="@+id/guaranaJesus"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cocaCola"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        />
 
     <!--  guaranaJesusImg  -->
     <ImageView
         android:id="@+id/guaranaJesusImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/sodaGuaranaJesusDesc"
         android:src="@drawable/sodajesus"
-        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
-        app:layout_constraintTop_toTopOf="@+id/guaranaJesus" />
-
+        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
+        app:layout_constraintTop_toTopOf="@+id/guaranaJesus"
+        app:layout_constraintBottom_toTopOf="@id/guaranaJesusName"
+        />
 
     <!--  guaranaJesusName  -->
     <TextView
@@ -292,10 +300,11 @@
         android:text="@string/sodaGuaranaJesus"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
+        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
         app:layout_constraintTop_toBottomOf="@+id/guaranaJesusImg"
-
+        app:layout_constraintBottom_toTopOf="@id/guaranaJesusDescription"
         />
 
     <!--  guaranaJesusDescription  -->
@@ -307,12 +316,14 @@
         android:text="@string/soda"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
+        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
         app:layout_constraintTop_toBottomOf="@+id/guaranaJesusName"
-
+        app:layout_constraintBottom_toTopOf="@id/sodaJesusTime"
         />
 
+    <!--  guaranaJesusTime  -->
     <TextView
         android:id="@+id/sodaJesusTime"
         android:layout_width="wrap_content"
@@ -320,41 +331,40 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
+        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
         app:layout_constraintTop_toBottomOf="@+id/guaranaJesusDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/guaranaJesusWrap"
         />
 
     <!--  guaranaJesusWrap  -->
     <View
         android:id="@+id/guaranaJesusWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/guaranaJesus"
-        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
         app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
-        app:layout_constraintTop_toBottomOf="@+id/guaranaJesusDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
+        app:layout_constraintTop_toBottomOf="@+id/sodaJesusTime"
+        app:layout_constraintBottom_toBottomOf="@+id/guaranaJesus"
         />
-
 
     <!--  guaranaJesusPrice  -->
     <TextView
         android:id="@+id/guaranaJesusPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/sodaGuaranaJesusPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/guaranaJesus"
-        app:layout_constraintStart_toStartOf="@+id/guaranaJesus"
-        app:layout_constraintTop_toBottomOf="@+id/guaranaJesusDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/guaranaJesusWrap"
+        app:layout_constraintEnd_toEndOf="@+id/guaranaJesusWrap"
+        app:layout_constraintTop_toTopOf="@+id/guaranaJesusWrap"
+        app:layout_constraintBottom_toBottomOf="@id/guaranaJesusWrap"
+        />
 
 
     <!--  SÃO GERALDO -->
@@ -362,26 +372,26 @@
         android:id="@+id/saoGeraldo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/white_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintTop_toBottomOf="@+id/pepsi"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        />
 
     <!--  saoGeraldoImg  -->
     <ImageView
         android:id="@+id/saoGeraldoImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/sodaSaoGeraldoDesc"
         android:src="@drawable/sodacaju"
-        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
-        app:layout_constraintTop_toTopOf="@+id/saoGeraldo" />
-
+        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
+        app:layout_constraintTop_toTopOf="@+id/saoGeraldo"
+        app:layout_constraintBottom_toTopOf="@id/saoGeraldoName"
+        />
 
     <!--  saoGeraldoName  -->
     <TextView
@@ -392,10 +402,11 @@
         android:text="@string/sodaSaoGeraldo"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
+        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
         app:layout_constraintTop_toBottomOf="@+id/saoGeraldoImg"
-
+        app:layout_constraintBottom_toTopOf="@id/saoGeraldoDescription"
         />
 
     <!--  saoGeraldoDescription  -->
@@ -407,12 +418,14 @@
         android:text="@string/soda"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
+        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
         app:layout_constraintTop_toBottomOf="@+id/saoGeraldoName"
-
+        app:layout_constraintBottom_toTopOf="@id/sodaGeraldoTime"
         />
 
+    <!--  saoGeraldoTime  -->
     <TextView
         android:id="@+id/sodaGeraldoTime"
         android:layout_width="wrap_content"
@@ -420,41 +433,40 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
+        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
         app:layout_constraintTop_toBottomOf="@+id/saoGeraldoDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/saoGeraldoWrap"
         />
 
     <!--  saoGeraldoWrap  -->
     <View
         android:id="@+id/saoGeraldoWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/saoGeraldo"
-        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
         app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
-        app:layout_constraintTop_toBottomOf="@+id/saoGeraldoDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
+        app:layout_constraintTop_toBottomOf="@+id/sodaGeraldoTime"
+        app:layout_constraintBottom_toBottomOf="@+id/saoGeraldo"
         />
-
 
     <!--  saoGeraldoPrice  -->
     <TextView
         android:id="@+id/saoGeraldoPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/sodaSaoGeraldoPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/saoGeraldo"
-        app:layout_constraintStart_toStartOf="@+id/saoGeraldo"
-        app:layout_constraintTop_toBottomOf="@+id/saoGeraldoDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/saoGeraldoWrap"
+        app:layout_constraintEnd_toEndOf="@+id/saoGeraldoWrap"
+        app:layout_constraintTop_toTopOf="@+id/saoGeraldoWrap"
+        app:layout_constraintBottom_toBottomOf="@id/saoGeraldoWrap"
+        />
 
 
     <!-- ITAIPAVA -->
@@ -462,27 +474,26 @@
         android:id="@+id/itaipava"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/white_card"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guaranaJesus"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintBottom_toTopOf="@id/guideline12"
+        />
 
     <!--  itaipavaImg  -->
     <ImageView
         android:id="@+id/itaipavaImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/sodaItaipavaDesc"
         android:src="@drawable/itaipava"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
-        app:layout_constraintTop_toTopOf="@+id/itaipava" />
-
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
+        app:layout_constraintTop_toTopOf="@+id/itaipava"
+        app:layout_constraintBottom_toTopOf="@id/itaipavaName"
+        />
 
     <!--  itaipavaName  -->
     <TextView
@@ -493,10 +504,11 @@
         android:text="@string/sodaItaipava"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/itaipavaImg"
-
+        app:layout_constraintBottom_toTopOf="@id/itaipavaDescription"
         />
 
     <!--  itaipavaDescription  -->
@@ -508,12 +520,14 @@
         android:text="@string/soda"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/itaipavaName"
-
+        app:layout_constraintBottom_toTopOf="@id/itaipavaTime"
         />
 
+    <!--  itaipavaTime  -->
     <TextView
         android:id="@+id/itaipavaTime"
         android:layout_width="wrap_content"
@@ -521,41 +535,40 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         app:layout_constraintTop_toBottomOf="@+id/itaipavaDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/itaipavaWrap"
         />
 
     <!--  itaipavaWrap  -->
     <View
         android:id="@+id/itaipavaWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/itaipava"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
         app:layout_constraintStart_toStartOf="@+id/itaipava"
-        app:layout_constraintTop_toBottomOf="@+id/itaipavaDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/itaipava"
+        app:layout_constraintTop_toBottomOf="@+id/itaipavaTime"
+        app:layout_constraintBottom_toBottomOf="@+id/itaipava"
         />
-
 
     <!--  itaipavaPrice  -->
     <TextView
         android:id="@+id/itaipavaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/sodaItaipavaPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/itaipava"
-        app:layout_constraintStart_toStartOf="@+id/itaipava"
-        app:layout_constraintTop_toBottomOf="@+id/itaipavaDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/itaipavaWrap"
+        app:layout_constraintEnd_toEndOf="@+id/itaipavaWrap"
+        app:layout_constraintTop_toTopOf="@+id/itaipavaWrap"
+        app:layout_constraintBottom_toBottomOf="@id/itaipavaWrap"
+        />
 
 
     <!--  HEINEKEN -->
@@ -563,26 +576,26 @@
         android:id="@+id/heineken"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/white_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintTop_toBottomOf="@+id/saoGeraldo"
-        app:layout_constraintWidth_percent="0.45" />
+        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintBottom_toTopOf="@id/guideline12"
+        />
 
     <!--  heinekenImg  -->
     <ImageView
         android:id="@+id/heinekenImg"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corners"
         android:contentDescription="@string/sodaHeinekenDesc"
         android:src="@drawable/heineken"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
         app:layout_constraintStart_toStartOf="@+id/heineken"
-        app:layout_constraintTop_toTopOf="@+id/heineken" />
-
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        app:layout_constraintTop_toTopOf="@+id/heineken"
+        app:layout_constraintBottom_toTopOf="@id/heinekenName"
+        />
 
     <!--  heinekenName  -->
     <TextView
@@ -593,10 +606,11 @@
         android:text="@string/sodaHeineken"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
         app:layout_constraintTop_toBottomOf="@+id/heinekenImg"
-
+        app:layout_constraintBottom_toTopOf="@id/heinekenDescription"
         />
 
     <!--  heinekenDescription  -->
@@ -608,12 +622,14 @@
         android:text="@string/soda"
         android:textColor="@color/description"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
         app:layout_constraintTop_toBottomOf="@+id/heinekenName"
-
+        app:layout_constraintBottom_toTopOf="@id/heinekenTime"
         />
 
+    <!--  heinekenTime  -->
     <TextView
         android:id="@+id/heinekenTime"
         android:layout_width="wrap_content"
@@ -621,41 +637,41 @@
         android:fontFamily="@font/interbold"
         android:text="@string/fastTime"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        android:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="@+id/heineken"
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
         app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
-
+        app:layout_constraintBottom_toTopOf="@id/heinekenWrap"
         />
 
     <!--  heinekenWrap  -->
     <View
         android:id="@+id/heinekenWrap"
-        android:layout_width="177dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_price"
-        app:layout_constraintBottom_toBottomOf="@+id/heineken"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
         app:layout_constraintStart_toStartOf="@+id/heineken"
-        app:layout_constraintTop_toBottomOf="@+id/heinekenDescription"
-
+        app:layout_constraintEnd_toEndOf="@+id/heineken"
+        app:layout_constraintTop_toBottomOf="@+id/heinekenTime"
+        app:layout_constraintBottom_toBottomOf="@+id/heineken"
         />
-
 
     <!--  heinekenPrice  -->
     <TextView
         android:id="@+id/heinekenPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/interbold"
         android:text="@string/sodaHeinekenPrice"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/heineken"
-        app:layout_constraintStart_toStartOf="@+id/heineken"
-        app:layout_constraintTop_toBottomOf="@+id/heinekenDescription" />
+        android:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/heinekenWrap"
+        app:layout_constraintEnd_toEndOf="@+id/heinekenWrap"
+        app:layout_constraintTop_toTopOf="@+id/heinekenWrap"
+        app:layout_constraintBottom_toBottomOf="@id/heinekenWrap"
+        />
+
 
     <!-- VERTICAL GUIDELINES -->
     <androidx.constraintlayout.widget.Guideline
@@ -663,27 +679,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.49" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.51" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.96" />
+
+
+    <!-- HORIZONTAL GUIDELINES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
