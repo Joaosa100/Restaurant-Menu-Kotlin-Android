@@ -290,10 +290,10 @@
     <!--  dessert products  -->
     <string name="dessertBoloLimao">Lemon Cake</string>
     <string name="dessertBoloMorango">Strawberry Cake</string>
-    <string name="dessertMaracuja">Passion Frt Sweet</string>
+    <string name="dessertMaracuja">Passion Sweet</string>
     <string name="dessertBoloBanana">Banana Cake</string>
     <string name="dessertDoceDeChurros">Churro Sweet</string>
-    <string name="dessertDoceDeLeiteNinho">Milk Powder Sweet</string>
+    <string name="dessertDoceDeLeiteNinho">Milk Jam Cake</string>
     <string name="dessertPaoDeMel">Honey Bread</string>
     <string name="dessertPaveDeAmendoim">Peanut Tiramisu</string>
 
@@ -319,10 +319,10 @@
 
 
     <!--  organic products  -->
-    <string name="organicSaladaAbacate">Avocado</string>
-    <string name="organicSaladaOvo">Egg and Potato</string>
-    <string name="organicSaladaRepolhoRoxo">Purple Cabbage</string>
-    <string name="organicSaladaGraoDeBico">Chickpea</string>
+    <string name="organicSaladaAbacate">Avocado Salad</string>
+    <string name="organicSaladaOvo">Potato Salad</string>
+    <string name="organicSaladaRepolhoRoxo">Cabbage Salad</string>
+    <string name="organicSaladaGraoDeBico">Chickpea Salad</string>
 
     <!--  organic prices -->
     <string name="organicSaladaAbacatePrice">R$7.90</string>
@@ -341,7 +341,7 @@
     <string name="pizzaMista">Ham and Cheese</string>
     <string name="pizzaQuatroQueijos">Four Cheese</string>
     <string name="pizzaCalabresa">Pepperoni</string>
-    <string name="pizzaCarneSol"> Beef Jerky</string>
+    <string name="pizzaCarneSol">Sun-Dried Meat</string>
 
     <!--  pizza prices  -->
     <string name="pizzaMistaPrice">$15.90</string>
