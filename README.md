@@ -5,60 +5,58 @@ A restaurant menu app.
 ![App first view](burgerHavenThumbFix.png)
 
 ![App first view](burgerVideo.gif)
-## Sumário
 
-- [Visão Geral](#visão-geral)
-- [Funcionalidades](#funcionalidades)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Testes](#testes)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
-- [Contato](#contato)
+## Table of Contents
 
-## Visão Geral
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Em um restaurante você precisa anotar rapidamente os pedidos, calcular o valor de cada um e estimar o tempo que cada item levará para chegar aos clientes. Com este aplicativo tudo isso é possível.
+## Overview
 
-## Funcionalidades
+In a restaurant, you need to quickly take orders, calculate the total for each, and estimate the time each item will take to reach the customers. With this app, all of that is possible.
 
-- **Menu Digital**: Visualização do cardápio completo com os nomes dos pratos, preços e imagens.
-- **Pedidos Online**: Permite aos usuários fazer pedidos diretamente pelo aplicativo para serem entregues pelos garçons.
-- **Pagamentos Online**: Preço em tempo real e pagamento dentro do aplicativo.
+## Features
 
+- **Digital Menu**: View the complete menu with dish names, prices, and images.
+- **Online Orders**: Allows users to place orders directly through the app to be delivered by the waitstaff.
+- **Online Payments**: Real-time pricing and in-app payment.
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de instalar, certifique-se de que você tem os seguintes requisitos:
+Before installing, make sure you have the following prerequisites:
 
 - [Kotlin](https://kotlinlang.org/)
 - [Gradle](https://gradle.org/)
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html)
-- [Android Studio](https://developer.android.com/studio) (recomendado)
+- [Android Studio](https://developer.android.com/studio) (recommended)
 
-## Instalação
+## Installation
 
-Passo a passo para instalar a aplicação localmente.
+Step-by-step instructions to install the application locally.
 
 ```sh
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+# Clone the repository
+git clone https://github.com/your-username/your-repository.git
 
-# Entre no diretório do projeto
-cd seu-repositorio
+# Navigate to the project directory
+cd your-repository
 
-# Compile e construa o projeto
+# Build the project
 ./gradlew build
 ```
 
-<!-- ## Uso -->
-
-## Tecnologias utilizadas
+## Technologies Used
 
 - Kotlin
 - Android Studio
 
-## Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
