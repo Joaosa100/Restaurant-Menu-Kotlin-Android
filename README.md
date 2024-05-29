@@ -6,7 +6,7 @@ A restaurant menu app.
 
 <!-- ![App first view](burgerVideo.gif) -->
 
-## Table of Contents
+## Summary
 
 - [Overview](#overview)
 - [Features](#features)
@@ -17,7 +17,6 @@ A restaurant menu app.
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
