@@ -4,7 +4,7 @@ A restaurant menu app.
 
 ![App first view](burgerHavenThumbFix.png)
 
-![App first view](burgerVideo.gif)
+<!-- ![App first view](burgerVideo.gif) -->
 
 ## Table of Contents
 
